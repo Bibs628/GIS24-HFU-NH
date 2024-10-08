@@ -65,8 +65,42 @@
   text-align: center;
  }
 
+ #Projekte {
+  border: #800080 solid 2px;
+  width:30%;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 1%;
+  padding-bottom: 0.8em;
+  background: #333;
+  color: white;
+  text-align: center;
 
+ }
+
+ #Projekte a[href] {
+  color: white;
+  background-color: #800080;
+  padding: 0.3em;
+  border-radius: 8px;
+  width: 30%;
+  text-decoration: none;
+  font-size: larger;
+ }
  
+ .flex-container {
+  margin-top: 1em;
+  align-items: flex-start;  /* Verhindert das Verzerren von Elementen*/
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 1em;
+  flex-wrap: wrap; /* Ermöglicht den Felxboxen sich auf mehreren Zeilen auszubreiten */
+}
+ 
+
  img {
   border-radius: 5%;
 }
