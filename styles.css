@@ -80,8 +80,12 @@
     }
   }
 
-  
-
+  body {
+    /* Deine CSS-Eigenschaften hier */
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+  }
 
  #Seitenheader {
   margin-top: 1%;
@@ -89,32 +93,34 @@
   padding-left: 3rem;
   border-radius: 35px;
   background: #333;
-  color: plum;
+  color: rgb(255, 255, 255);
  } 
 
  #Kurzbeschreibung {
+  padding-left: 3rem;
   border-radius: 35px;
   margin-top: 1%;
   padding-top: 1em;
   padding: 0.3em;
   background: #333;
   color: white;
-  text-align: center;
+  text-align: left;
  }
 
  #Standart {
+  padding-left: 3rem;
   border-radius: 35px;
   margin-top: 1%;
   padding-top: 1em;
   padding: 0.3em;
   background: #333;
   color: white;
-  text-align: center;
+  text-align: left;
  }
 
  #Projekte {
   border: #800080 solid 2px;
-  width:30%;
+  width:32%;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 10px;
@@ -153,6 +159,7 @@
  }
 
  #Projekte img {
+  margin-left: 3rem;
   padding: calc(2% + 5px);
   border-radius: calc(10% + 5px); /* Kombiniert prozentuale und feste Werte */
 }
