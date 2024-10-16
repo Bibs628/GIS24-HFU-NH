@@ -48,6 +48,11 @@
     color: white;
   }
 
+  .topnav a.active2 {
+    background-color: #c96cc9;
+    color: white;
+  }
+
   @media screen and (min-width: 768px) {
     .topnav {
       flex-wrap: nowrap;
@@ -159,7 +164,7 @@
  }
 
  #Projekte img {
-  margin-left: 3rem;
+  
   padding: calc(2% + 5px);
   border-radius: calc(10% + 5px); /* Kombiniert prozentuale und feste Werte */
 }
