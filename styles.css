@@ -1,5 +1,26 @@
+/* Generelles */
+body {
+  border-radius: 0%+30px;
+}
+
+
+ img {
+  border-radius: 5%;
+}
+
+body {
+    background-color: rgb(31, 31, 31);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: purple;
+}
+
+h2 {
+    color: green;
+}	
 /*navbar*/
-/* Create a top navigation bar with a black background color  */
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -26,7 +47,7 @@
   display: inline-block;
   width: calc(500%)
 }
-
+ 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
@@ -124,6 +145,21 @@
   text-align: left;
  }
 
+ #Standart p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+ }
+
+ #Standart h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+ }
+
+
+ /* Projekte */
+
  #Projekte {
   border: #800080 solid 2px;
   width:32%;
@@ -138,8 +174,6 @@
   text-align: center;
   transition: border-color 0.3s ease;
  }
-
-
 
 #Projekte:hover {
   border-color: rgb(221, 160, 221); /* Neue Farbe beim Hover */
@@ -170,6 +204,23 @@
   border-radius: calc(10% + 5px); /* Kombiniert prozentuale und feste Werte */
 }
 
+#Projekte h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#Projekte p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
 #Projektlinks {
   margin-top: 1%;
   padding: 0.3em;
@@ -177,6 +228,9 @@
   color: white;
   text-align: center;
 }
+
+
+/* Flexboxen */
 
  .flex-container {
   margin-top: 1em;
@@ -188,24 +242,32 @@
   flex-wrap: wrap; /* Ermöglicht den Felxboxen sich auf mehreren Zeilen auszubreiten */
 }
  
-body {
-  border-radius: 0%+30px;
+
+
+
+
+/* Collapsible Content */
+
+.collapsible-content {
+  display: none;
+  overflow: hidden;
+  margin-top: 0.5em;
 }
 
-
- img {
-  border-radius: 5%;
+.collapsible-button {
+  background-color: #800080;
+  color: white;
+  cursor: pointer;
+  padding: 0.5em;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.25em;
+  border-radius: 10px;
+  margin-top: 0.5em;
 }
 
-body {
-    background-color: rgb(31, 31, 31);
-    font-family: Arial, sans-serif;
+.collapsible-button.active, .collapsible-button:hover {
+  background-color: #ccc;
 }
-
-h1 {
-    color: purple;
-}
-
-h2 {
-    color: green;
-}	
