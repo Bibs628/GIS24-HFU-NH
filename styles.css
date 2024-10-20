@@ -135,7 +135,7 @@ footer {
  
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #F2613F;
   color: black;
   transition: background-color 0.3s ease;
   
@@ -255,6 +255,19 @@ footer {
   color: #9B3922;
  }
 
+ #Standart a[href] {
+  color: white;
+  background-color: #F2613F;
+  padding: 0.3em;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+  font-size: larger;
+  display: inline-block;
+  width: 70%;
+  margin-left: calc(4rem);
+ }
 
  /* Projekte */
 
@@ -270,9 +283,12 @@ footer {
   color: white; /* Textfarbe */
   text-align: center; /* Zentriert den Text */
   transition: border-color 0.3s ease; /* Fügt eine Transition hinzu */
-
  }
 
+ #Projekte p {
+  padding-left: calc(3rem);
+  padding-right: calc(3rem);
+ }
 
  @media screen and (max-width: 768px) {
   #Projekte {
@@ -320,8 +336,9 @@ footer {
   }
 
  #Projekte img {
-  
-  padding: calc(2% + 5px);
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
   border-top-left-radius: calc(45px + 5%) ;
   border-top-right-radius: calc(25px + 5%) ;
   border-bottom-left-radius: calc(25px + 5%) ;
@@ -354,6 +371,7 @@ footer {
   color: white;
   text-align: center;
 }
+
 
 
 /* Flexboxen */
