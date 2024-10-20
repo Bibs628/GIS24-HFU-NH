@@ -7,7 +7,7 @@ html, body {
 
 body {
   position: relative;
-  background-color: #0C0C0C; /* Fallback background color */
+  background-color: #272727; /* Fallback background color */
   font-family: Arial, sans-serif;
   /* Deine CSS-Eigenschaften hier */
   margin-left: 5%;
@@ -33,7 +33,7 @@ body::before {
 }
 
 /* Textfarben */
-h1, h2, h3,  {
+h1, h2, h3 {
   color: #9B3922;
 }
 
@@ -259,14 +259,14 @@ footer {
  /* Projekte */
 
  #Projekte {
-  border: #F2613F solid 2px; /* Rahmenfarbe und -stärke */
-  border-bottom-right-radius: 15px; /* Runde Ecken */
-  border-bottom-left-radius: 15px; /* Runde Ecken */
-  border-top-left-radius: 10px;  /* Runde Ecken */
-  border-top-right-radius: 10px; /* Runde Ecken */
+  
+  border-bottom-right-radius: 45px; /* Runde Ecken */
+  border-bottom-left-radius: 25px; /* Runde Ecken */
+  border-top-left-radius: 45px;  /* Runde Ecken */
+  border-top-right-radius: 25px; /* Runde Ecken */
   margin-top: 1%; /* Abstand zum vorherigen Element */
   padding-bottom: 0.8em; /* Abstand zum Text */
-  background: #0c0c0c33; /* Hintergrundfarbe */
+  background: #0c0c0c80; /* Hintergrundfarbe */
   color: white; /* Textfarbe */
   text-align: center; /* Zentriert den Text */
   transition: border-color 0.3s ease; /* Fügt eine Transition hinzu */
@@ -322,7 +322,10 @@ footer {
  #Projekte img {
   
   padding: calc(2% + 5px);
-  border-radius: calc(10% + 5px); /* Kombiniert prozentuale und feste Werte */
+  border-top-left-radius: calc(45px + 5%) ;
+  border-top-right-radius: calc(25px + 5%) ;
+  border-bottom-left-radius: calc(25px + 5%) ;
+  border-bottom-right-radius: calc(45px + 5%) ;
 }
 
 #Projekte h3 {
