@@ -7,10 +7,10 @@ Eine Persönliche Website um mich Vorzustellen und meine Privaten Projekte zu ve
 ### Umfang an Seiten
 Die Seite soll aus verschiedenen Unterseiten bestehen, ein grober vorläufiger Aufbau sieht wie folgt aus:
 
-![Projekte][pictures\Projektidee GIS.png]
+![[https://raw.githubusercontent.com/Bibs628/GIS24-HFU-NH/refs/heads/main/pictures/Projektidee%20GIS.png]
 
 ## Link zur Seite:
-https://bibs628.github.io/GIS24-HFU-NH/
+https://bibs628.github.io/GIS24-HFU]-NH/
 
 ## Fragen
 
