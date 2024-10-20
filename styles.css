@@ -1,34 +1,118 @@
 /* Generelles */
-body {
-  border-radius: 0%+30px;
-}
-
-
- img {
-  border-radius: 5%;
+html, body {
+  height: 100%; /* Ensure the body and html elements take up the full height */
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: rgb(31, 31, 31);
-    font-family: Arial, sans-serif;
+  position: relative;
+  background-color: #0C0C0C; /* Fallback background color */
+  font-family: Arial, sans-serif;
+  /* Deine CSS-Eigenschaften hier */
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0;
+
 }
 
-h1 {
-    color: purple;
+body::before {
+  content: "";
+  position: fixed; /* Use fixed positioning to ensure it covers the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('pictures/Background_HR_Grey.png'); /* Path to your image */
+  border-radius: none;
+  background-size: cover; /* Scale the image to cover the entire background */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center center; /* Center the image */
+  opacity: 0.1; /* Set the transparency level */
+  z-index: -1; /* Ensure the pseudo-element is behind other content */
 }
 
-h2 {
-    color: green;
-}	
+/* Textfarben */
+h1, h2, h3,  {
+  color: #9B3922;
+}
+
+/* Links */
+a {
+  color: #F2613F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9B3922;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Header */
+header {
+  background-color: #0c0c0c33;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Main */
+main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #0c0c0c33;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* Navigation */
+
+
+
+
+
+
 /*navbar*/
 .topnav {
-  background-color: #333;
+  background-color: #0c0c0c33;
   overflow: hidden;
   border-radius: 20px;
   min-width: auto;
   display: flex;
   padding: 0 1%px;
   text-align: left;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /* Style the links inside the navigation bar */
@@ -40,6 +124,7 @@ h2 {
   text-decoration: none;
   font-size: 17px;
   border-radius: 10px;
+  display: block;
   
 }
 
@@ -52,27 +137,31 @@ h2 {
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+  transition: background-color 0.3s ease;
   
 }
 
 /* Create a right-aligned (split) link inside the navigation bar */
 .topnav a.split {
   float: right;
-  background-color: #8000804d;
+  background-color: #9B3922;
   color: white;
   margin-left: auto;
 }
 
 /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #800080;
+    background-color: #9B3922;
     color: white;
   }
 
   .topnav a.active2 {
-    background-color: #c96cc9;
+    background-color: #9b38228e;
     color: white;
   }
+
+
+
 
   @media screen and (min-width: 768px) {
     .topnav {
@@ -106,83 +195,115 @@ h2 {
     }
   }
 
-  body {
-    /* Deine CSS-Eigenschaften hier */
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 0;
-  }
-
  #Seitenheader {
   margin-top: 1%;
   padding: 0.3em;
   padding-left: 3rem;
+  padding-right: 3rem;
   border-radius: 35px;
-  background: #333;
+  background: #0c0c0c33;
   color: rgb(255, 255, 255);
-  text-align: center;
+  text-align: left;
+  margin-bottom: 1rem
  } 
 
+  #Seitenheader h1 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: left;
+    color: #f2603f;
+  }	
+
  #Kurzbeschreibung {
-  padding-left: 3rem;
   border-radius: 35px;
-  margin-top: 1%;
-  padding-top: 1em;
-  padding: 0.3em;
-  background: #333;
+  padding: 1rem;
+  background: #0c0c0c33;
   color: white;
   text-align: left;
+  margin-bottom: 1%;
+  margin-bottom: 1rem;
  }
 
  #Standart {
-  padding-left: 3rem;
   border-radius: 35px;
-  margin-top: 1%;
-  padding-top: 1em;
-  padding: 0.3em;
-  background: #333;
-  color: white;
+  padding: 1rem;
+  background: #0c0c0c33;
   text-align: left;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 0 1rem #0c0c0c33;
  }
 
  #Standart p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   margin-left: 1em;
+  margin-right: 1em;
+  text-align: left;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  color: white;
  }
 
- #Standart h3 {
+ #Standart h1, h2, h3 {	
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   margin-left: 1em;
+  margin-right: 1em;
+  text-align: left ; 
+  text-overflow: ellipsis;
+  max-width: 100%;
+  color: #9B3922;
  }
 
 
  /* Projekte */
 
  #Projekte {
-  border: #800080 solid 2px;
-  width:32%;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  margin-top: 1%;
-  padding-bottom: 0.8em;
-  background: #333;
-  color: white;
-  text-align: center;
-  transition: border-color 0.3s ease;
+  border: #F2613F solid 2px; /* Rahmenfarbe und -stärke */
+  border-bottom-right-radius: 15px; /* Runde Ecken */
+  border-bottom-left-radius: 15px; /* Runde Ecken */
+  border-top-left-radius: 10px;  /* Runde Ecken */
+  border-top-right-radius: 10px; /* Runde Ecken */
+  margin-top: 1%; /* Abstand zum vorherigen Element */
+  padding-bottom: 0.8em; /* Abstand zum Text */
+  background: #0c0c0c33; /* Hintergrundfarbe */
+  color: white; /* Textfarbe */
+  text-align: center; /* Zentriert den Text */
+  transition: border-color 0.3s ease; /* Fügt eine Transition hinzu */
+
  }
 
+
+ @media screen and (max-width: 768px) {
+  #Projekte {
+    min-width: calc(100%/3 - 1rem);
+    max-width: calc(100%/1 - 1rem);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    #Projekte {
+      min-width: calc(100%/3 - 1rem);
+      max-width: calc(100%/2 - 1rem);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    #Projekte {
+      min-width: calc(100%/3 - 1rem);
+      max-width: calc(100%/3 - 1rem);
+    }
+  }
+
+
 #Projekte:hover {
-  border-color: rgb(221, 160, 221); /* Neue Farbe beim Hover */
-  box-shadow: 0 0 10px rgba(221, 160, 221, 0.5); /* Fügt einen Gloweffekt hinzu */
+  border-color: #F2613F; /* Neue Farbe beim Hover */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Fügt eine Transition hinzu */
 } 
 
  #Projekte a[href] {
   color: white;
-  background-color: #800080;
+  background-color: #F2613F;
   padding: 0.3em;
   border-radius: 8px;
   width: 30%;
@@ -193,10 +314,10 @@ h2 {
  }
 
  #Projekte a[href]:hover {
-  background-color: plum;
+  background-color: #9B3922;
   color: white;
-  box-shadow: 0 0 10px rgba(221, 160, 221, 0.5);
- }
+  transition: background-color 0.3s ease;
+  }
 
  #Projekte img {
   
@@ -215,16 +336,18 @@ h2 {
   margin-left: 0.5em;
   margin-right: 0.5em;
   text-align: left;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Anzahl der Zeilen, nach denen abgeschnitten wird */
+  -webkit-box-orient: vertical;
   max-width: 100%;
 }
 
 #Projektlinks {
   margin-top: 1%;
   padding: 0.3em;
-  background: #333;
+  background: #0c0c0c33;
   color: white;
   text-align: center;
 }
@@ -244,8 +367,6 @@ h2 {
  
 
 
-
-
 /* Collapsible Content */
 
 .collapsible-content {
@@ -255,7 +376,7 @@ h2 {
 }
 
 .collapsible-button {
-  background-color: #800080;
+  background-color: #9B3922;
   color: white;
   cursor: pointer;
   padding: 0.5em;
