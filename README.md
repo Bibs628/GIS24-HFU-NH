@@ -15,10 +15,10 @@ https://bibs628.github.io/GIS24-HFU-NH/
 ## Fragen
 
 ### Website pushing
-Das Pushen des Projektes ins GitHub scheint nicht die GitHub page genau wie im localhost zu aktualisieren
+Das Pushen des Projektes ins GitHub scheint sich nicht die GitHub page genau wie im localhost zu aktualisieren. Der Localhost zeigt die Website wie es soll an aber GitHub nicht und ich kann mir dies nicht erklären. 
 
 ### Zentrieren von <a href> 
-Ich möchte gerne den "Button" auf Seiten wie unter Projekte/HomeLab gerne zentrieren, jedoch bin ich mir nicht sicher wie das geht. Am besten passt sich der Overhang dann auch ein Stück weit an der Bildschrirmbreite an
+Ich möchte gerne den "Button" auf Seiten wie unter Projekte/HomeLab gerne zentrieren, jedoch bin ich mir nicht sicher wie das geht. Am besten passt sich der Overhang dann auch ein Stück weit an der Bildschrirmbreite an.
 
 ### bessere Anpassungen der Textboxen
 Ich bin an sich mit der Art und Weise wie die Textboxen gerendert werden zufrieden, jedoch finde ich die Art und Weise wie Zeilenumbrüche bis jetzt auf verschiedenen Bildschirmbreiten Skalieren bis jetzt nicht so geil. Ich habe dazu jedoch bis jetzt keine Elegantere variante gefunden.
@@ -42,4 +42,14 @@ gar nicht: #481E14
 ### Impressumspflicht
 Kennen sie die Notwendigkeiten des Impressums? Nach meinen Informationen sollten meine Angegebenen Daten ausreichen sein.
 
+### Umgang mit Unterseiten komplett anderer Struktur
+Wie geht man mit Unterseiten um, die sich komplett unabhängig von der eigentlichen Website agieren? In meinem Fall hadnelt es sich um einen Vortrag welchen ich bald im UnFug halte. Gibt es da elegante Wege um einfach zu dem normalen Bereich zurück zu gehen oder soll ich einfach links am Anfang & Ende zur Website packen?
 
+### Bildgröße und optimierung der Speichergröße
+Mir persönlich ist die Bildqualität wichtig und deswegen würde ich gerne diese möglichst Verlustfrei laden. Ich habe die Datein im Moment auf eine Auflösung von WQHD / 4k ausgelegt was bis jetzt die Bilder angeht. Dies bedeutet bei den Projekten im Moment eine Bildauflösung vom 850x750px in Dateiformat .png, welche in Dateigrößen zwischen 2MB und 23 KB resultiert. Die größenunterschiede liegen mitunter an der Transparenz, welche bei einem .jpeg nicht bestehen würde und nach meinen Tests ist die Speicherplatzgröße nicht großartig Verändern oder massiv in die Bildqualität eingreifen.
+
+### Einklappen der TopNav bei geringen Auflösungen / Burgermenu
+Ich habe Versucht zwischenruch mal ein Burgermenu einzubinden, jedoch hat dies bei mir nicht so funktioniert wie ich wollte. Ich habe versucht mich an diesem Guide von w3 School zu halten https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+
+### Verbesserte Einstellung der TopNav
+Die TopNav ist an sich benutzbar, diese erzeugt jedoch einen Zeilenumbruch bei mittleren Auflösungen und ich habe online keine Ausreichenden Resourcen gefunden wie ich mit <span> umzugehen habe.
