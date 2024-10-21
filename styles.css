@@ -99,6 +99,11 @@ footer {
   text-align: left;
   margin-bottom: 1rem;
   position: relative;
+
+   
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -125,7 +130,13 @@ footer {
   font-size: 17px;
   border-radius: 10px;
   display: block;
-  
+
+  flex-shrink: 1;
+ 
+}
+
+.topnav_links {
+  display: flex;
 }
 
 .spacer {
@@ -222,6 +233,16 @@ footer {
   text-align: left;
   margin-bottom: 1%;
   margin-bottom: 1rem;
+  margin-bottom: 1rem;
+ }
+
+ #Kurzbeschreibung p {
+  max-width: 80rem;
+ }
+
+ #Kurzbeschreibung img {
+  margin: 0 auto;
+  display: block;
  }
 
  #Standart {
