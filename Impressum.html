@@ -26,6 +26,7 @@
       <a href="Projekte.html">Projekte</a>
       <span class="spacer"></span>
       <a href="Impressum.html" class="split"> Impressum</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
     </div>
 
 
@@ -51,7 +52,6 @@
         die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.
         Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen. <br><br>
         Die Texte auf dieser Seite sind von mir selbst erstellt und unterliegen dem Urheberrecht, die Bilder sind entweder selbst erstellt, von Freunden für den Zweck freigegeben oder von <a href="https://free-images.com/">free-images</a> und diese unterliegen der Creative Commons Zero (CC0) Lizenz.</p>
-      </p>
     </div>
   </div>
 </div>
@@ -66,6 +66,17 @@
         Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
   </div>
 </div>
+
+<script>
+  function toggleMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
 
   </body>
 </html>
