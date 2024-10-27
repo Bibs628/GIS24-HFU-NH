@@ -329,28 +329,14 @@ footer {
   }
 }
 
+
+
 #Projekte:hover {
-  border-color: #F2613F; /* Neue Farbe beim Hover */
-  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Fügt eine Transition hinzu */
-}
-
-#Projekte a[href] {
-  color: white;
-  background-color: #F2613F;
-  padding: 0.3rem;
-  border-radius: 8px;
-  width: 30%;
-  text-decoration: none;
-  font-size: larger;
-  display: inline-block;
-  width: 70%;
-}
-
-#Projekte a[href]:hover {
-  background-color: #9B3922;
+  background: #29211f;
   color: white;
   transition: background-color 0.3s ease;
 }
+
 
 #Projekte img {
   padding-top: 2rem;
@@ -369,6 +355,7 @@ footer {
 }
 
 #Projekte p {
+  color: white;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 0.5rem;
