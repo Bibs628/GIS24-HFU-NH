@@ -9,11 +9,9 @@ body {
   position: relative;
   background-color: #272727; /* Fallback background color */
   font-family: Arial, sans-serif;
-  /* Deine CSS-Eigenschaften hier */
   margin-left: 5%;
   margin-right: 5%;
   padding: 0;
-
 }
 
 body::before {
@@ -83,11 +81,6 @@ footer {
 
 /* Navigation */
 
-
-
-
-
-
 /*navbar*/
 .topnav {
   background-color: #0c0c0c33;
@@ -95,12 +88,10 @@ footer {
   border-radius: 20px;
   min-width: auto;
   display: flex;
-  padding: 0 1%px;
+  padding: 0 1%;
   text-align: left;
   margin-bottom: 1rem;
   position: relative;
-
-   
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -130,26 +121,18 @@ footer {
   font-size: 17px;
   border-radius: 10px;
   display: block;
-
   flex-shrink: 1;
- 
 }
 
 .topnav_links {
   display: flex;
 }
 
-.spacer {
-  display: inline-block;
-  width: calc(500%)
-}
- 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #F2613F;
   color: black;
   transition: background-color 0.3s ease;
-  
 }
 
 /* Create a right-aligned (split) link inside the navigation bar */
@@ -161,52 +144,50 @@ footer {
 }
 
 /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #9B3922;
-    color: white;
-  }
+.topnav a.active {
+  background-color: #9B3922;
+  color: white;
+}
 
-  .topnav a.active2 {
-    background-color: #9b38228e;
-    color: white;
-  }
+.topnav a.active2 {
+  background-color: #9b38228e;
+  color: white;
+}
 
-
-
-
-  @media screen and (min-width: 768px) {
-    .topnav {
-      flex-wrap: nowrap;
-    }
-    
-    .topnav a {
-      width: 100%;
-      text-align: left;
-    }
-
-    .topnav a.split {
-      margin-left: 0; /* Entfernt den Auto-Margin auf kleineren Bildschirmen */
-    }
+@media screen and (min-width: 768px) {
+  .topnav {
+    flex-direction: row;
+    align-items: center;
   }
   
-  /* Styles for smaller screens */
-  @media screen and (max-width: 767px) {
-    .topnav {
-      flex-direction: column;
-      align-items: stretch;
-    }
-    
-    .topnav a {
-      width: 100%;
-      text-align: left;
-    }
-    
-    .topnav a.split {
-      margin-left: 0; /* Entfernt den Auto-Margin auf kleineren Bildschirmen */
-    }
+  .topnav a {
+    width: 100%;
+    text-align: left;
   }
 
- #Seitenheader {
+  .topnav a.split {
+    margin-left: 0; /* Entfernt den Auto-Margin auf kleineren Bildschirmen */
+  }
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 767px) {
+  .topnav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .topnav a {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .topnav a.split {
+    margin-left: 0; /* Entfernt den Auto-Margin auf kleineren Bildschirmen */
+  }
+}
+
+#Seitenheader {
   margin-top: 1%;
   padding: 0.3rem;
   padding-left: 3rem;
@@ -215,17 +196,17 @@ footer {
   background: #0c0c0c33;
   color: rgb(255, 255, 255);
   text-align: left;
-  margin-bottom: 1rem
- } 
+  margin-bottom: 1rem;
+}
 
-  #Seitenheader h1 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    text-align: left;
-    color: #f2603f;
-  }	
+#Seitenheader h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  color: #f2603f;
+}
 
- #Kurzbeschreibung {
+#Kurzbeschreibung {
   border-radius: 35px;
   padding: 1rem;
   background: #0c0c0c33;
@@ -233,28 +214,27 @@ footer {
   text-align: left;
   margin-bottom: 1%;
   margin-bottom: 1rem;
-  margin-bottom: 1rem;
- }
+}
 
- #Kurzbeschreibung p {
+#Kurzbeschreibung p {
   max-width: 80rem;
- }
+}
 
- #Kurzbeschreibung img {
+#Kurzbeschreibung img {
   margin: 0 auto;
   display: block;
- }
+}
 
- #Standart {
+#Standart {
   border-radius: 35px;
   padding: 1rem;
   background: #0c0c0c33;
   text-align: left;
   margin-bottom: 1rem;
   box-shadow: inset 0 0 1rem #0c0c0c33;
- }
+}
 
- #Standart p {
+#Standart p {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 1rem;
@@ -263,20 +243,20 @@ footer {
   text-overflow: ellipsis;
   max-width: 100%;
   color: white;
- }
+}
 
- #Standart h3 {	
+#Standart h3 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  text-align: left ; 
+  text-align: left;
   text-overflow: ellipsis;
   max-width: 100%;
   color: #F2613F;
- }
+}
 
- #Standart h4 {
+#Standart h4 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 3rem;
@@ -285,10 +265,9 @@ footer {
   text-overflow: ellipsis;
   max-width: 100%;
   color: #F2613F;
- }
+}
 
-
- #Standart a[href] {
+#Standart a[href] {
   color: white;
   background-color: #F2613F;
   padding: 0.3rem;
@@ -300,9 +279,9 @@ footer {
   display: inline-block;
   width: 70%;
   margin-left: calc(4rem);
- }
+}
 
- #Standart ul {
+#Standart ul {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 1rem;
@@ -311,12 +290,11 @@ footer {
   text-overflow: ellipsis;
   max-width: 100%;
   color: white;
- }
+}
 
- /* Projekte */
+/* Projekte */
 
- #Projekte {
-  
+#Projekte {
   border-bottom-right-radius: 45px; /* Runde Ecken */
   border-bottom-left-radius: 25px; /* Runde Ecken */
   border-top-left-radius: 45px;  /* Runde Ecken */
@@ -327,41 +305,40 @@ footer {
   color: white; /* Textfarbe */
   text-align: center; /* Zentriert den Text */
   transition: border-color 0.3s ease; /* Fügt eine Transition hinzu */
- }
+}
 
- #Projekte p {
+#Projekte p {
   padding-left: calc(3rem);
   padding-right: calc(3rem);
- }
+}
 
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #Projekte {
     min-width: calc(100%/3 - 1rem);
     max-width: calc(100%/1 - 1rem);
-    }
   }
+}
 
-  @media screen and (min-width: 768px) {
-    #Projekte {
-      min-width: calc(100%/3 - 1rem);
-      max-width: calc(100%/2 - 1rem);
-    }
+@media screen and (min-width: 768px) {
+  #Projekte {
+    min-width: calc(100%/3 - 1rem);
+    max-width: calc(100%/2 - 1rem);
   }
+}
 
-  @media screen and (min-width: 1024px) {
-    #Projekte {
-      min-width: calc(100%/3 - 1rem);
-      max-width: calc(100%/3 - 1rem);
-    }
+@media screen and (min-width: 1024px) {
+  #Projekte {
+    min-width: calc(100%/3 - 1rem);
+    max-width: calc(100%/3 - 1rem);
   }
-
+}
 
 #Projekte:hover {
   border-color: #F2613F; /* Neue Farbe beim Hover */
   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Fügt eine Transition hinzu */
-} 
+}
 
- #Projekte a[href] {
+#Projekte a[href] {
   color: white;
   background-color: #F2613F;
   padding: 0.3rem;
@@ -371,15 +348,15 @@ footer {
   font-size: larger;
   display: inline-block;
   width: 70%;
- }
+}
 
- #Projekte a[href]:hover {
+#Projekte a[href]:hover {
   background-color: #9B3922;
   color: white;
   transition: background-color 0.3s ease;
-  }
+}
 
- #Projekte img {
+#Projekte img {
   padding-top: 2rem;
   padding-right: 2rem;
   padding-left: 2rem;
@@ -416,21 +393,17 @@ footer {
   text-align: center;
 }
 
-
-
 /* Flexboxen */
 
- .flex-container {
+.flex-container {
   margin-top: 1rem;
   align-items: flex-start;  /* Verhindert das Verzerren von Elementen*/
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   gap: 1rem;
-  flex-wrap: wrap; /* Ermöglicht den Felxboxen sich auf mehreren Zeilen auszubreiten */
+  flex-wrap: wrap; /* Ermöglicht den Flexboxen sich auf mehreren Zeilen auszubreiten */
 }
- 
-
 
 /* Collapsible Content */
 
@@ -477,4 +450,16 @@ footer {
   text-overflow: ellipsis;
   max-width: 100%;
   color: black;
+}
+
+/* Details and Summary */
+details summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+details summary h3 {
+  margin: 0;
+  padding-left: 0.5rem;
 }
