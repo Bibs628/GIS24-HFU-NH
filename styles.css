@@ -21,7 +21,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('pictures/Background_HR_Grey.png'); /* Path to your image */
+  background-image: url('pictures/Background_HR_Grey.jpg'); /* Path to your image */
   border-radius: none;
   background-size: cover; /* Scale the image to cover the entire background */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -295,10 +295,10 @@ footer {
 /* Projekte */
 
 #Projekte {
-  border-bottom-right-radius: 45px; /* Runde Ecken */
-  border-bottom-left-radius: 25px; /* Runde Ecken */
-  border-top-left-radius: 45px;  /* Runde Ecken */
-  border-top-right-radius: 25px; /* Runde Ecken */
+  border-bottom-right-radius: 3rem; /* Runde Ecken */
+  border-bottom-left-radius: 3rem; /* Runde Ecken */
+  border-top-left-radius: 3rem;  /* Runde Ecken */
+  border-top-right-radius: 3rem; /* Runde Ecken */
   margin-top: 1%; /* Abstand zum vorherigen Element */
   padding-bottom: 0.8em; /* Abstand zum Text */
   background: #0c0c0c80; /* Hintergrundfarbe */
