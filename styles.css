@@ -334,12 +334,10 @@ footer {
   background-color: #F2613F;
   padding: 0.3rem;
   border-radius: 8px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   font-size: larger;
   display: inline-block;
-  width: calc( 40%);
-  margin-left: 2rem;
 }
 
 #Standart a[href]:hover {
