@@ -158,6 +158,8 @@ footer {
   .topnav {
     flex-direction: row;
     align-items: center;
+    position: sticky;
+    top: 0;
   }
   
   .topnav a {
@@ -538,7 +540,7 @@ details summary h3 {
   padding: 0 1rem;
   text-align: left;
   margin-bottom: 1rem;
-  position: relative;
+  position: bottom; ;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
