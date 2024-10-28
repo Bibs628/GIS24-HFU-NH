@@ -443,6 +443,7 @@ footer {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3; /* Anzahl der Zeilen, nach denen abgeschnitten wird */
+  line-clamp: 3; /* Standard property for compatibility */
   -webkit-box-orient: vertical;
   max-width: 100%;
   padding-left: 2rem;
