@@ -238,6 +238,8 @@ footer {
 #Kurzbeschreibung img {
   margin: 0 auto;
   display: block;
+  border-radius: 2rem;
+  max-width: 60%;
 }
 
 #Standart {
@@ -561,3 +563,5 @@ details summary h3 {
   height: 2rem;
   margin-right: 5rem;
 }
+
+
