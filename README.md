@@ -22,6 +22,18 @@ Zu sehen ist dies unter anderem im Footer und im in den Projekte.hmtl
 ### topnav oben mit sticky
 Ich möchte gerne die Topnav durch sticky fixieren, was funktioniert. Jedoch will ich den Body in doesem Bereich ausblenden um die Transparenz der Topnav beizubehalten, was ich nicht finde.
 
+#### position fixed
+
 ### footer unten am bildschirmrand auch durch Sticky?
 
 
+
+
+### Anmerkungen
+Topnav <nav> anstatt <div>
+
+
+
+### Datenbanken
+Posgr sql
+maria
