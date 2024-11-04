@@ -29,8 +29,3 @@ function showSlides(n) {
   //dots[slideIndex-1].className += " active";
   //captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
-
-let element = document.getElementById("Projekte");
-element.classList.add("active");
-
