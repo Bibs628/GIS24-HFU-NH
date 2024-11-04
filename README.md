@@ -28,12 +28,6 @@ Ich möchte gerne die Topnav durch sticky fixieren, was funktioniert. Jedoch wil
 
 
 
-
-### Anmerkungen
-Topnav <nav> anstatt <div>
-
-
-
 ### Datenbanken
 Posgr sql
 maria
