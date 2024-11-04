@@ -11,6 +11,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -24,7 +25,12 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  //slides[slideIndex-1].style.display = "block";
+  //dots[slideIndex-1].className += " active";
+  //captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
+let element = document.getElementById("Projekte");
+element.classList.add("active");
+

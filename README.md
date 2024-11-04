@@ -27,7 +27,6 @@ Ich möchte gerne die Topnav durch sticky fixieren, was funktioniert. Jedoch wil
 ### footer unten am bildschirmrand auch durch Sticky?
 
 
-
 ### Datenbanken
 Posgr sql
 maria
