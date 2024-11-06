@@ -29,3 +29,32 @@ function showSlides(n) {
   //dots[slideIndex-1].className += " active";
   //captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+/*
+// Create an Object
+const Projekte = {
+  name: "Projekte",
+  description: "Meine Projekte",
+  Image: "images/Projekte.jpg",
+  link: "Projekte.html",
+  alt: "Projekte"
+  alt img: "Projekte"
+}
+
+// Display Properties
+document.getElementById("demo").innerHTML = person.name + ", " + person.age + ", " + person.city;
+*/
+
+// Create an Object
+const Projekte = {
+  name: "AStA",
+  description: "AStA",
+  Image: "images/logo_asta.png",
+  link: "ASTA.html",
+  alt: "Allgemeiner Studierendenausschuss",
+  alt_img: "Logo AStA"
+}
+// Display Properties
+document.getElementById("AStA").innerHTML = Projekte.name + ", " + Projekte.image + ", " + Projekte.description + ", " + Projekte.link + ", " + Projekte.alt + ", " + Projekte.alt_img;
+
+
