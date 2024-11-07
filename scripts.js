@@ -55,6 +55,68 @@ const Projekte = {
   alt_img: "Logo AStA"
 }
 // Display Properties
-document.getElementById("AStA").innerHTML = Projekte.name + ", " + Projekte.image + ", " + Projekte.description + ", " + Projekte.link + ", " + Projekte.alt + ", " + Projekte.alt_img;
+// document.getElementById("AStA").innerHTML = Projekte.name + ", " + Projekte.image + ", " + Projekte.description + ", " + Projekte.link + ", " + Projekte.alt + ", " + Projekte.alt_img;
 
 
+let Username = {
+  name: "Username",
+  Date: "Date",
+  time: "Time",
+  Headers: "Headers",
+  Content: "Content",
+}
+
+  // JSON data
+  const jsonData = {
+    name: "Username",
+    date: "Datum",
+    time: "Uhrzeit",
+    header: "Überschrift",
+    message: "Nachricht"
+  };
+
+    console.log(jsonData);
+
+  // Function to display JSON data
+  /*function displayJSON(data) {
+    console.log(document.getElementById("jsonContent"));
+    const jsonContent = document.getElementById("#jsonContent");
+    const content = `
+      <p><strong>Name:</strong> ${data.name}</p>
+      <p><strong>Datum:</strong> ${data.date}</p>
+      <p><strong>Uhrzeit:</strong> ${data.time}</p>
+      <p><strong>Überschrift:</strong> ${data.header}</p>
+      <p><strong>Nachricht:</strong> ${data.message}</p>
+    `;
+    jsonContent.innerHTML = content;
+  }*/
+
+  // Display the JSON data
+  //displayJSON(jsonData);
+
+  // Projektdaten
+  const projects =
+    fetch('JSON/Projekte.json');
+  console.log(projects);
+
+  // Funktion zum Erstellen der Projekt-HTML-Elemente
+  function createProjectElements(projects) {
+    const projectsContainer = document.getElementById("projectsjs");
+    projects.forEach(project => {
+      const projectDiv = document.createElement("p");
+      projectDiv.className = "Projekte";
+      projectDiv.innerHTML = `
+        <a href="${project.link}">
+          <img src="${project.image}" alt="${project.alt}" width="80%" height="80%">
+          <h3>${project.name}</h3>
+          <p>${project.description}</p>
+        </a>
+      `;
+      projectsContainer.appendChild(projectDiv);
+
+    });
+  }
+
+  let testIdElement = document.getElementById("projectsjs");
+  // Projekte anzeigen
+  createProjectElements(projects);
