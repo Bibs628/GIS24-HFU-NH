@@ -109,7 +109,7 @@
       }
 }
 
-* Dark mode */
+/* Dark mode */
 @media (prefers-color-scheme: light) {
     .Projekte h3 {
         margin-top: 0.5rem;

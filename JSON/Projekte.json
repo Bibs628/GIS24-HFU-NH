@@ -1,19 +1,18 @@
-{
+[
+  {
     "name": "AStA & AStA-Technik",
     "description": "Als Mitglied der AStA und der AStA-Technik unterstütze ich regelmäßig Veranstaltungen und setzte ich mich auch für Studenten ein.",
     "image": "pictures/logo_asta_color.png",
     "link": "Projekte/AStA-Technik.html",
     "alt": "AStA Logo"
-},
-
-{
+  },
+  {
     "name": "MediaJam SoSe24/25",
     "description": "Die Planung des MediaJams in diesem Semester habe ich übernommen, an diesem werden kleinere Creativprojekte in wenigen Tagen umgesetzt.",
     "image": "pictures/MediaJam24_25.jpg",
     "link": "Projekte/MediaJam2425.html",
     "alt": "MediaJam SoSe24 Logo"
-},
-  
+  },
   {
     "name": "MediaJam WiSe24",
     "description": "Im Rahmen des Internen MediaJams haben wir in einer kleinen Gruppe eine kleine Stop-Motion-Animation in Blender erstellt.",
@@ -21,7 +20,6 @@
     "link": "Projekte/MediaJam24.html",
     "alt": "MedieJam WiSw24 Logo"
   },
-
   {
     "name": "GIS-Website",
     "description": "Neben dieser Website hier habe ich zudem ein Forum im Kurs Grundlagen Interaktiver Systeme, GIS, erstellt.",
@@ -29,7 +27,6 @@
     "link": "Projekte/GIS-Website.html",
     "alt": "Grundlagen Interaktiver Systeme Codebeispiel"
   },
-
   {
     "name": "Fachschaft DM",
     "description": "Als Mitglied der Fachschaft vertrete ich die Interessen der Studenten gegenüber der Fakultät und setzte Veranstaltungen für Studenten um.",
@@ -37,7 +34,6 @@
     "link": "Projekte/FachschaftDM.html",
     "alt": "Fachschaft DM Logo"
   },
-
   {
     "name": "Film Refferat",
     "description": "In meinem ersten Semester habe ich an einem Refferat teilgenommen und in diesem Zuge haben wir uns dran Versucht eine kleine Serie umzusetzten.",
@@ -45,7 +41,6 @@
     "link": "Projekte/FilmRefferat24.html",
     "alt": "FilmReff Bild mit 2 Personen mit einer Kamera"
   },
-
   {
     "name": "Ersti-Party WiSe24",
     "description": "Ich war als Mitglied der AStA-Technik bei dem technischen Aufbau der Veranstaltungstechnik mit involviert.",
@@ -53,7 +48,6 @@
     "link": "Projekte/Ersti-Party.html",
     "alt": "Ersti Party WiSe24 Plakat"
   },
-
   {
     "name": "Hochschul-Party SoSe24/25",
     "description": "Als Mitglied der AStA-Technik bin ich von der Planung bis zur Umsetzung und Nachbesprechung dieser Veranstaltung involviert.",
@@ -61,7 +55,6 @@
     "link": "Projekte/Hochschul-Party.html",
     "alt": "Hochschul-Party SoSe24/25 Plakat"
   },
-
   {
     "name": "UnFUG",
     "description": "Ich habe Zuhause ein kleines HomeLab über welches ich in einem Vortrag von meinen Vorgang und Problemen erzähle.",
@@ -69,7 +62,6 @@
     "link": "Projekte/HomeLab.html",
     "alt": "UnFUG Logo vor Serverraum"
   },
-
   {
     "name": "PirateSoftware GameJam 15",
     "description": "Im Rahmen des 15. PirateSoftware GameJams habe ich in einem 2er-Team an einem spannenden Event teilgenommen. Das Thema des GameJams war 'Shadows and Alchemy'. In diesem Zuge haben wir ein kleines Jump'n'Run-Spiel entwickelt, in dem der Spieler zwischen vier Elementen wählen kann und dadurch verschiedene Eigenschaften erhält. Das Projekt wurde in der Godot-Engine entwickelt und ist online spielbar. Durch die Teilnahme am GameJam konnten wir wertvolle Erfahrungen in der Spieleentwicklung sammeln und unsere Teamarbeit sowie Projektkoordination verbessern.",
@@ -77,23 +69,18 @@
     "link": "Projekte/PirateGameJam24.html",
     "alt": "PirateSoftware GameJam 15 Bild"
   },
-
   {
     "name": "Forum GIS",
     "description": "Hier wird in Zukunft die Beschreibung des Forums kommen",
     "image": "pictures/Platzhalter.png",
     "link": "Projekte/GIS-Forum.html",
     "alt": "Platzhalter"
-  }
-
-
-// End of JSON/Projekte.json
-/* 
-{
-    "name": "Name",
-    "description": "Beschreibung",
-    "image": "pictures/Bild",
-    "link": "Projekte/Seite.html",
-    "alt": "Platzhalter"
   },
-*/
+  {
+    "name": "28. MeStuTa Trier",
+    "description": "Als Mitglied der Fachschaft DM habe ich an der Medienstudientagung in Trier teilgenommen.",
+    "image": "pictures/MeStuta.png",
+    "link": "Projekte/MeStuTaTrier.html",
+    "alt": "Logo der MeStuTa Trier"
+  }
+]

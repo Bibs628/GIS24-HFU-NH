@@ -94,16 +94,12 @@ let Username = {
   // Display the JSON data
   //displayJSON(jsonData);
 
-  // Projektdaten
-  const projects =
-    fetch('JSON/Projekte.json');
-  console.log(projects);
-
+document.addEventListener("DOMContentLoaded", function() {
   // Funktion zum Erstellen der Projekt-HTML-Elemente
   function createProjectElements(projects) {
     const projectsContainer = document.getElementById("projectsjs");
     projects.forEach(project => {
-      const projectDiv = document.createElement("p");
+      const projectDiv = document.createElement("div");
       projectDiv.className = "Projekte";
       projectDiv.innerHTML = `
         <a href="${project.link}">
@@ -113,10 +109,14 @@ let Username = {
         </a>
       `;
       projectsContainer.appendChild(projectDiv);
-
     });
   }
 
-  let testIdElement = document.getElementById("projectsjs");
-  // Projekte anzeigen
-  createProjectElements(projects);
+  // Projektdaten laden und anzeigen
+  fetch('Projekte.json')
+    .then(response => response.json())
+    .then(data => {
+      createProjectElements(data);
+    })
+    .catch(error => console.error('Error loading projects:', error));
+});
