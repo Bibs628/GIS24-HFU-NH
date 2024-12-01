@@ -397,6 +397,11 @@ footer {
   flex-wrap: wrap; /* Ermöglicht den Flexboxen sich auf mehreren Zeilen auszubreiten */
 }
 
+.flex-container img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
 /* Collapsible Content */
 
 .collapsible-content {
