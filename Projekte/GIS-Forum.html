@@ -14,43 +14,86 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../styles_Projekte.css">
     <link rel="stylesheet" href="../styles_Standart.css">
+    <link rel="stylesheet" href="../Forum.css">
+    <script src="../Forum.js" defer></script>
     <script src="../scripts.js" defer></script>
     
-  <link rel="icon" href="../pictures/brainmade-head-white.svg">
-  </head>
+    <link rel="icon" href="../pictures/brainmade-head-white.svg">
+</head>
 
 <!-- Body -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-  <body>
-
+<body>
 
     <nav class="topnav">
-      <div class="topnav_links">
-      <a href="../index.html">Startseite</a>
-      <a href="../Lebenslauf.html">Lebenslauf</a>
-      <a href="../ueber_mich.html">Über&nbsp;Mich</a>
-      <a href="../ProjekteJS.html" class="active2">Projekte</a></div>
-      <div><a href="../Impressum.html" class="split"> Impressum</a></div>
+        <div class="topnav_links">
+            <a href="../index.html">Startseite</a>
+            <a href="../Lebenslauf.html">Lebenslauf</a>
+            <a href="../ueber_mich.html">Über&nbsp;Mich</a>
+            <a href="../ProjekteJS.html" class="active2">Projekte</a>
+        </div>
+        <div><a href="../Impressum.html" class="split"> Impressum</a></div>
     </nav>
 
     <h1>Überschrift</h1>
     <div class="Standart">
-      <h3>Hier wird zurzeit JSON getestet um ein Forum zu erstellen</h3>
-      <p>mehr Informationen werden hierzu folgen...</p>
+        <h3>Die Folgenden Felder sind SEHR experimentelle Testfelder, um bestimmte Funktionen zu testen.</h3>
+        <p>mehr Informationen werden hierzu folgen...</p>
     </div>
 
-    <div class="Standart">
-        <h3>Nucleares Testfeld</h3>
-        <div id="jsonContent">
-
+    <div class="Standart" id="anmeldung">
+        <h3>Nucleares Testfeld 1 - Anmeldebereich</h3>
+        
+        <div class="wrapper">
+            <div class="card-switch">
+                <label class="switch">
+                    <input type="checkbox" class="toggle">
+                    <span class="slider"></span>
+                    <span class="card-side"></span>
+                    <div class="flip-card__inner">
+                        <div class="flip-card__front">
+                            <div class="title">Melde dich an</div>
+                            <form class="flip-card__form" action="">
+                                <input class="flip-card__input" name="email" placeholder="Email" type="email">
+                                <input class="flip-card__input" name="password" placeholder="Password" type="password">
+                                <button class="flip-card__btn">Anmelden</button>
+                            </form>
+                        </div>
+                        <div class="flip-card__back">
+                            <div class="title">Registrier dich</div>
+                            <form class="flip-card__form" action="">
+                                <input class="flip-card__input" placeholder="Name" type="name">
+                                <input class="flip-card__input" name="email" placeholder="Email" type="email">
+                                <input class="flip-card__input" name="password" placeholder="Password" type="password">
+                                <button class="flip-card__btn">Registrieren</button>
+                            </form>
+                        </div>
+                    </div>
+                </label>
+            </div>   
         </div>
-      </div>  
+    </div>  
+
+<div class="Standart">
+    <h3>Nucleares Testfeld 2 - Forum</h3>
+
+    <div id="forum">
+      <form id="forumForm">
+        <input type="text" id="username" placeholder="Dein Name" required>
+        <textarea id="message" placeholder="Deine Nachricht" required></textarea>
+        <button type="submit">Posten</button>
+      </form>
+      <div id="posts"></div>
+    </div>
+
+    
+
+</div>
 
     <div class="footer">
-      <p>© 2024 Nils Hack</p> 
-      <a href="https://brainmade.org"> <img src="../pictures/brainmade-white-logo.svg" alt="Brainmade Logo" width="80"></a></div>
+        <p>© 2024 Nils Hack</p> 
+        <a href="https://brainmade.org"><img src="../pictures/brainmade-white-logo.svg" alt="Brainmade Logo" width="80"></a>
     </div>
 
-
-  </body>
+</body>
 </html>
