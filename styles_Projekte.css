@@ -1,61 +1,119 @@
 /* Projekte */
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
 .Projekte {
-    border-bottom-right-radius: 3rem; /* Runde Ecken */
-    border-bottom-left-radius: 3rem; /* Runde Ecken */
-    border-top-left-radius: 3rem;  /* Runde Ecken */
-    border-top-right-radius: 3rem; /* Runde Ecken */
-    margin-top: 1%; /* Abstand zum vorherigen Element */
-    padding-bottom: 0.8em; /* Abstand zum Text */
-    background: #0c0c0c80; /* Hintergrundfarbe */
-    color: white; /* Textfarbe */
-    text-align: center; /* Zentriert den Text */
-    transition: border-color 0.3s ease; /* Fügt eine Transition hinzu */
+  border-bottom-right-radius: 3rem; /* Runde Ecken */
+  border-bottom-left-radius: 3rem; /* Runde Ecken */
+  border-top-left-radius: 3rem;  /* Runde Ecken */
+  border-top-right-radius: 3rem; /* Runde Ecken */
+  margin-top: 1%; /* Abstand zum vorherigen Element */
+  padding-bottom: 0.8em; /* Abstand zum Text */
+  background: #0c0c0c80; /* Hintergrundfarbe */
+  color: white; /* Textfarbe */
+  text-align: center; /* Zentriert den Text */
+  transition: border-color 0.3s ease; /* Fügt eine Transition hinzu */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .Projekte {
+    min-width: calc(100%/3 - 1rem);
+    max-width: calc(100%/1 - 1rem);
+    height: 340px; /* Feste Höhe für alle Karten */
+    width: 200px; /* Feste Breite für alle Karten */
   }
-  
-  
-  @media screen and (max-width: 768px) {
-    .Projekte {
-      min-width: calc(100%/3 - 1rem);
-      max-width: calc(100%/1 - 1rem);
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .Projekte {
-      min-width: calc(100%/3 - 1rem);
-      max-width: calc(100%/2 - 1rem);
-    }
-  }
-  
-  @media screen and (min-width: 1024px) {
-    .Projekte {
-      min-width: calc(100%/3 - 1rem);
-      max-width: calc(100%/3 - 1rem);
-    }
-  }
-  
-  
-  
-  .Projekte:hover {
-    color: white;
-    opacity: 0.8;
-    transition: all 0.3s ease; 
-  }
-  
+
   .Projekte img {
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 2rem;
-    border-top-left-radius: 4rem ;
-    border-top-right-radius: 4rem ;
-    border-bottom-left-radius: 4rem;
-    border-bottom-right-radius: 4rem;
+    max-height: 200px; /* Maximale Höhe für das Bild */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-top: 1rem;
+    border-radius: 1rem; /* Runde Ecken */
   }
-  
+}
+
+@media screen and (min-width: 768px) {
+  .Projekte {
+    min-width: calc(100%/3 - 1rem);
+    max-width: calc(100%/2 - 1rem);
+    height: 350px; /* Feste Höhe für alle Karten */
+    width: 250px; /* Feste Breite für alle Karten */
+  }
+
+  .Projekte img {
+    max-height: 200px; /* Maximale Höhe für das Bild */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-top: 1rem;
+    border-radius: 1rem; /* Runde Ecken */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Projekte {
+    min-width: calc(100%/3 - 1rem);
+    max-width: calc(100%/3 - 1rem);
+    height: 500px; /* Feste Höhe für alle Karten */
+    width: 300px; /* Feste Breite für alle Karten */
+  }
+}
+
+.Projekte:hover {
+  color: white;
+  opacity: 0.8;
+  transition: all 0.3s ease; 
+}
+
+.Projekte img {
+  max-height: 300px; /* Maximale Höhe für das Bild */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin-top: 1rem;
+  border-radius: 1rem; /* Runde Ecken */
+}
+
+.Projekte h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #9B3922;
+}
+
+.Projekte p {
+  color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Anzahl der Zeilen, nach denen abgeschnitten wird */
+  line-clamp: 3; /* Standard property for compatibility */
+  -webkit-box-orient: vertical;
+  max-width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
   .Projekte h3 {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
     color: #9B3922;
@@ -78,60 +136,32 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-    .Projekte h3 {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        text-align: center;
-        color: #9B3922;
-      }
-      
-      .Projekte p {
-        color: white;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        text-align: left;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3; /* Anzahl der Zeilen, nach denen abgeschnitten wird */
-        line-clamp: 3; /* Standard property for compatibility */
-        -webkit-box-orient: vertical;
-        max-width: 100%;
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
 }
 
-/* Dark mode */
+/* Light mode */
 @media (prefers-color-scheme: light) {
-    .Projekte h3 {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        text-align: center;
-        color: #9B3922;
-      }
-      
-      .Projekte p {
-        color: black;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        text-align: left;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3; /* Anzahl der Zeilen, nach denen abgeschnitten wird */
-        line-clamp: 3; /* Standard property for compatibility */
-        -webkit-box-orient: vertical;
-        max-width: 100%;
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
+  .Projekte h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #9B3922;
+  }
+  
+  .Projekte p {
+    color: black;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Anzahl der Zeilen, nach denen abgeschnitten wird */
+    line-clamp: 3; /* Standard property for compatibility */
+    -webkit-box-orient: vertical;
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

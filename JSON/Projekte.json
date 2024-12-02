@@ -44,16 +44,16 @@
   {
     "name": "Ersti-Party WiSe24",
     "description": "Ich war als Mitglied der AStA-Technik bei dem technischen Aufbau der Veranstaltungstechnik mit involviert.",
-    "image": "pictures/Ersti_Party_WiSe2424.jpg",
+    "image": "pictures/Ersti_Party_WiSe2424.png",
     "link": "Projekte/Ersti-Party.html",
     "alt": "Ersti Party WiSe24 Plakat"
   },
   {
-    "name": "Hochschul-Party SoSe24/25",
-    "description": "Als Mitglied der AStA-Technik bin ich von der Planung bis zur Umsetzung und Nachbesprechung dieser Veranstaltung involviert.",
-    "image": "pictures/Ersti_Party_SoSe2425.jpg",
-    "link": "Projekte/Hochschul-Party.html",
-    "alt": "Hochschul-Party SoSe24/25 Plakat"
+    "name": "Flow & Glow SoSe24/25",
+    "description": "Als Mitglied der AStA-Technik bin ich von der Planung bis zur Umsetzung und Nachbesprechung dieser Veranstaltung involviert gewesen.",
+    "image": "pictures/FlowAndGlow_SS24.png",
+    "link": "Projekte/FlowAndGlowSS24.html",
+    "alt": "Werbeplakat Flow & Glow SoSe24"
   },
   {
     "name": "UnFUG",
@@ -65,7 +65,7 @@
   {
     "name": "PirateSoftware GameJam 15",
     "description": "Im Rahmen des 15. PirateSoftware GameJams habe ich in einem 2er-Team an einem spannenden Event teilgenommen. Das Thema des GameJams war 'Shadows and Alchemy'. In diesem Zuge haben wir ein kleines Jump'n'Run-Spiel entwickelt, in dem der Spieler zwischen vier Elementen wählen kann und dadurch verschiedene Eigenschaften erhält. Das Projekt wurde in der Godot-Engine entwickelt und ist online spielbar. Durch die Teilnahme am GameJam konnten wir wertvolle Erfahrungen in der Spieleentwicklung sammeln und unsere Teamarbeit sowie Projektkoordination verbessern.",
-    "image": "pictures/PirateGameJam15.jpg",
+    "image": "pictures/PirateGameJam15.png",
     "link": "Projekte/PirateGameJam24.html",
     "alt": "PirateSoftware GameJam 15 Bild"
   },
@@ -79,7 +79,7 @@
   {
     "name": "28. MeStuTa Trier",
     "description": "Als Mitglied der Fachschaft DM habe ich an der Medienstudientagung in Trier teilgenommen.",
-    "image": "pictures/MeStuta.png",
+    "image": "pictures/MeStuta_breit.png",
     "link": "Projekte/MeStuTaTrier.html",
     "alt": "Logo der MeStuTa Trier"
   }
