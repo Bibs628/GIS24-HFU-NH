@@ -39,7 +39,7 @@
     height: auto;
     object-fit: contain;
     margin-top: 1rem;
-    border-radius: 1rem; /* Runde Ecken */
+    border-radius: 3rem; /* Runde Ecken */
   }
 }
 
@@ -57,7 +57,7 @@
     height: auto;
     object-fit: contain;
     margin-top: 1rem;
-    border-radius: 1rem; /* Runde Ecken */
+    border-radius: 3rem; /* Runde Ecken */
   }
 }
 
@@ -67,6 +67,15 @@
     max-width: calc(100%/3 - 1rem);
     height: 500px; /* Feste Höhe für alle Karten */
     width: 300px; /* Feste Breite für alle Karten */
+  }
+
+  .Projekte img {
+    max-height: 200px; /* Maximale Höhe für das Bild */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-top: 1rem;
+    border-radius: 3rem; /* Runde Ecken */
   }
 }
 
@@ -82,7 +91,7 @@
   height: auto;
   object-fit: contain;
   margin-top: 1rem;
-  border-radius: 1rem; /* Runde Ecken */
+  border-radius: 1em; /* Runde Ecken */
 }
 
 .Projekte h3 {
