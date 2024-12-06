@@ -9,26 +9,39 @@ function shuffle(array) {
     return array;
 }
 
-fetch("./JSON/Projekte.json")
-    .then((response) => response.json())
-    .then(data => {
-        // Projekte mischen
-        const shuffledData = shuffle(data);
+// Funktion zum Erstellen der Projekt-HTML-Elemente
+function createProjectElements(projects) {
+    projects.forEach(project => {
+        let projectDiv = document.createElement("div");
+        projectDiv.className = "Projekte";
+        projectDiv.innerHTML = `
+            <a href="${project.link}">
+                <img src="${project.image}" alt="${project.alt}" width="80%" height="80%">
+                <h3>${project.name}</h3>
+                <p>${project.description}</p>
+            </a>`;
+        parentDiv.appendChild(projectDiv);
+    });
+}
 
-        // HTML-Elemente für Projekte erstellen
-        for (let i = 0; i < shuffledData.length; i++) {
-            let projectDiv = document.createElement("div");
-            projectDiv.className = "Projekte";
-            projectDiv.innerHTML = `<a href="${shuffledData[i].link}">
-            <img src="${shuffledData[i].image}" alt="${shuffledData[i].alt}" width="80%" height="80%">
-            <h3>${shuffledData[i].name}</h3>
-            <p>
-            ${shuffledData[i].description}
-            </p></a>`;
-            parentDiv.appendChild(projectDiv);
-        }
-    })
-    .catch(error => console.error('Error loading projects:', error));
+// Überprüfen, ob ein gespeichertes Array im localStorage vorhanden ist
+let storedProjects = localStorage.getItem('shuffledProjects');
+
+if (storedProjects) {
+    // Verwenden des gespeicherten Arrays
+    createProjectElements(JSON.parse(storedProjects));
+} else {
+    // Projektdaten laden und mischen
+    fetch("./JSON/Projekte.json")
+        .then(response => response.json())
+        .then(data => {
+            const shuffledData = shuffle(data);
+            // Gemischtes Array im localStorage speichern
+            localStorage.setItem('shuffledProjects', JSON.stringify(shuffledData));
+            createProjectElements(shuffledData);
+        })
+        .catch(error => console.error('Error loading projects:', error));
+}
 
 /*
     let parentDiv = document.getElementById("projectsjs");
