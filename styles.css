@@ -1,3 +1,18 @@
+/* CSS-Variablen für Farben und andere wiederverwendbare Werte */
+:root {
+  --background-color: #272727;
+  --text-color: #ffffff;
+  --heading-color: #9B3922;
+  --link-color: #F2613F;
+  --link-hover-color: #9B3922;
+  --background-image: url('pictures/Background_HR_Grey.jpg');
+  --background-opacity: 0.1;
+  --container-background: #0c0c0c33;
+  --button-background: #9B3922;
+  --button-hover-background: #F2613F;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
 /* Generelles */
 html, body {
   height: 100%; /* Ensure the body and html elements take up the full height */
@@ -7,13 +22,14 @@ html, body {
 
 body {
   position: relative;
-  background-color: #272727; /* Fallback background color */
+  background-color: var(--background-color); /* Fallback background color */
   font-family: Arial, sans-serif;
   margin-left: 5%;
   margin-right: 5%;
   padding: 0;
   line-height: 1.3;
   font-size: 1.2rem;
+  color: var(--text-color);
 }
 
 body::before {
@@ -23,33 +39,34 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('pictures/Background_HR_Grey.jpg'); /* Path to your image */
+  background-image: var(--background-image); /* Path to your image */
   border-radius: none;
   background-size: cover; /* Scale the image to cover the entire background */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-position: center center; /* Center the image */
-  opacity: 0.1; /* Set the transparency level */
+  opacity: var(--background-opacity); /* Set the transparency level */
   z-index: -1; /* Ensure the pseudo-element is behind other content */
 }
 
 /* Textfarben */
 h1, h2, h3 {
-  color: #9B3922;
+  color: var(--heading-color);
 }
 
 li {
   line-height: 1.5;
   font-size: 1.2rem;
+  color: var(--text-color);
 }
 
 /* Links */
 a {
-  color: #F2613F;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #9B3922;
+  color: var(--link-hover-color);
 }
 
 /* Container */
@@ -61,7 +78,7 @@ a:hover {
 
 /* Header */
 header {
-  background-color: #0c0c0c33;
+  background-color: var(--container-background);
   border-radius: 20px;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -80,7 +97,7 @@ main {
 
 /* Footer */
 footer {
-  background-color: #0c0c0c33;
+  background-color: var(--container-background);
   border-radius: 20px;
   padding: 1rem;
   margin-top: 1rem;
@@ -90,7 +107,7 @@ footer {
 
 /*navbar*/
 .topnav {
-  background-color: #0c0c0c33;
+  background-color: var(--container-background);
   overflow: hidden;
   border-radius: 20px;
   min-width: auto;
@@ -121,7 +138,7 @@ footer {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: var(--text-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -137,7 +154,7 @@ footer {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #F2613F;
+  background-color: var(--link-hover-color);
   color: black;
   transition: background-color 0.3s ease;
 }
@@ -145,19 +162,19 @@ footer {
 /* Create a right-aligned (split) link inside the navigation bar */
 .topnav a.split {
   float: right;
-  background-color: #9B3922;
+  background-color: var(--heading-color);
   color: white;
   margin-left: auto;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #9B3922;
+  background-color: var(--heading-color);
   color: white;
 }
 
 .topnav a.active2 {
-  background-color: #9b38228e;
+  background-color: rgba(155, 56, 34, 0.55);
   color: white;
 }
 
@@ -202,8 +219,8 @@ footer {
   padding-left: 3rem;
   padding-right: 3rem;
   border-radius: 35px;
-  background: #0c0c0c33;
-  color: rgb(255, 255, 255);
+  background: var(--container-background);
+  color: var(--text-color);
   text-align: left;
   margin-bottom: 1rem;
 }
@@ -212,27 +229,27 @@ footer {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   text-align: left;
-  color: #f2603f;
+  color: var(--link-color);
 }
 
 .Seitenheader h3 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   text-align: left;
-  color: #f2603f;
+  color: var(--link-color);
 }
 
 .Seitenheader p {
   text-align: left;
-  color: white;
+  color: var(--text-color);
   margin-left: 3rem;
 }
 
 .Kurzbeschreibung {
   border-radius: 35px;
   padding: 1rem;
-  background: #0c0c0c33;
-  color: white;
+  background: var(--container-background);
+  color: var(--text-color);
   text-align: left;
   margin-bottom: 1%;
   margin-bottom: 1rem;
@@ -252,10 +269,10 @@ footer {
 .Standart {
   border-radius: 35px;
   padding: 1rem;
-  background: #0c0c0c33;
+  background: var(--container-background);
   text-align: left;
   margin-bottom: 1rem;
-  box-shadow: inset 0 0 1rem #0c0c0c33;
+  box-shadow: inset 0 0 1rem var(--container-background);
 }
 
 .Standart p {
@@ -266,7 +283,7 @@ footer {
   text-align: left;
   text-overflow: ellipsis;
   max-width: 100%;
-  color: white;
+  color: var(--text-color);
 }
 
 .Standart h3 {
@@ -277,7 +294,7 @@ footer {
   text-align: left;
   text-overflow: ellipsis;
   max-width: 100%;
-  color: #F2613F;
+  color: var(--link-color);
 }
 
 .Standart h4 {
@@ -288,12 +305,12 @@ footer {
   text-align: left;
   text-overflow: ellipsis;
   max-width: 100%;
-  color: #F2613F;
+  color: var(--link-color);
 }
 
 .Standart a[href] {
-  color: white;
-  background-color: #F2613F;
+  color: var(--text-color);
+  background-color: var(--link-color);
   padding: 0.3rem;
   border-radius: 8px;
   text-align: center;
@@ -308,10 +325,10 @@ footer {
 .Standart2 {
   border-radius: 35px;
   padding: 1rem;
-  background: #0c0c0c33;
+  background: var(--container-background);
   text-align: left;
   margin-bottom: 1rem;
-  box-shadow: inset 0 0 1rem #0c0c0c33;
+  box-shadow: inset 0 0 1rem var(--container-background);
 }
 
 .Standart2 p {
@@ -322,7 +339,7 @@ footer {
   text-align: left;
   text-overflow: ellipsis;
   max-width: 100%;
-  color: white;
+  color: var(--text-color);
 }
 
 .Standart2 h3 {
@@ -333,12 +350,12 @@ footer {
   text-align: left;
   text-overflow: ellipsis;
   max-width: 100%;
-  color: #F2613F;
+  color: var(--link-color);
 }
 
 .Standart2 a[href] {
-  color: white;
-  background-color: #F2613F;
+  color: var(--text-color);
+  background-color: var(--link-color);
   padding: 0.3rem;
   border-radius: 8px;
   text-align: left;
@@ -348,8 +365,8 @@ footer {
 }
 
 .Standart a[href]:hover {
-  background-color: #9B3922;
-  color: white;
+  background-color: var(--link-hover-color);
+  color: var(--text-color);
   transition: background-color 0.3s ease;
 }
 
@@ -361,7 +378,7 @@ footer {
   text-align: left;
   text-overflow: ellipsis;
   max-width: 100%;
-  color: white;
+  color: var(--text-color);
 }
 
 .Standart iframe {
@@ -372,16 +389,14 @@ footer {
   text-align: center;
   text-overflow: ellipsis;
   max-width: 100%;
-  color: white;
+  color: var(--text-color);
 }
-
-
 
 .Projektlinks {
   margin-top: 1%;
   padding: 0.3rem;
-  background: #0c0c0c33;
-  color: white;
+  background: var(--container-background);
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -411,8 +426,8 @@ footer {
 }
 
 .collapsible-button {
-  background-color: #9B3922;
-  color: white;
+  background-color: var(--button-background);
+  color: var(--text-color);
   cursor: pointer;
   padding: 0.5rem;
   width: 100%;
@@ -431,11 +446,11 @@ footer {
 .Anmerkung {
   border-radius: 35px;
   padding: 1rem;
-  background: #9B3922;
-  color: white;
+  background: var(--button-background);
+  color: var(--text-color);
   text-align: left;
   margin-bottom: 1rem;
-  box-shadow: inset 0 0 1rem #0c0c0c33;
+  box-shadow: inset 0 0 1rem var(--container-background);
 }
 
 .Anmerkung h1, h2, h3 {
@@ -463,7 +478,7 @@ details summary h3 {
 
 .footer {
   margin-top: 1rem;
-  background-color: #0c0c0c33;
+  background-color: var(--container-background);
   overflow: hidden;
   border-radius: 2rem;
   min-width: auto;
@@ -479,7 +494,7 @@ details summary h3 {
 
 .footer p {
   text-align: center;
-  color: white;
+  color: var(--text-color);
   margin: 1rem;
   margin-top: calc(3rem / 2);
   margin-left: 5rem;
@@ -491,7 +506,6 @@ details summary h3 {
   height: 2rem;
   margin-right: 5rem;
 }
-
 
 /* Test der Slidehow-Bildergallerie */
 

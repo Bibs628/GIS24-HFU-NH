@@ -33,6 +33,7 @@ document.getElementById('forumForm').addEventListener('submit', function(event) 
     const posts = JSON.parse(localStorage.getItem('posts')) || [];
         
     posts.push({ username, message, timestamp: new Date().toLocaleString() });
+    console.log(posts);
     localStorage.setItem('posts', JSON.stringify(posts));
         
     displayPosts();
