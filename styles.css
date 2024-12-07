@@ -595,3 +595,16 @@ details summary h3 {
 .demo:hover {
   opacity: 1;
 }
+
+button {
+  background-color: var(--button-background);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: var(--button-hover-background);
+}

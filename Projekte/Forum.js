@@ -32,12 +32,16 @@ document.getElementById('forumForm').addEventListener('submit', function(event) 
     const message = document.getElementById('message').value;
     const posts = JSON.parse(localStorage.getItem('posts')) || [];
         
-    posts.push({ username, message, timestamp: new Date().toLocaleString() });
-    console.log(posts);
+    posts.push({ username, message, timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) });
     localStorage.setItem('posts', JSON.stringify(posts));
         
     displayPosts();
     this.reset();
+});
+
+document.getElementById('clearStorage').addEventListener('click', function() {
+    localStorage.removeItem('posts');
+    displayPosts();
 });
 
 function displayPosts() {

@@ -11,6 +11,7 @@ function shuffle(array) {
 
 // Funktion zum Erstellen der Projekt-HTML-Elemente
 function createProjectElements(projects) {
+    parentDiv.innerHTML = ''; // Clear existing projects
     projects.forEach(project => {
         let projectDiv = document.createElement("div");
         projectDiv.className = "Projekte";
@@ -42,6 +43,14 @@ if (storedProjects) {
         })
         .catch(error => console.error('Error loading projects:', error));
 }
+
+// Event Listener für den Sortier-Button
+document.getElementById('sortButton').addEventListener('click', function() {
+    let projects = JSON.parse(localStorage.getItem('shuffledProjects')) || [];
+    projects = shuffle(projects);
+    localStorage.setItem('shuffledProjects', JSON.stringify(projects));
+    createProjectElements(projects);
+});
 
 /*
     let parentDiv = document.getElementById("projectsjs");
