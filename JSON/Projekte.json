@@ -70,17 +70,17 @@
     "alt": "PirateSoftware GameJam 15 Bild"
   },
   {
-    "name": "Forum GIS",
-    "description": "Hier wird in Zukunft die Beschreibung des Forums kommen",
-    "image": "pictures/Platzhalter.png",
-    "link": "Projekte/GIS-Forum.html",
-    "alt": "Platzhalter"
-  },
-  {
     "name": "28. MeStuTa Trier",
     "description": "Als Mitglied der Fachschaft DM habe ich an der Medienstudientagung in Trier teilgenommen.",
     "image": "pictures/MeStuta_breit.png",
     "link": "Projekte/MeStuTaTrier.html",
     "alt": "Logo der MeStuTa Trier"
+  },
+  {
+    "name": "GIS - Forum",
+    "description": "In meinem ersten Semester habe ich an einem Refferat teilgenommen und in diesem Zuge haben wir uns dran Versucht eine kleine Serie umzusetzten.",
+    "image": "pictures/",
+    "link": "Projekte/FilmRefferat24.html",
+    "alt": "FilmReff Bild mit 2 Personen
   }
 ]
