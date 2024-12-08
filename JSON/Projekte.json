@@ -63,6 +63,13 @@
     "alt": "UnFUG Logo vor Serverraum"
   },
   {
+    "name": "GIS - Forum",
+    "description": "Das Forum im Kurs Grundlagen Interaktiver Systeme, GIS, die Eingaben werden im Moment im localstorage gespeichert.",
+    "image": "pictures/GIS-Forum.png",
+    "link": "Projekte/GIS-Forum.html",
+    "alt": "Bild des JavaScript Codes des Forums"
+  },
+  {
     "name": "PirateSoftware GameJam 15",
     "description": "Im Rahmen des 15. PirateSoftware GameJams habe ich in einem 2er-Team an einem spannenden Event teilgenommen. Das Thema des GameJams war 'Shadows and Alchemy'. In diesem Zuge haben wir ein kleines Jump'n'Run-Spiel entwickelt, in dem der Spieler zwischen vier Elementen wählen kann und dadurch verschiedene Eigenschaften erhält. Das Projekt wurde in der Godot-Engine entwickelt und ist online spielbar. Durch die Teilnahme am GameJam konnten wir wertvolle Erfahrungen in der Spieleentwicklung sammeln und unsere Teamarbeit sowie Projektkoordination verbessern.",
     "image": "pictures/PirateGameJam15.png",
@@ -72,15 +79,8 @@
   {
     "name": "28. MeStuTa Trier",
     "description": "Als Mitglied der Fachschaft DM habe ich an der Medienstudientagung in Trier teilgenommen.",
-    "image": "pictures/MeStuta_breit.png",
+    "image": "pictures/MeStuTa_breit.png",
     "link": "Projekte/MeStuTaTrier.html",
     "alt": "Logo der MeStuTa Trier"
-  },
-  {
-    "name": "GIS - Forum",
-    "description": "Das Forum im Kurs Grundlagen Interaktiver Systeme, GIS, die Eingaben werden im Moment im localstorage gespeichert.",
-    "image": "pictures/GIS_Forum.png",
-    "link": "Projekte/GIS-Forum.html",
-    "alt": "Bild des JavaScript Codes des Projektes"
   }
 ]

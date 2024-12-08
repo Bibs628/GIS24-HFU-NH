@@ -17,7 +17,7 @@ function createProjectElements(projects) {
         projectDiv.className = "Projekte";
         projectDiv.innerHTML = `
             <a href="${project.link}">
-                <img src="${project.image}" alt="${project.alt}" width="80%" height="80%">
+                <img src="${project.image}" alt="${project.alt}" class="project-image">
                 <h3>${project.name}</h3>
                 <p>${project.description}</p>
             </a>`;
@@ -33,7 +33,7 @@ if (storedProjects) {
     createProjectElements(JSON.parse(storedProjects));
 } else {
     // Projektdaten laden und mischen
-    fetch("JSON/Projekte.json")
+    fetch("./JSON/Projekte.json")
         .then(response => response.json())
         .then(data => {
             const shuffledData = shuffle(data);
