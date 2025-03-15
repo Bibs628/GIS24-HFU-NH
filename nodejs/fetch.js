@@ -7,4 +7,4 @@ async function requestTextWithGET(url) {
 }
 
 requestTextWithGET('http://localhost:3000');
-console.log('Zwischenzeitlich weiterarbeiten...');
+console.log('Zwischenzeitlich weiterarbeiten...');  
