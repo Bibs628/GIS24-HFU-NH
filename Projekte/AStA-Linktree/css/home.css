@@ -1,0 +1,47 @@
+  
+     /* Allgemeine Stilregeln */
+     body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1d1d1b;
+      color: #e96164;
+      text-align: center;
+    }
+    
+    /* Header-Stil */
+    header {
+      background-color:#1d1d1b;
+      color: #fff;
+      padding: 2em;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    a:link, a:visited {
+      border-radius: 2em;
+      color:#ffd136;
+      padding: 14px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 3em;
+    }
+    
+    a:hover, a:active {
+      background-color: #ffd136;
+      color: #1d1d1b;
+    }
+
+    .menu { 
+      float: center;
+      text-align: center;
+    }
+
+    .logo {
+      width: 100%;
+      height: auto;
+    }
