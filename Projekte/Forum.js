@@ -28,18 +28,35 @@ function showReply() {
 // Event listener for form submission
 document.getElementById('forumForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission behavior
-        
+
     const username = document.getElementById('username').value;
     const message = document.getElementById('message').value;
-    const posts = JSON.parse(localStorage.getItem('posts')) || []; // Get existing posts from localStorage or initialize an empty array
-        
-    // Add the new post to the array
-    posts.push({ username, message, timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) });
-    localStorage.setItem('posts', JSON.stringify(posts)); // Save the updated posts array to localStorage
-        
-    displayPosts(); // Update the displayed posts
-    this.reset(); // Reset the form fields
+    const newPost = { username, message, timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) };
+
+
+    console.log("Fetch")
+    fetch('http://localhost:3000/posts', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newPost)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        // Save the post to localStorage
+        const posts = JSON.parse(localStorage.getItem('posts')) || [];
+        posts.push(newPost);
+        localStorage.setItem('posts', JSON.stringify(posts));
+        displayPosts(); // Update the displayed posts
+        this.reset(); // Reset the form fields
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
 });
+
 
 // Event listener for clearing the localStorage
 document.getElementById('clearStorage').addEventListener('click', function() {
