@@ -5,45 +5,58 @@
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> <!-- Icon im Browser Tab -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- Einstellen des Viewports -->
-  <meta name="description" content="Portfolio von Nils Hack" /><!-- Beschreibung der Seite -->
-  <meta name="keywords" content="Portfolio, Projekte, Persönliche Website" /><!-- Keywords -->
-  <meta name="author" content="Nils Hack" /><!-- Autor -->
-  <title>Nils - Projekte</title><!-- Titel der Seite -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio von Nils Hack" />
+  <meta name="keywords" content="Portfolio, Projekte, Persönliche Website" />
+  <meta name="author" content="Nils Hack" />
+  <title>Nils - Projekte</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../pictures/brainmade-head-white.svg" />
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../styles_Projekte.css">
   <link rel="stylesheet" href="../styles_Standart.css">
+  <link rel="stylesheet" href="../header.css"> <!-- Header-Stile -->
+  <link rel="stylesheet" href="../footer.css"> <!-- Footer-Stile -->
+
+  <!-- Scripts -->
   <script src="scripts.js" defer></script>
-  
-<link rel="icon" href="../pictures/brainmade-head-white.svg">
 </head>
 
 <!-- Body -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-  <body>
+<body>
+  <!-- Header -->
+  <header id="header"></header>
 
+  <!-- Main Content -->
+  <main>
+    <h1>Überschrift</h1>
+    <section class="Standart">
+      <h3>Dieses Event befindet sich in Vorbereitung. Mehr Informationen werden hierzu folgen...</h3>
+    </section>
+  </main>
 
-    <nav class="topnav">
-      <div class="topnav_links">
-      <a href="../index.html">Startseite</a>
-      <a href="../Lebenslauf.html">Lebenslauf</a>
-      <a href="../ueber_mich.html">Über&nbsp;Mich</a>
-      <a href="../ProjekteJS.html" class="active2">Projekte</a></div>
-      <div><a href="../Impressum.html" class="split"> Impressum</a></div>
-    </nav>
+  <!-- Footer -->
+  <footer id="footer"></footer>
 
-    <h1>Überschrift</h1><class="Standart">
+  <!-- Dynamisches Laden von Header und Footer -->
+  <script>
+    // Header laden
+    fetch('../header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
 
-      <h3>Dieses Dieses Event befindett sich in Vorbereitung. Mehr Informationen werden hierzu folgen...</p>
-    </div>
-
-    
-    <div class="footer">
-      <p>© 2024 Nils Hack</p> 
-      <a href="https://brainmade.org"> <img src="/pictures/brainmade-white-logo.svg" alt="Brainmade Logo" width="80"></a></div>
-    </div>
-
-
-  </body>
-</html>..
+    // Footer laden
+    fetch('../footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

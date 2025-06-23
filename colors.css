@@ -1,0 +1,65 @@
+/* ============================================
+   Farbvariablen für die gesamte Website
+   ============================================ */
+:root {
+  /* === Basisfarben === */
+  --text-color:            #ffffff;
+  --heading-color:         #9B3922;
+  --link-color:            #F2613F;
+  --link-hover-color:      #9B3922;
+  --box-shadow-color:      rgba(0, 0, 0, 0.1);
+
+  /* === Hintergrundfarben (von dunkel nach hell) === */
+  --background-color:      #1e1e1e;  /* Gesamter Seitenhintergrund */
+  --background-alt-1:      #252525;  /* Alternativer Hintergrund 1 */
+  --background-alt-2:      #2e2e2e;  /* Alternativer Hintergrund 2 */
+  --background-alt-3:      #3a3a3a;  /* Alternativer Hintergrund 3 */
+  --background-alt-4:      #444444;  /* Alternativer Hintergrund 4 */
+
+  /* === Container & Module === */
+  --container-background:  #0c0c0c33;
+  --forum-info-bg:         #111314;
+  --note-bg:               #111314;
+  --forum-form-bg:         rgba(0, 0, 0, 0.1);
+
+  /* === Header & Footer === */
+  --header-bg:             var(--container-background);
+  --footer-bg:             #52057b;
+
+  /* === Navigation === */
+  --nav-item-color:        #ffffff;
+  --nav-item-hover-bg:     rgba(255, 255, 255, 0.05);
+  --bar-icon-color:        #ffffff;
+
+  /* === Tabellen === */
+  --table-head-bg:         #2C2C2C;
+  --table-row-bg:          #131415;
+
+  /* === Buttons === */
+  --button-background:           #9B3922;
+  --button-hover-background:     #F2613F;
+  --comment-btn-shadow:          #ffffff;
+
+  /* === Suchbox === */
+  --search-box-border:           #52057b;
+  --search-box-shadow:           #52057b;
+  --search-box-btn-bg:           #ffffff;
+  --search-box-btn-color:        #000000;
+  --search-box-btn-hover-bg:     #000000;
+  --search-box-btn-hover-color:  #ffffff;
+  --search-box-btn-hover-shadow: #ffffff;
+
+  /* === Formulare & Eingaben === */
+  --comment-input-hover-border:  #000000;
+  --subforum-devider-bg:         #52057b;
+
+  /* === Navigation & Pagination === */
+  --navigate-link-color:         #ffffff;
+  --navigate-link-hover-color:   #FF0042;
+  --pagination-link-color:       #ffffff;
+  --pagination-link-border:      #ffffff;
+
+  /* === Detailseiten === */
+  --detail-head-bg:              #2C2C2C;
+  --detail-body-bg:              #131415;
+}

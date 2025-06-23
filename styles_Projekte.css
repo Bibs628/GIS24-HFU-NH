@@ -1,3 +1,11 @@
+@import url('colors.css');
+
+/* Restliche Header-Stile */
+.topnav {
+  background-color: var(--container-background);
+  /* ... */
+}/* CSS-Variablen für Farben und andere wiederverwendbare Werte */
+
 /* Projekte */
 
 .flex-container {

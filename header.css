@@ -1,0 +1,139 @@
+@import url('colors.css');
+
+/* Header */
+header {
+  background-color: var(--container-background);
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px var(--box-shadow-color);
+}
+
+header h1 {
+  margin: 0;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Navigation Container */
+.topnav {
+  background-color: var(--container-background);
+  border-radius: 20px;
+  border: 1px solid var(--heading-color);
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap; /* Responsives Verhalten bei kleineren Bildschirmen */
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Navigation Links */
+.topnav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover und aktive Zustände */
+.topnav a:hover {
+  background-color: var(--link-hover-color);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: var(--heading-color);
+  color: white;
+}
+
+.topnav a.active2 {
+  background-color: rgba(155, 56, 34, 0.55);
+  color: white;
+}
+
+/* Split-Button rechtsbündig */
+.topnav a.split {
+  margin-left: auto;
+  background-color: var(--heading-color);
+  color: white;
+}
+
+/* Hamburger-Menü für Mobilgeräte */
+.topnav a.icon {
+  display: none; /* Standard: ausgeblendet, wird via JS bei kleinen Screens eingeblendet */
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+/* Responsives Verhalten */
+@media screen and (max-width: 768px) {
+  .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topnav a {
+    width: 100%;
+    text-align: left;
+  }
+
+  .topnav a.split {
+    margin-left: 0;
+  }
+
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .topnav {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    gap: 5rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center; /* Zentriert alle Inhalte vertikal */
+  }
+
+  .topnav a {
+    display: flex;                   /* Neu: flex für zentrierten Text */
+    align-items: center;            /* Vertikal zentrieren */
+    justify-content: center;        /* Horizontal zentrieren */
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  }
+
+  .topnav a:hover {
+    background-color: var(--link-hover-color);
+    color: black;
+    transform: scale(1.05);
+  }
+
+  .topnav a.split {
+    margin-left: auto;
+    font-weight: bold;
+    box-shadow: 0 0 8px var(--heading-color);
+  }
+}

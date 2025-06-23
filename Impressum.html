@@ -39,18 +39,9 @@
   <body>
 
 
-    <nav class="topnav">
-      <div class="topnav_links">
-      <a href="index.html">Startseite</a>
-      <a href="Lebenslauf.html">Lebenslauf</a>
-      <a href="ueber_mich.html">Über&nbsp;Mich</a>
-      <a href="ProjekteJS.html">Projekte</a></div>
-      <div><a href="Impressum.html" class="split"> Impressum</a></div>
-    </nav>
+  <!-- Header -->
+  <header id="header"></header>
 
-
-
-    
    <div class="Seitenheader">
       <h1>Impressum</h1>
       <h3>Angaben gemäß § 5 TMG</h3>
@@ -110,10 +101,24 @@
     <p>Die Angaben basieren auf Informationen von <a href="https://www.e-recht24.de">eRecht24</a></p>
   </div>
 
-  <div class="footer">
-    <p>© 2024 Nils Hack</p> 
-    <a href="https://brainmade.org"> <img src="/pictures/brainmade-white-logo.svg" alt="Brainmade Logo" width="80"></a></div>
-</div>
+  <!-- Footer -->
+  <footer id="footer"></footer>
 
+<!-- Dynamisches Laden von Header und Footer -->
+  <script>
+    // Header laden
+    fetch('../header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+
+    // Footer laden
+    fetch('../footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
   </body>
 </html>

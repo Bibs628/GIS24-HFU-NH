@@ -1,212 +1,213 @@
-.wrapper {
-    --input-focus: #2d8cf0;
-    --font-color: #323232;
-    --font-color-sub: #666;
-    --bg-color: #fff;
-    --bg-color-alt: #666;
-    --main-color: #323232;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2em;
+@import url('colors.css');
+
+/* Restliche Header-Stile */
+.topnav {
+  background-color: var(--container-background);
 }
 
-/* switch card */
+/* Wrapper */
+.wrapper {
+  --input-focus: var(--button-hover-background);
+  --font-color: var(--text-color);
+  --font-color-sub: rgba(255, 255, 255, 0.6); /* Subtextfarbe */
+  --bg-color: var(--background-color);
+  --bg-color-alt: var(--container-background);
+  --main-color: var(--heading-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+/* Switch card */
 .switch {
-    transform: translateY(-200px);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    width: 50px;
-    height: 20px;
+  transform: translateY(-200px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 50px;
+  height: 20px;
 }
 
 .card-side::before {
-    position: absolute;
-    content: 'Log in';
-    left: -70px;
-    top: 0;
-    width: 100px;
-    text-decoration: underline;
-    color: var(--font-color);
-    font-weight: 600;
+  position: absolute;
+  content: 'Log in';
+  left: -70px;
+  top: 0;
+  width: 100px;
+  text-decoration: underline;
+  color: var(--font-color);
+  font-weight: 600;
 }
 
 .card-side::after {
-    position: absolute;
-    content: 'Sign up';
-    left: 70px;
-    top: 0;
-    width: 100px;
-    text-decoration: none;
-    color: var(--font-color);
-    font-weight: 600;
+  position: absolute;
+  content: 'Sign up';
+  left: 70px;
+  top: 0;
+  width: 100px;
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: 600;
 }
 
 .toggle {
-    opacity: 0;
-    width: 0;
-    height: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .slider {
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
-    box-shadow: 4px 4px var(--main-color);
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--bg-color);
-    transition: 0.3s;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-color);
+  transition: 0.3s;
 }
 
 .slider:before {
-    box-sizing: border-box;
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    border: 2px solid var(--main-color);
-    border-radius: 5px;
-    left: -2px;
-    bottom: 2px;
-    background-color: var(--bg-color);
-    box-shadow: 0 3px 0 var(--main-color);
-    transition: 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  left: -2px;
+  bottom: 2px;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 0 var(--main-color);
+  transition: 0.3s;
 }
 
 .toggle:checked + .slider {
-    background-color: var(--input-focus);
+  background-color: var(--input-focus);
 }
 
 .toggle:checked + .slider:before {
-    transform: translateX(30px);
+  transform: translateX(30px);
 }
 
 .toggle:checked ~ .card-side:before {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .toggle:checked ~ .card-side:after {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* card */ 
-
+/* Card */
 .flip-card__inner {
-    width: 300px;
-    height: 350px;
-    position: relative;
-    background-color: transparent;
-    perspective: 1000px;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+  width: 300px;
+  height: 350px;
+  position: relative;
+  background-color: transparent;
+  perspective: 1000px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 .toggle:checked ~ .flip-card__inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .toggle:checked ~ .flip-card__front {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .flip-card__front, .flip-card__back {
-    padding: 20px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    background: lightgrey;
-    gap: 20px;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
-    box-shadow: 4px 4px var(--main-color);
+  padding: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: var(--container-background);
+  gap: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
 }
 
 .flip-card__back {
-    width: 100%;
-    transform: rotateY(180deg);
+  width: 100%;
+  transform: rotateY(180deg);
 }
 
 .flip-card__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .title {
-    margin: 20px 0 20px 0;
-    font-size: 25px;
-    font-weight: 900;
-    text-align: center;
-    color: var(--main-color);
+  margin: 20px 0 20px 0;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  color: var(--main-color);
 }
 
 .flip-card__input {
-    width: 250px;
-    height: 40px;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
-    background-color: var(--bg-color);
-    box-shadow: 4px 4px var(--main-color);
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--font-color);
-    padding: 5px 10px;
-    outline: none;
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 5px 10px;
+  outline: none;
 }
 
 .flip-card__input::placeholder {
-    color: var(--font-color-sub);
-    opacity: 0.8;
+  color: var(--font-color-sub);
+  opacity: 0.8;
 }
 
 .flip-card__input:focus {
-    border: 2px solid var(--input-focus);
+  border: 2px solid var(--input-focus);
 }
 
 .flip-card__btn:active, .button-confirm:active {
-    box-shadow: 0px 0px var(--main-color);
-    transform: translate(3px, 3px);
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
 }
 
 .flip-card__btn {
-    margin: 20px 0 20px 0;
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
-    background-color: var(--bg-color);
-    box-shadow: 4px 4px var(--main-color);
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--font-color);
-    cursor: pointer;
+  margin: 20px 0 20px 0;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
 }
 
 #anmeldung {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
 }
-
-
-
-
-
 
 /* ###################################################################################### */
 /*           Forums.html                       */
@@ -221,7 +222,7 @@
 }
 
 .subforum-title{
-    background-color:#292B2E;
+    background-color:var(--subforum-title-bg);
     padding: 5px;
     border-radius: 5px;
     margin:4px;
@@ -236,7 +237,7 @@
     padding: 10px;
     margin:4px;
     border-radius: 5px;
-    background-color:#111314;
+    background-color:var(--subforum-column-bg);
 }
 
 .subforum-description *{
@@ -275,7 +276,7 @@
         display: block;
         border: 0;
         height: 1px;
-        background-image: linear-gradient(to right, rgba(190, 190, 190, 0), rgba(255, 255, 255, 0.75), rgba(190, 190, 190, 0));
+        background-image: linear-gradient(to right, rgba(190, 190, 190, 0), var(--subforum-devider-bg), rgba(190, 190, 190, 0));
     }
 
     
@@ -318,7 +319,7 @@ header{
     align-items: center;
 }
 .navigation{
-    background-color:#52057b;
+    background-color:var(--navigation-bg);
     padding: 10px;
     width: 65%;
     display: inline-block;
@@ -345,11 +346,11 @@ header{
     margin-inline: 20px;
     font-size: 20px;
     padding: 10px;
-    color:#fff;
+    color: var(--nav-item-color);
 }
 
 .nav-item a:hover{
-    background-color: rgb(0,0,0,0.1);
+    background-color: var(--nav-item-hover-bg);
 }
 
 .hide{
@@ -360,282 +361,278 @@ header{
     font-size: 60px;
     display: inline-block;
     margin-right:10px;
-    color: #fff;
+    color: var(--bar-icon-color);
     cursor: pointer;
 }
 
+@import url('colors.css');
+
+/* Font Face */
 @font-face {
-    font-family:aquire;
-    src:url(aquire.otf);
+    font-family: aquire;
+    src: url(aquire.otf);
 }
 
-.brand{
-    font-size:60px;
+.brand {
+    font-size: 60px;
     display: inline-block;
-    font-family:aquire;
+    font-family: aquire;
 }
 
-/*Navbar for the smartphones*/
-@media screen and (max-width: 460px){
-    .navigation{
+/* Navbar for Smartphones */
+@media screen and (max-width: 460px) {
+    .navigation {
         max-height: auto;
     }
-    
-    .close-icon i{
-        font-size:30px;
+
+    .close-icon i {
+        font-size: 30px;
     }
-    
-    .nav-item a{
-        float:left;
-        display:inline;
+
+    .nav-item a {
+        float: left;
+        display: inline;
         margin-inline: 3px;
         font-size: 10px;
         padding: 5px;
     }
-    
-    
-    .bar-icon{
+
+    .bar-icon {
         font-size: 30px;
     }
- 
-    .brand{
-        font-size:20px;
+
+    .brand {
+        font-size: 20px;
     }
 }
 
-  /* Search Box styles */
-.search-box{
-    border: solid 1px #52057b;
-    margin-top: 20px;
+/* Search Box Styles */
+.search-box {
+    border: solid 1px var(--search-box-border);
     padding: 40px;
-    display:flex;
+    display: flex;
     justify-content: center;
-    box-shadow:1px 2px 3px #52057b;
+    box-shadow: 1px 2px 3px var(--search-box-shadow);
 }
 
-.search-box select{
+.search-box select {
     padding: 10px;
 }
 
-.search-box input{
+.search-box input {
     padding: 10px;
 }
 
-.search-box button{
+.search-box button {
     padding: 10px;
-    background-color:#fff;
-    color:#000000;
+    background-color: var(--search-box-btn-bg);
+    color: var(--search-box-btn-color);
 }
 
-.search-box button:hover{
-    background-color: #000000;
-    color: #fff;
-    box-shadow: 1px 2px 3px #fff;
+.search-box button:hover {
+    background-color: var(--search-box-btn-hover-bg);
+    color: var(--search-box-btn-hover-color);
+    box-shadow: 1px 2px 3px var(--search-box-btn-hover-shadow);
 }
 
-/* search box for smrtphones */
-@media screen and (max-width: 460px){
-    .search-box input, .search-box button, .search-box select{
+/* Search Box for Smartphones */
+@media screen and (max-width: 460px) {
+    .search-box input,
+    .search-box button,
+    .search-box select {
         min-width: 300px;
         margin-top: 5px;
-    }    
-
+    }
 }
 
-/* forum info Styling */
-.forum-info{
+/* Forum Info Styling */
+.forum-info {
     padding: 20px;
-    background-color: #111314;
+    background-color: var(--forum-info-bg);
 }
 
-.chart{
-    font-size:20px;
-    font-weight:bold;
+.chart {
+    font-size: 20px;
+    font-weight: bold;
 }
+
 /* Footer Styling */
-
-footer{
+footer {
     margin-top: 20px;
     padding: 20px;
-    background-color:  #52057b;
+    background-color: var(--footer-bg);
     display: block;
     text-align: center;
 }
 
-/* ########################################### */
-/*            posts.html                       */
-/* ########################################### */
-
-/* posts table's head  */
-.table-head{
+/* Posts Table Head */
+.table-head {
     display: flex;
 }
 
-.table-head div{
+.table-head div {
     padding: 5px;
     margin: 2px;
-    background-color: #2C2C2C;
+    background-color: var(--table-head-bg);
     font-weight: bold;
 }
 
-.table-head .status{
+.table-head .status {
     flex: 5%;
 }
 
-.table-head .subjects{
+.table-head .subjects {
     flex: 70%;
 }
 
-.table-head .replies{
+.table-head .replies {
     flex: 10%;
 }
 
-.table-head .last-reply{
+.table-head .last-reply {
     flex: 15%;
 }
 
-/* posts table's body  */
-
-.table-row{
+/* Posts Table Body */
+.table-row {
     display: flex;
 }
 
-.table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
+.table-row .status,
+.table-row .subjects,
+.table-row .replies,
+.table-row .last-reply {
     padding: 5px;
     margin: 2px;
-    background-color: #131415;
+    background-color: var(--table-row-bg);
 }
 
-.table-row .status{
+.table-row .status {
     flex: 5%;
     font-size: 30px;
     text-align: center;
 }
 
-.table-row .subjects{
+.table-row .subjects {
     flex: 70%;
 }
 
-.table-row .replies{
+.table-row .replies {
     flex: 10%;
 }
 
-.table-row .last-reply{
+.table-row .last-reply {
     flex: 15%;
 }
 
-/* navigation path*/
-.navigate{
+/* Navigation Path */
+.navigate {
     margin-block: 20px;
     font-weight: lighter;
     font-size: 24px;
 }
 
-.navigate a{
-    color: #fff;
+.navigate a {
+    color: var(--navigate-link-color);
 }
 
-.navigate a:hover{
-    color:#FF0042;
+.navigate a:hover {
+    color: var(--navigate-link-hover-color);
     font-weight: bolder;
 }
 
-/* Pagination*/
-
-.pagination{
+/* Pagination */
+.pagination {
     padding: 20px;
     font-size: 15px;
 }
 
-.pagination a{
-    color: #fff;
+.pagination a {
+    color: var(--pagination-link-color);
     margin-inline: 5px;
     padding: 5px 10px;
-    border: solid 0.5px #fff;
+    border: solid 0.5px var(--pagination-link-border);
 }
 
-.pagination a:hover{
+.pagination a:hover {
     opacity: 0.5;
 }
 
-.note{
-    background-color:#111314;
+/* Notes */
+.note {
+    background-color: var(--note-bg);
     padding: 20px;
     display: block;
 }
 
-.note span{
+.note span {
     font-size: 20px;
     margin-block: 5px;
 }
 
-
-/* ########################################### */
-/*            detail.html                      */
-/* ########################################### */
-
-.head{
+/* Detail Section */
+.head {
     display: flex;
-    background-color: #2C2C2C;
+    background-color: var(--detail-head-bg);
     padding: 5px;
     font-weight: bold;
     font-size: 15px;
 }
 
-.authors{
+.authors {
     flex: 20%;
 }
 
-.content{
+.content {
     flex: 80%;
 }
 
-.body{
+.body {
     display: flex;
-    background-color: #131415;
+    background-color: var(--detail-body-bg);
     padding: 10px;
     margin-top: 5px;
 }
 
-.body .authors .username{
+.body .authors .username {
     font-size: 20px;
 }
 
-.body .authors img{
+.body .authors img {
     max-width: 50px;
     max-height: 80px;
 }
 
-.body .content .comment button{
-    border:none;
-    padding:10px;
+.body .content .comment button {
+    border: none;
+    padding: 10px;
     font-weight: bolder;
-    box-shadow: 4px 6px #fff;
+    box-shadow: 4px 6px var(--comment-btn-shadow);
     cursor: pointer;
     float: right;
 }
 
-/* comment section */
-.comment-area{
-    margin-bottom:50px;
+/* Comment Section */
+.comment-area {
+    margin-bottom: 50px;
 }
 
-.comment-area textarea{
+.comment-area textarea {
     width: 100%;
     min-height: 100px;
     padding: 10px;
     margin-block: 10px;
 }
 
-.comment-area input{
+.comment-area input {
     float: right;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.comment-area input:hover{
-    border: solid 1px #000000;
+.comment-area input:hover {
+    border: solid 1px var(--comment-input-hover-border);
 }
 
 #forumForm {
@@ -644,18 +641,19 @@ footer{
     gap: 1rem;
     width: 100%;
     max-width: 800px;
+    background-color: var(--container-background);
 }
 
 #forumForm input, #forumForm button {
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--box-shadow-color);
     border-radius: 5px;
     font-size: 1rem;
 }
 
-#forumForm button {;
-    background-color: #9B3922;
-    color: white;
+#forumForm button {
+    background-color: var(--button-background);
+    color: var(--text-color);
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 50%;
@@ -663,18 +661,18 @@ footer{
 }
 
 #forumForm button:hover {
-    background-color: #F2613F;
+    background-color: var(--button-hover-background);
 }
 
 .post {
-    background-color: #f2603f2a;
-    color: white;
+    background-color: var(--link-hover-color);
+    color: var(--text-color);
     padding: 1em;
     margin: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
     border-radius: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--box-shadow-color);
 }
 
 .post p {

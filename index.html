@@ -23,14 +23,8 @@
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <body>
 
-  <nav class="topnav">
-    <div class="topnav_links">
-    <a href="index.html" class="active">Startseite</a>
-    <a href="Lebenslauf.html">Lebenslauf</a>
-    <a href="ueber_mich.html">Über&nbsp;Mich</a>
-    <a href="ProjekteJS.html">Projekte</a></div>  
-    <div><a href="Impressum.html" class="split"> Impressum</a></div>
-  </nav>
+  <!-- Header -->
+  <header id="header"></header>
 
   <div class="Seitenheader">
     <h1>Nils Johannes Hack</h1>
@@ -51,18 +45,24 @@
     </p>
   </div>
 
-  <div class="Anmerkung">
-    <h3>Diese Website befindet sich noch im Aufbau</h3>
-    <p>Diese Website ist ein Projekt, welches im Rahmen der Vorlesungen und Praktika "Grundlagen Interaktiver Systeme" entsteht. Das Projekt begann am 07.10.24 und ist noch nicht abgeschlossen, dementsprechend wird sich diese Website mitunter noch stark ändern. 
-      Stand jetzt, den 21.10.24, ist die Website nur in ihren grundlegenden Funktionen benutzbar. Einige Bereiche und Anpassungen, wie z.B. für mobile, sind nicht vorhanden oder optimiert, was hoffentlich in naher Zukunft folgen wird. ~Nils
-    </p>
-  </div>
+  <!-- Footer -->
+  <footer id="footer"></footer>
 
-  <div class="footer">
-    <p>© 2024 Nils Hack</p> 
-    <a href="https://brainmade.org"> <img src="pictures/brainmade-white-logo.svg" alt="Brainmade Logo" width="80"></a></div>
-  </div>
+<!-- Dynamisches Laden von Header und Footer -->
+  <script>
+    // Header laden
+    fetch('../header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
 
- 
+    // Footer laden
+    fetch('../footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
 </body>
 </html>

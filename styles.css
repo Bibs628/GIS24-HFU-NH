@@ -1,4 +1,5 @@
-/* CSS-Variablen für Farben und andere wiederverwendbare Werte */
+@import url('colors.css');
+
 :root {
   --background-color: #272727;
   --text-color: #ffffff;
@@ -105,21 +106,7 @@ footer {
 
 /* Navigation */
 
-/*navbar*/
-.topnav {
-  background-color: var(--container-background);
-  overflow: hidden;
-  border-radius: 20px;
-  min-width: auto;
-  display: flex;
-  padding: 0 1%;
-  text-align: left;
-  margin-bottom: 1rem;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-}
+
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
@@ -177,14 +164,6 @@ footer {
   background-color: rgba(155, 56, 34, 0.55);
   color: white;
 }
-
-@media screen and (min-width: 768px) {
-  .topnav {
-    flex-direction: row;
-    align-items: center;
-    position: sticky;
-    top: 0;
-  }
   
   .topnav a {
     width: 100%;
@@ -197,11 +176,6 @@ footer {
 }
 
 /* Styles for smaller screens */
-@media screen and (max-width: 767px) {
-  .topnav {
-    flex-direction: column;
-    align-items: stretch;
-  }
   
   .topnav a {
     width: 100%;
@@ -252,7 +226,6 @@ footer {
   color: var(--text-color);
   text-align: left;
   margin-bottom: 1%;
-  margin-bottom: 1rem;
 }
 
 .Kurzbeschreibung p {
@@ -439,9 +412,9 @@ footer {
   margin-top: 0.5rem;
 }
 
-.collapsible-button.active, .collapsible-button:hover {
-  background-color: #ccc;
-}
+background-color: var(--button-hover-background);
+color: var(--text-color);
+
 
 .Anmerkung {
   border-radius: 35px;
@@ -486,7 +459,7 @@ details summary h3 {
   padding: 0 1rem;
   text-align: left;
   margin-bottom: 1rem;
-  position: bottom; ;
+  position: fixed; bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
