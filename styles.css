@@ -173,7 +173,7 @@ footer {
   .topnav a.split {
     margin-left: 0; /* Entfernt den Auto-Margin auf kleineren Bildschirmen */
   }
-}
+
 
 /* Styles for smaller screens */
   
@@ -185,7 +185,7 @@ footer {
   .topnav a.split {
     margin-left: 0; /* Entfernt den Auto-Margin auf kleineren Bildschirmen */
   }
-}
+
 
 .Seitenheader {
   margin-top: 1%;
@@ -411,10 +411,6 @@ footer {
   border-radius: 10px;
   margin-top: 0.5rem;
 }
-
-background-color: var(--button-hover-background);
-color: var(--text-color);
-
 
 .Anmerkung {
   border-radius: 35px;

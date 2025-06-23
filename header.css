@@ -1,139 +1,72 @@
 @import url('colors.css');
 
-/* Header */
+/* Header: Dünner, leicht abgerundeter Rahmen */
 header {
-  background-color: var(--container-background);
-  border-radius: 20px;
-  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 0;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 10px var(--box-shadow-color);
-}
-
-header h1 {
-  margin: 0;
-  color: var(--text-color);
-  text-align: center;
-  font-size: 2rem;
+  background: var(--header-bg);           /* Header-Hintergrundfarbe */
+  color: var(--header-text-color);        /* Header-Schriftfarbe */
+  border: 1px solid var(--heading-color);
+  border-radius: 12px;
+  box-shadow: none;
 }
 
 /* Navigation Container */
 .topnav {
-  background-color: var(--container-background);
-  border-radius: 20px;
-  border: 1px solid var(--heading-color);
-  padding: 0.5rem 1rem;
-  display: flex;
-  flex-wrap: wrap; /* Responsives Verhalten bei kleineren Bildschirmen */
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns:
+    1fr repeat(6, max-content 1fr);
   align-items: center;
-  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 /* Navigation Links */
 .topnav a {
-  color: var(--text-color);
+  color: var(--header-text-color);        /* Schriftfarbe Header-Links */
+  text-align: center;
+  padding: 8px 16px;
   text-decoration: none;
   font-size: 1rem;
-  border-radius: 10px;
-  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  background: none;
+  font-weight: 500;
   white-space: nowrap;
-  transition: background-color 0.3s ease;
+  min-width: 100px;
 }
 
-/* Hover und aktive Zustände */
+/* Hover-Effekt für Links: Orange Rahmen */
 .topnav a:hover {
   background-color: var(--link-hover-color);
-  color: black;
+  color: var(--nav-link-hover-text);      /* Definiert in colors.css */
+  border: 2px solid var(--heading-color);
 }
 
+/* Aktiver Link: Orange Rahmen und Hintergrund */
 .topnav a.active {
   background-color: var(--heading-color);
   color: white;
+  border: 2px solid var(--heading-color);
+  font-weight: bold;
+  box-shadow: 0 0 8px var(--heading-color);
+  padding: 8px 16px;
 }
 
-.topnav a.active2 {
-  background-color: rgba(155, 56, 34, 0.55);
-  color: white;
-}
+/* Damit die Gaps nicht klickbar sind */
+.topnav a:nth-child(1) { grid-column: 2; }
+.topnav a:nth-child(2) { grid-column: 4; }
+.topnav a:nth-child(3) { grid-column: 6; }
+.topnav a:nth-child(4) { grid-column: 8; }
+.topnav a:nth-child(5) { grid-column: 10; }
+.topnav a:nth-child(6) { grid-column: 12; }
 
-/* Split-Button rechtsbündig */
-.topnav a.split {
-  margin-left: auto;
-  background-color: var(--heading-color);
-  color: white;
-}
-
-/* Hamburger-Menü für Mobilgeräte */
-.topnav a.icon {
-  display: none; /* Standard: ausgeblendet, wird via JS bei kleinen Screens eingeblendet */
-  background: black;
-  color: white;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  border-radius: 10px;
-}
-
-/* Responsives Verhalten */
-@media screen and (max-width: 768px) {
-  .topnav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .topnav a {
-    width: 100%;
-    text-align: left;
-  }
-
-  .topnav a.split {
-    margin-left: 0;
-  }
-
-  .topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .topnav {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0.5rem 1rem;
-    gap: 5rem;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center; /* Zentriert alle Inhalte vertikal */
-  }
-
-  .topnav a {
-    display: flex;                   /* Neu: flex für zentrierten Text */
-    align-items: center;            /* Vertikal zentrieren */
-    justify-content: center;        /* Horizontal zentrieren */
-    font-size: 1.1rem;
-    padding: 0.75rem 1.5rem;
-    border-radius: 12px;
-    white-space: nowrap;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-  }
-
-  .topnav a:hover {
-    background-color: var(--link-hover-color);
-    color: black;
-    transform: scale(1.05);
-  }
-
-  .topnav a.split {
-    margin-left: auto;
-    font-weight: bold;
-    box-shadow: 0 0 8px var(--heading-color);
-  }
-}

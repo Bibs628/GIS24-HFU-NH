@@ -4,10 +4,10 @@
 :root {
   /* === Basisfarben === */
   --text-color:            #ffffff;
-  --heading-color:         #9B3922;
-  --link-color:            #F2613F;
-  --link-hover-color:      #9B3922;
-  --box-shadow-color:      rgba(0, 0, 0, 0.1);
+  --heading-color:         #9b56c0;
+  --link-color:            #9b56c0;
+  --link-hover-color:      #7e20b1;
+  --box-shadow-color:      rgba(255, 255, 255, 0.1);
 
   /* === Hintergrundfarben (von dunkel nach hell) === */
   --background-color:      #1e1e1e;  /* Gesamter Seitenhintergrund */
@@ -24,9 +24,11 @@
 
   /* === Header & Footer === */
   --header-bg:             var(--container-background);
+  --nav-link-hover-text: #ffffff;
+  --header-text-color:     #ffffff;              /* Schriftfarbe Header */
   --footer-bg:             #52057b;
 
-  /* === Navigation === */
+  /* ===
   --nav-item-color:        #ffffff;
   --nav-item-hover-bg:     rgba(255, 255, 255, 0.05);
   --bar-icon-color:        #ffffff;
@@ -36,8 +38,8 @@
   --table-row-bg:          #131415;
 
   /* === Buttons === */
-  --button-background:           #9B3922;
-  --button-hover-background:     #F2613F;
+  --button-background:           #9b56c0;
+  --button-hover-background:     #7e20b1;
   --comment-btn-shadow:          #ffffff;
 
   /* === Suchbox === */
@@ -62,4 +64,6 @@
   /* === Detailseiten === */
   --detail-head-bg:              #2C2C2C;
   --detail-body-bg:              #131415;
+
+
 }
