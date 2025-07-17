@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Awesome Selfhosted",
+    "link": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+    "tag": "Awesome",
+    "description": "Eine kuratierte Liste selbstgehosteter Software und Dienste."
+  },
+  {
+    "title": "Awesome Useful Websites",
+    "link": "https://github.com/atakanaltok/awesome-useful-websites",
+    "tag": "Awesome",
+    "description": "Sammlung nützlicher Websites für verschiedene Zwecke."
+  },
+  {
+    "title": "Learn Anything Websites",
+    "link": "https://github.com/learn-anything/websites",
+    "tag": "Awesome",
+    "description": "Websites zum Lernen und Entdecken neuer Themen."
+  },
+  {
+    "title": "Awesome",
+    "link": "https://github.com/sindresorhus/awesome",
+    "tag": "Awesome",
+    "description": "Die originale Awesome-Liste mit vielen weiteren Awesome-Listen."
+  },
+  {
+    "title": "StanForever Awesome Websites",
+    "link": "https://github.com/StanForever/awesome-websites",
+    "tag": "Awesome",
+    "description": "Kuratierte Liste von großartigen Websites."
+  },
+  {
+    "title": "Awesome Dev Websites",
+    "link": "https://github.com/christopherkade/awesome-dev-websites",
+    "tag": "Awesome",
+    "description": "Liste von Websites für Entwickler."
+  },
+  {
+    "title": "LiLittleCat Awesome Websites",
+    "link": "https://github.com/LiLittleCat/awesome-websites",
+    "tag": "Awesome",
+    "description": "Sammlung von nützlichen und interessanten Websites."
+  },
+  {
+    "title": "Logancyang Awesome Personal Websites",
+    "link": "https://github.com/logancyang/awesome-personal-websites",
+    "tag": "Awesome",
+    "description": "Liste von inspirierenden persönlichen Websites."
+  },
+  {
+    "title": "Papers We Love",
+    "link": "https://github.com/papers-we-love/papers-we-love",
+    "tag": "Awesome",
+    "description": "Kuratierte Sammlung von wissenschaftlichen Arbeiten, die Entwickler lieben."
+  },
+  {
+    "title": "Awesome Hacking",
+    "link": "https://github.com/Hack-with-Github/Awesome-Hacking",
+    "tag": "Awesome",
+    "description": "Liste von Ressourcen und Tools rund ums Hacking."
+  },
+  {
+    "title": "Awesome Mac",
+    "link": "https://github.com/jaywcjlove/awesome-mac",
+    "tag": "Awesome",
+    "description": "Kuratierte Liste von Software und Tools für macOS."
+  },
+  {
+    "title": "Awesome for Beginners",
+    "link": "https://github.com/MunGell/awesome-for-beginners",
+    "tag": "Awesome",
+    "description": "Awesome-Liste mit Projekten für Einsteiger."
+  }
+]
