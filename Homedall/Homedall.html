@@ -129,6 +129,11 @@ fetch('Homedall-backend.json')
       if (item.tag && tagBaseColors[item.tag]) {
         card.style.setProperty('--card-gradient', getGradient(tagBaseColors[item.tag]));
       }
+      // Ganze Karte klickbar machen
+      card.style.cursor = 'pointer';
+      card.onclick = () => {
+        window.open(item.link, '_blank');
+      };
       container.appendChild(card);
     });
   });
