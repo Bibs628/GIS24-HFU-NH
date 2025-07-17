@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Behance",
+    "title": "Behance",
+    "link": "https://behance.net",
+    "tag": "Grafikgestaltung",
+    "description": "Portfolio-Plattform für Designer, Illustratoren und Kreative mit vielen Inspirationsquellen."
+  },
+  {
+    "name": "Dribbble",
+    "title": "Dribbble",
+    "link": "https://dribbble.com",
+    "tag": "Grafikgestaltung",
+    "description": "Community für Designer, mit Projekten, Inspiration und Austausch."
+  },
+  {
+    "name": "Canva",
+    "title": "Canva",
+    "link": "https://canva.com",
+    "tag": "Grafikgestaltung",
+    "description": "Benutzerfreundliches Online-Tool zur schnellen Grafikgestaltung für Social Media, Präsentationen und mehr."
+  },
+  {
+    "name": "Adobe Creative Cloud",
+    "title": "Adobe Creative Cloud",
+    "link": "https://adobe.com/creativecloud",
+    "tag": "Grafikgestaltung",
+    "description": "Professionelle Programme für Grafikdesign, darunter Photoshop, Illustrator, InDesign etc."
+  },
+  {
+    "name": "Envato Elements",
+    "title": "Envato Elements",
+    "link": "https://elements.envato.com",
+    "tag": "Grafikgestaltung",
+    "description": "Ressourcen für Designer: Grafiken, Templates, Fonts, Stockbilder und mehr."
+  },
+  {
+    "name": "Unsplash",
+    "title": "Unsplash",
+    "link": "https://unsplash.com",
+    "tag": "Grafikgestaltung",
+    "description": "Hochwertige, kostenlose Stockfotos für kreative Projekte."
+  },
+  {
+    "name": "Figma",
+    "title": "Figma",
+    "link": "https://figma.com",
+    "tag": "Grafikgestaltung",
+    "description": "Webbasiertes Design- und Kollaborationstool für UI/UX und Grafikdesign."
+  },
+  {
+    "name": "Pixabay",
+    "title": "Pixabay",
+    "link": "https://pixabay.com",
+    "tag": "Grafikgestaltung",
+    "description": "Kostenlose Fotos, Illustrationen, Vektorgrafiken und Videos zur freien Nutzung."
+  },
+  {
+    "name": "Color Hunt",
+    "title": "Color Hunt",
+    "link": "https://colorhunt.co",
+    "tag": "Grafikgestaltung",
+    "description": "Inspirierende Farbpaletten und Farbkombinationen für Designprojekte."
+  },
+  {
+    "name": "Font Squirrel",
+    "title": "Font Squirrel",
+    "link": "https://fontsquirrel.com",
+    "tag": "Grafikgestaltung",
+    "description": "Große Auswahl an kostenlosen, kommerziell nutzbaren Schriftarten."
+  }
+]

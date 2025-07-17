@@ -1,0 +1,115 @@
+[
+  {
+    "name": "Instagram",
+    "title": "Instagram",
+    "link": "https://instagram.com",
+    "tag": "Social Media",
+    "description": "Plattform für das Teilen von Fotos, Stories und Videos mit Fokus auf visuelle Inhalte."
+  },
+  {
+    "name": "Twitter (X)",
+    "title": "Twitter (X)",
+    "link": "https://twitter.com",
+    "tag": "Social Media",
+    "description": "Microblogging-Dienst für kurze Nachrichten, Diskussionen und News-Updates."
+  },
+  {
+    "name": "TikTok",
+    "title": "TikTok",
+    "link": "https://tiktok.com",
+    "tag": "Social Media",
+    "description": "App für das Teilen von kurzen, kreativen Videos, besonders beliebt bei jüngeren Nutzern."
+  },
+  {
+    "name": "LinkedIn",
+    "title": "LinkedIn",
+    "link": "https://linkedin.com",
+    "tag": "Social Media",
+    "description": "Professionelles Netzwerk für Karriere, Jobsuche und Business-Kontakte."
+  },
+  {
+    "name": "Pinterest",
+    "title": "Pinterest",
+    "link": "https://pinterest.com",
+    "tag": "Social Media",
+    "description": "Visuelle Suchmaschine und Plattform zum Sammeln und Teilen von Ideen und Inspirationen."
+  },
+  {
+    "name": "Reddit",
+    "title": "Reddit",
+    "link": "https://reddit.com",
+    "tag": "Social Media",
+    "description": "Forum-basierte Plattform für Diskussionen, Fragen und den Austausch zu vielfältigen Themen."
+  },
+  {
+    "name": "YouTube",
+    "title": "YouTube",
+    "link": "https://youtube.com",
+    "tag": "Social Media",
+    "description": "Größte Videoplattform für das Hochladen, Teilen und Ansehen von Videos."
+  },
+  {
+    "name": "WhatsApp",
+    "title": "WhatsApp",
+    "link": "https://whatsapp.com",
+    "tag": "Social Media",
+    "description": "Messenger-App für das Teilen von Nachrichten, Fotos, Videos und Gruppenkommunikation."
+  },
+
+  {
+    "name": "LinkedIn",
+    "title": "LinkedIn",
+    "link": "https://linkedin.com",
+    "tag": "Social Media",
+    "description": "Professionelles Netzwerk für Karriere, Jobsuche und Business-Kontakte."
+  },
+  {
+    "name": "Snapchat",
+    "title": "Snapchat",
+    "link": "https://snapchat.com",
+    "tag": "Social Media",
+    "description": "App für das Teilen von Fotos und Videos, die nach kurzer Zeit wieder verschwinden."
+  },
+  {
+    "name": "Pinterest",
+    "title": "Pinterest",
+    "link": "https://pinterest.com",
+    "tag": "Social Media",
+    "description": "Visuelle Suchmaschine und Plattform zum Sammeln und Teilen von Ideen und Inspirationen."
+  },
+  {
+    "name": "Reddit",
+    "title": "Reddit",
+    "link": "https://reddit.com",
+    "tag": "Social Media",
+    "description": "Forum-basierte Plattform für Diskussionen, Fragen und den Austausch zu vielfältigen Themen."
+  },
+  {
+    "name": "YouTube",
+    "title": "YouTube",
+    "link": "https://youtube.com",
+    "tag": "Social Media",
+    "description": "Größte Videoplattform für das Hochladen, Teilen und Ansehen von Videos."
+  },
+  {
+    "name": "WhatsApp",
+    "title": "WhatsApp",
+    "link": "https://whatsapp.com",
+    "tag": "Social Media",
+    "description": "Messenger-App für das Teilen von Nachrichten, Fotos, Videos und Gruppenkommunikation."
+  },
+  {
+    "name": "ArtStation",
+    "title": "ArtStation",
+    "link": "https://www.artstation.com",
+    "tag": "Social Media",
+    "description": "Plattform für Künstler, Illustratoren und Designer zum Teilen und Entdecken von digitalen Kunstwerken."
+  },
+  {
+    "name": "deviantART",
+    "title": "deviantART",
+    "link": "https://www.deviantart.com",
+    "tag": "Social Media",
+    "description": "Große Online-Community für Künstler und Kunstinteressierte zum Teilen und Diskutieren von kreativen Werken."
+  }
+]

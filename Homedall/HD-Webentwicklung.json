@@ -1,0 +1,72 @@
+[
+  {
+    "name": "MDN Web Docs",
+    "title": "MDN Web Docs",
+    "link": "https://developer.mozilla.org",
+    "tag": "Webentwicklung",
+    "description": "Umfassende Dokumentation zu HTML, CSS, JavaScript und Webstandards."
+  },
+  {
+    "name": "W3Schools",
+    "title": "W3Schools",
+    "link": "https://w3schools.com",
+    "tag": "Webentwicklung",
+    "description": "Einsteigerfreundliche Tutorials und Referenzen zu Webtechnologien."
+  },
+  {
+    "name": "freeCodeCamp",
+    "title": "freeCodeCamp",
+    "link": "https://freecodecamp.org",
+    "tag": "Webentwicklung",
+    "description": "Interaktive Lernplattform mit Kursen, Projekten und Community."
+  },
+  {
+    "name": "CSS-Tricks",
+    "title": "CSS-Tricks",
+    "link": "https://css-tricks.com",
+    "tag": "Webentwicklung",
+    "description": "Tipps, Artikel und Beispiele rund um CSS und moderne Webentwicklung."
+  },
+  {
+    "name": "Stack Overflow",
+    "title": "Stack Overflow",
+    "link": "https://stackoverflow.com",
+    "tag": "Webentwicklung",
+    "description": "Frage-Antwort-Community für Programmierer mit Fokus auf Webentwicklung."
+  },
+  {
+    "name": "Smashing Magazine",
+    "title": "Smashing Magazine",
+    "link": "https://smashingmagazine.com",
+    "tag": "Webentwicklung",
+    "description": "Magazine mit Artikeln, Guides und Ressourcen für Webdesigner und Entwickler."
+  },
+  {
+    "name": "Frontend Mentor",
+    "title": "Frontend Mentor",
+    "link": "https://frontendmentor.io",
+    "tag": "Webentwicklung",
+    "description": "Realistische Challenges für das Üben von HTML, CSS und JavaScript."
+  },
+  {
+    "name": "CodePen",
+    "title": "CodePen",
+    "link": "https://codepen.io",
+    "tag": "Webentwicklung",
+    "description": "Online-Editor für die Entwicklung und das Teilen von Webprojekten."
+  },
+  {
+    "name": "Web.dev",
+    "title": "Web.dev",
+    "link": "https://web.dev",
+    "tag": "Webentwicklung",
+    "description": "Google-Initiative mit Tutorials, Best Practices und Tools für moderne Webentwicklung."
+  },
+  {
+    "name": "GitHub",
+    "title": "GitHub",
+    "link": "https://github.com",
+    "tag": "Webentwicklung",
+    "description": "Plattform für Versionskontrolle, Open-Source-Projekte und Zusammenarbeit."
+  }
+]

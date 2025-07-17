@@ -1,0 +1,72 @@
+[
+  {
+    "name": "projektmagazin.de",
+    "title": "Projekt Magazin",
+    "link": "https://projektmagazin.de",
+    "tag": "Projektmanagement",
+    "description": "Deutschsprachiges Fachportal mit Artikeln, Methoden, Tools und News rund um Projektmanagement."
+  },
+  {
+    "name": "pm-blog.com",
+    "title": "PM Blog",
+    "link": "https://pm-blog.com",
+    "tag": "Projektmanagement",
+    "description": "Blog mit Tipps, Trends und Diskussionen zu Projektmanagement und Führung."
+  },
+  {
+    "name": "GPM Deutsche Gesellschaft für Projektmanagement",
+    "title": "GPM",
+    "link": "https://gpm-ipma.de",
+    "tag": "Projektmanagement",
+    "description": "Fachverband für Projektmanagement mit Veranstaltungen, Zertifizierungen und Ressourcen."
+  },
+  {
+    "name": "Trello",
+    "title": "Trello",
+    "link": "https://trello.com",
+    "tag": "Projektmanagement",
+    "description": "Online-Kollaborationstool für Aufgaben- und Projektmanagement mit Boards und Karten."
+  },
+  {
+    "name": "Kanban Tool",
+    "title": "Kanban Tool",
+    "link": "https://kanbantool.com",
+    "tag": "Projektmanagement",
+    "description": "Visualisierung von Arbeitsabläufen durch Kanban-Boards, Zeiterfassung und Analyse."
+  },
+  {
+    "name": "Asana",
+    "title": "Asana",
+    "link": "https://asana.com",
+    "tag": "Projektmanagement",
+    "description": "Leistungsstarke Plattform zur Aufgabenverwaltung und Teamzusammenarbeit."
+  },
+  {
+    "name": "Wrike",
+    "title": "Wrike",
+    "link": "https://wrike.com",
+    "tag": "Projektmanagement",
+    "description": "Projektmanagement-Software mit Fokus auf Teamarbeit, Zeiterfassung und Reportings."
+  },
+  {
+    "name": "Smartsheet",
+    "title": "Smartsheet",
+    "link": "https://smartsheet.com",
+    "tag": "Projektmanagement",
+    "description": "Tabellenbasiertes Tool für Planung, Zusammenarbeit und Automatisierung im Projektmanagement."
+  },
+  {
+    "name": "Project Management Institute (PMI)",
+    "title": "PMI",
+    "link": "https://pmi.org",
+    "tag": "Projektmanagement",
+    "description": "Weltweit führende Organisation für Projektmanagement-Zertifizierungen und Standards."
+  },
+  {
+    "name": "OpenProject",
+    "title": "OpenProject",
+    "link": "https://openproject.org",
+    "tag": "Projektmanagement",
+    "description": "Open Source Projektmanagement-Software für Aufgaben, Zeitpläne und Dokumentation."
+  }
+]
