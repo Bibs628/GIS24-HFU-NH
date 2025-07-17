@@ -24,26 +24,12 @@
       max-width: 320px;
       text-align: center;
       transition: transform 0.2s;
-      /* Kein border-image mehr! */
-      border: none;
+      border: 4px solid #ccc; /* Standardfarbe, wird per JS überschrieben */
       z-index: 0;
       overflow: visible;
     }
     .card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: 24px;
-      padding: 0;
-      z-index: -1;
-      border: 4px solid transparent;
-      background: var(--card-gradient, transparent);
-      -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-      pointer-events: none;
+      display: none;
     }
     .card:hover {
       transform: scale(1.05);
@@ -98,25 +84,6 @@
   "Codeing": "#24292e"
 };
 
-function getGradient(color) {
-  // Helle Farben dunkler, dunkle Farben heller machen
-  // Einfache Helligkeitsberechnung
-  const hex = color.replace('#','');
-  const r = parseInt(hex.substring(0,2),16);
-  const g = parseInt(hex.substring(2,4),16);
-  const b = parseInt(hex.substring(4,6),16);
-  const brightness = (r*299 + g*587 + b*114) / 1000;
-  let altColor;
-  if (brightness > 128) {
-    // Helle Farbe -> dunkler
-    altColor = `rgba(${Math.max(r-40,0)},${Math.max(g-40,0)},${Math.max(b-40,0)},1)`;
-  } else {
-    // Dunkle Farbe -> heller
-    altColor = `rgba(${Math.min(r+60,255)},${Math.min(g+60,255)},${Math.min(b+60,255)},1)`;
-  }
-  return `linear-gradient(135deg, ${color}, ${altColor})`;
-}
-
 fetch('Homedall-backend.json')
   .then(response => response.json())
   .then(data => {
@@ -127,9 +94,8 @@ fetch('Homedall-backend.json')
       card.className = 'card';
       card.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
       if (item.tag && tagBaseColors[item.tag]) {
-        card.style.setProperty('--card-gradient', getGradient(tagBaseColors[item.tag]));
+        card.style.borderColor = tagBaseColors[item.tag];
       }
-      // Ganze Karte klickbar machen
       card.style.cursor = 'pointer';
       card.onclick = () => {
         window.open(item.link, '_blank');
