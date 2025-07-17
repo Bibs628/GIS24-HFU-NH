@@ -71,12 +71,14 @@
 <body>
   <header id="header"></header>
 
-  <div style="text-align:center;margin-top:30px;">
+  <!-- StartpageSearchengine start-->
+    <div style="text-align:center;margin-top:30px;">
     <form action="https://www.startpage.com/sp/search" method="GET" target="_blank" style="display:inline-block;background:#222;padding:24px 32px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.2);">
       <input type="text" name="query" placeholder="Startpage-Suche" style="padding:8px;width:300px;border-radius:8px;border:none;background:#333;color:#fff;font-size:1em;">
       <button type="submit" style="padding:8px 16px;margin-left:10px;border-radius:8px;background:#00bfff;color:#fff;font-weight:bold;border:none;cursor:pointer;transition:background 0.2s;">Suchen</button>
     </form>
   </div>
+<!-- Startpagesearchengine Ende-->
 
   <div id="homedall-important"></div>
   <div id="homedall-cards"></div>
@@ -127,8 +129,13 @@
           card.className = 'card';
           card.onclick = () => window.open(item.link, '_blank');
           card.style.borderColor = importantTagColors[item.tag] || "#888";
+          const favicon = item.link
+            ? `<img src="https://www.google.com/s2/favicons?domain=${item.link}" alt="Favicon" style="width:20px;height:20px;margin-right:8px;vertical-align:middle;">`
+            : '';
           card.innerHTML = `
-            <div class="card-title">${item.title}</div>
+            <div class="card-title">
+              ${favicon}${item.title || ''}
+            </div>
             <div class="card-tag">${item.tag}</div>
           `;
           cardsDiv.appendChild(card);
@@ -175,8 +182,13 @@
             card.className = 'card';
             card.onclick = () => window.open(item.link, '_blank');
             card.style.borderColor = cat.color;
+            const favicon = item.link
+              ? `<img src="https://www.google.com/s2/favicons?domain=${item.link}" alt="Favicon" style="width:20px;height:20px;margin-right:8px;vertical-align:middle;">`
+              : '';
             card.innerHTML = `
-              <div class="card-title">${item.title}</div>
+              <div class="card-title">
+                ${favicon}${item.title}
+              </div>
               <div class="card-desc">${item.description || ''}</div>
               <div class="card-tag">${item.tag}</div>
             `;
@@ -187,6 +199,14 @@
           container.appendChild(section);
         });
     });
+
+    // Favicon Grabber Beispiel
+    const DOMAIN = 'example.com';
+    fetch('https://favicongrabber.com/api/grab/' + DOMAIN)
+      .then(res => res.json())
+      .then(data => {
+        // data.icons[0].src ist meist das größte Icon
+      });
   </script>
 </body>
 </html>
