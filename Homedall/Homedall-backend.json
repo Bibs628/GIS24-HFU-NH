@@ -1,10 +1,72 @@
 [
   {
-    "title": "Google",
-    "link": "https://www.google.com"
+    "title": "Cloud VST HFU",
+    "link": "https://cloud.vst.hs-furtwangen.de",
+    "tag": "VST"
+  },
+  {
+    "title": "Helpdesk VST HFU",
+    "link": "https://helpdesk.vst.hs-furtwangen.de",
+    "tag": "VST"
+  },
+  {
+    "title": "VST HFU",
+    "link": "https://vst.hs-furtwangen.de",
+    "tag": "VST"
+  },
+  {
+    "title": "Mailbox HFU",
+    "link": "https://mailbox.hs-furtwangen.de/",
+    "tag": "HFU"
+  },
+  {
+    "title": "Zoom HFU",
+    "link": "https://hs-furtwangen-de.zoom.us/",
+    "tag": "HFU"
+  },
+  {
+    "title": "Overleaf",
+    "link": "https://www.overleaf.com",
+    "tag": "UniZeugs"
+  },
+  {
+    "title": "Proxer.me",
+    "link": "https://proxer.me",
+    "tag": "privat"
+  },
+  {
+    "title": "Prime Video",
+    "link": "https://www.primevideo.com",
+    "tag": "privat"
+  },
+  {
+    "title": "Miruro",
+    "link": "https://www.miruro.to/",
+    "tag": "privat"
+  },
+  {
+    "title": "Reddit",
+    "link": "https://www.reddit.com",
+    "tag": "Social Media"
   },
   {
     "title": "GitHub",
-    "link": "https://github.com"
+    "link": "https://github.com",
+    "tag": "Codeing"
+  },
+  {
+    "title": "NixOS Search",
+    "link": "https://search.nixos.org/packages",
+    "tag": "Laptop"
+  },
+  {
+    "title": "GitHub Copilot",
+    "link": "https://github.com/features/copilot",
+    "tag": "KI"
+  },
+  {
+    "title": "ChatGPT",
+    "link": "https://chat.openai.com",
+    "tag": "KI"
   }
 ]

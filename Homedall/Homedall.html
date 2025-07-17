@@ -15,22 +15,43 @@
       margin-top: 40px;
     }
     .card {
-      background: #222;
-      color: #fff;
-      border-radius: 12px;
+      position: relative;
+      background: transparent;
+      border-radius: 24px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
       padding: 24px 32px;
       min-width: 220px;
       max-width: 320px;
       text-align: center;
       transition: transform 0.2s;
+      /* Kein border-image mehr! */
+      border: none;
+      z-index: 0;
+      overflow: visible;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 24px;
+      padding: 0;
+      z-index: -1;
+      border: 4px solid transparent;
+      background: var(--card-gradient, transparent);
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
     }
     .card:hover {
       transform: scale(1.05);
       background: #444;
+      border-radius: 24px;
     }
     .card a {
-      color: #00bfff;
+      color: rgba(255,255,255,0.85);
       text-decoration: none;
       font-size: 1.2em;
       font-weight: bold;
@@ -38,15 +59,19 @@
   </style>
 </head>
 <body>
+
   <header id="header"></header>
-  <div class="Seitenheader">
-    <h1>Homedall Dashboard</h1>
-    <p>Deine persönlichen Links als Karten.</p>
-  </div>
+
+ <div style="text-align:center;margin-top:30px;">
+  <form action="https://www.startpage.com/sp/search" method="GET" target="_blank" style="display:inline-block;background:#222;padding:24px 32px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+    <input type="text" name="query" placeholder="Startpage-Suche" style="padding:8px;width:300px;border-radius:8px;border:none;background:#333;color:#fff;font-size:1em;">
+    <button type="submit" style="padding:8px 16px;margin-left:10px;border-radius:8px;background:#00bfff;color:#fff;font-weight:bold;border:none;cursor:pointer;transition:background 0.2s;">Suchen</button>
+  </form>
+</div>
+
   <div class="flex-container" id="homedall-cards">
     <!-- Karten werden hier eingefügt -->
   </div>
-  <footer id="footer"></footer>
   <script>
     // Header laden
     fetch('../header.html')
@@ -61,17 +86,52 @@
         document.getElementById('footer').innerHTML = data;
       });
     // Karten aus JSON generieren
-    fetch('Homedall-backend.json')
-      .then(response => response.json())
-      .then(data => {
-        const container = document.getElementById('homedall-cards');
-        data.forEach(item => {
-          const card = document.createElement('div');
-          card.className = 'card';
-          card.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
-          container.appendChild(card);
-        });
-      });
+    const tagBaseColors = {
+  "VST": "#FFFF00",
+  "HFU": "#68a95e",
+  "UniZeugs": "#ffb300",
+  "privat": "#904684",
+  "Social Media": "#b21414",
+  "Laptop": "#24292e",
+  "KI": "#f7f9ef",
+  "Sonstiges": "#939393",
+  "Codeing": "#24292e"
+};
+
+function getGradient(color) {
+  // Helle Farben dunkler, dunkle Farben heller machen
+  // Einfache Helligkeitsberechnung
+  const hex = color.replace('#','');
+  const r = parseInt(hex.substring(0,2),16);
+  const g = parseInt(hex.substring(2,4),16);
+  const b = parseInt(hex.substring(4,6),16);
+  const brightness = (r*299 + g*587 + b*114) / 1000;
+  let altColor;
+  if (brightness > 128) {
+    // Helle Farbe -> dunkler
+    altColor = `rgba(${Math.max(r-40,0)},${Math.max(g-40,0)},${Math.max(b-40,0)},1)`;
+  } else {
+    // Dunkle Farbe -> heller
+    altColor = `rgba(${Math.min(r+60,255)},${Math.min(g+60,255)},${Math.min(b+60,255)},1)`;
+  }
+  return `linear-gradient(135deg, ${color}, ${altColor})`;
+}
+
+fetch('Homedall-backend.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('homedall-cards');
+    container.innerHTML = '';
+    data.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
+      if (item.tag && tagBaseColors[item.tag]) {
+        card.style.setProperty('--card-gradient', getGradient(tagBaseColors[item.tag]));
+      }
+      container.appendChild(card);
+    });
+  });
   </script>
 </body>
 </html>

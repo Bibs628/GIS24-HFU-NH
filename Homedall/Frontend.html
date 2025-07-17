@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homedall Dashboard</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles_Projekte.css">
+  <style>
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .card {
+      background: #222;
+      color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      padding: 24px 32px;
+      min-width: 220px;
+      max-width: 320px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      background: #444;
+    }
+    .card a {
+      color: #00bfff;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header id="header"></header>
+  <div class="Seitenheader">
+    <h1>Homedall Dashboard</h1>
+    <p>Deine persönlichen Links als Karten.</p>
+  </div>
+  <div class="flex-container" id="homedall-cards">
+    <!-- Karten werden hier eingefügt -->
+  </div>
+  <footer id="footer"></footer>
+  <script>
+    // Header laden
+    fetch('../header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+    // Footer laden
+    fetch('../footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+    // Karten aus JSON generieren
+    fetch('Homedall-backend.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('homedall-cards');
+        data.forEach(item => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
+          container.appendChild(card);
+        });
+      });
+  </script>
+</body>
+</html>
