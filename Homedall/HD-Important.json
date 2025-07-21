@@ -25,6 +25,21 @@
     "tag": "HFU"
   },
   {
+    "title": "HFU Felix",
+    "link": "https://felix.hs-furtwangen.de/",
+    "tag": "HFU"
+  },
+  {
+    "title": "Edu VPN HFU",
+    "link": "https://eduvpn.hs-furtwangen.de/vpn-user-portal/home",
+    "tag": "HFU"
+  },
+  {
+    "title": "SPlan HFU",
+    "link": "https://splan.hs-furtwangen.de/starplan/",
+    "tag": "HFU"
+  },
+  {
     "title": "Overleaf",
     "link": "https://www.overleaf.com",
     "tag": "UniZeugs"
@@ -61,7 +76,7 @@
   },
   {
     "title": "GitHub Copilot",
-    "link": "https://github.com/features/copilot",
+    "link": "https://github.com/copilot",
     "tag": "KI"
   },
   {
@@ -76,7 +91,7 @@
   },
   {
     "title": "1&1 Webmail",
-    "link": "https://kunden.1und1.de/login/webmail/",
+    "link": "https://id.ionos.de/identifier?client_app=IONOSMAIL&from=eue_webmail",
     "tag": "privat"
   }
 ]
