@@ -38,6 +38,16 @@
     "title": "SPlan HFU",
     "link": "https://splan.hs-furtwangen.de/starplan/",
     "tag": "HFU"
+  }
+  {
+    "title": "Website HFU",
+    "link": "https://www.hs-furtwangen.de",
+    "tag": "HFU"
+  },,
+  {
+    "title": "Software HFU",
+    "link": "https://howto.hs-furtwangen.de/software/",
+    "tag": "HFU"
   },
   {
     "title": "Overleaf",
