@@ -85,6 +85,11 @@
     "tag": "Laptop"
   },
   {
+    "title": "PDF24",
+    "link": "https://tools.pdf24.org/a",
+    "tag": "Laptop"
+  },
+  {
     "title": "GitHub Copilot",
     "link": "https://github.com/copilot",
     "tag": "KI"
