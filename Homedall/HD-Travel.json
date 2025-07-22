@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Google Maps",
+    "title": "Google Maps",
+    "link": "https://maps.google.com/",
+    "tag": "Travel",
+    "description": "Navigation, Routenplanung und Standortsuche weltweit."
+  },
+  {
+    "name": "Deutsche Bahn",
+    "title": "Deutsche Bahn",
+    "link": "https://www.bahn.de/",
+    "tag": "Travel",
+    "description": "Fahrplanauskunft, Ticketbuchung und Reiseinformationen für Bahnreisen in Deutschland."
+  },
+  {
+    "name": "FlixBus",
+    "title": "FlixBus",
+    "link": "https://www.flixbus.de/",
+    "tag": "Travel",
+    "description": "Fernbusreisen in Deutschland und Europa mit günstigen Preisen."
+  },
+  {
+    "name": "Komoot",
+    "title": "Komoot",
+    "link": "https://www.komoot.de/",
+    "tag": "Travel",
+    "description": "Routenplanung und Navigation für Outdoor-Aktivitäten wie Wandern und Radfahren."
+  }
+]

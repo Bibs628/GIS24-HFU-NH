@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Wikipedia",
+    "title": "Wikipedia",
+    "link": "https://www.wikipedia.org/",
+    "tag": "News",
+    "description": "Freies Online-Lexikon mit Millionen von Artikeln in vielen Sprachen."
+  },
+  {
+    "name": "Tagesschau",
+    "title": "Tagesschau",
+    "link": "https://www.tagesschau.de/",
+    "tag": "News",
+    "description": "Deutschlands wichtigste Nachrichtenquelle für aktuelle Ereignisse."
+  },
+  {
+    "name": "Zeit Online",
+    "title": "Zeit Online",
+    "link": "https://www.zeit.de/",
+    "tag": "News",
+    "description": "Nachrichten, Analysen und Hintergrundberichte aus Deutschland und der Welt."
+  },
+  {
+    "name": "Deutsche Welle",
+    "title": "Deutsche Welle",
+    "link": "https://www.dw.com/",
+    "tag": "News",
+    "description": "Nachrichtenportal in vielen Sprachen mit Fokus auf internationale Berichterstattung."
+  },
+  {
+    "name": "Planet Wissen",
+    "title": "Planet Wissen",
+    "link": "https://www.planet-wissen.de/",
+    "tag": "News",
+    "description": "Multimediale Wissensplattform mit spannenden Themen aus Wissenschaft und Alltag."
+  },
+  {
+    "name": "BR Wissen",
+    "title": "BR Wissen",
+    "link": "https://www.br.de/wissen/",
+    "tag": "News",
+    "description": "Wissensportal des Bayerischen Rundfunks mit Artikeln, Videos und Podcasts."
+  },
+  {
+    "name": "National Geographic",
+    "title": "National Geographic",
+    "link": "https://www.nationalgeographic.de/",
+    "tag": "News",
+    "description": "Wissenschaft, Natur, Geschichte und Fotografie in faszinierenden Reportagen."
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Chefkoch",
+    "title": "Chefkoch",
+    "link": "https://www.chefkoch.de/",
+    "tag": "Kochen",
+    "description": "Deutschlands größte Rezeptesammlung mit Bewertungen und Community."
+  },
+  {
+    "name": "EatSmarter",
+    "title": "EatSmarter",
+    "link": "https://eatsmarter.de/",
+    "tag": "Kochen",
+    "description": "Gesunde Rezepte und Ernährungstipps für jeden Tag."
+  },
+  {
+    "name": "Kochbar",
+    "title": "Kochbar",
+    "link": "https://www.kochbar.de/",
+    "tag": "Kochen",
+    "description": "Rezepte, Kochideen und Tipps für Einsteiger und Profis."
+  },
+  {
+    "name": "Lecker",
+    "title": "Lecker",
+    "link": "https://www.lecker.de/",
+    "tag": "Kochen",
+    "description": "Vielfältige Rezepte für jeden Anlass und Geschmack."
+  },
+  {
+    "name": "Backen.de",
+    "title": "Backen.de",
+    "link": "https://www.backen.de/",
+    "tag": "Kochen",
+    "description": "Backrezepte für Kuchen, Torten und Gebäck."
+  },
+  {
+    "name": "Springlane",
+    "title": "Springlane",
+    "link": "https://www.springlane.de/",
+    "tag": "Kochen",
+    "description": "Rezepte, Küchengeräte und Inspiration zum Kochen & Backen."
+  },
+  {
+    "name": "Foodboom",
+    "title": "Foodboom",
+    "link": "https://www.foodboom.de/",
+    "tag": "Kochen",
+    "description": "Moderne Rezepte mit Bildern und Videos für den Alltag."
+  },
+  {
+    "name": "Sallys Welt",
+    "title": "Sallys Welt",
+    "link": "https://www.sallys-blog.de/",
+    "tag": "Kochen",
+    "description": "Back- und Kochideen von Deutschlands bekanntester Foodbloggerin."
+  }
+]

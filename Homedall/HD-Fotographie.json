@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Flickr",
+    "title": "Flickr",
+    "link": "https://www.flickr.com/",
+    "tag": "Fotographie",
+    "description": "Foto-Community und Plattform zum Teilen und Entdecken von Fotografien."
+  },
+  {
+    "name": "500px",
+    "title": "500px",
+    "link": "https://500px.com/",
+    "tag": "Fotographie",
+    "description": "Plattform für Fotografen mit Portfolios, Wettbewerben und Inspiration."
+  },
+  {
+    "name": "Unsplash",
+    "title": "Unsplash",
+    "link": "https://unsplash.com/",
+    "tag": "Fotographie",
+    "description": "Kostenlose hochwertige Fotos für Kreative und Inspiration."
+  },
+  {
+    "name": "Pixabay",
+    "title": "Pixabay",
+    "link": "https://pixabay.com/",
+    "tag": "Fotographie",
+    "description": "Kostenlose Fotos, Grafiken und Videos zur freien Nutzung."
+  },
+  {
+    "name": "DPReview",
+    "title": "DPReview",
+    "link": "https://www.dpreview.com/",
+    "tag": "Fotographie",
+    "description": "Testberichte, News und Community rund ums Fotografieren."
+  },
+  {
+    "name": "Canon Academy",
+    "title": "Canon Academy",
+    "link": "https://www.canon.de/academy/",
+    "tag": "Fotographie",
+    "description": "Fototipps, Tutorials und Workshops für Einsteiger und Profis."
+  },
+  {
+    "name": "Fotocommunity",
+    "title": "Fotocommunity",
+    "link": "https://www.fotocommunity.de/",
+    "tag": "Fotographie",
+    "description": "Austausch, Kritik und Präsentation der eigenen Fotografien."
+  },
+  {
+    "name": "PetaPixel",
+    "title": "PetaPixel",
+    "link": "https://petapixel.com/",
+    "tag": "Fotographie",
+    "description": "Fotografie-News, Inspiration und Technik-Tipps."
+  }
+]

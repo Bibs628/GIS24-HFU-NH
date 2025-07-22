@@ -103,16 +103,19 @@
     const importantTagColors = {
       "VST": "#FFFF00",
       "HFU": "#68a95e",
-      "UniZeugs": "#ffb300",
-      "privat": "#904684",
+      "UniZeugs": "# #FFC300 ",
+      "privat": "#aa4b24",
       "Social Media": "#b21414",
       "Laptop": "#24292e",
       "KI": "#8e24aa",
       "Sonstiges": "#939393",
-      "Codeing": "#24292e"
+      "Codeing": "#24292e",
+      "Fotographie": "#2483aa",
+      "Travel": "#e04ed8",
+      "News": "# #900C3F ",
+      "Kochen": "#4ee056"
     };
 
-  
     // Wichtige Links immer anzeigen
     fetch('HD-Important.json')
       .then(response => response.json())
@@ -150,6 +153,7 @@
 
     // Kategorien und Farben für die restlichen Bereiche
     const categories = [
+      { file: 'HD-Studium.json', label: 'Studium', color: "#ffb300" },
       { file: 'HD-SocialMedia.json', label: 'Social Media', color: "#e91e63" },
       { file: 'HD-Webentwicklung.json', label: 'Webentwicklung', color: "#00bfff" },
       { file: 'HD-Projektmanagement.json', label: 'Projektmanagement', color: "#ffb300" },

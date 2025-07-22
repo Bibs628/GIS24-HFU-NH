@@ -1,0 +1,58 @@
+[
+  {
+    "name": "WhatsApp Web",
+    "title": "WhatsApp Web",
+    "link": "https://web.whatsapp.com/",
+    "tag": "Social Media",
+    "description": "Messenger für den Browser; Chatten und Dateien teilen am PC."
+  },
+  {
+    "name": "Telegram Web",
+    "title": "Telegram Web",
+    "link": "https://web.telegram.org/",
+    "tag": "Social Media",
+    "description": "Sicherer Messenger für Web, Desktop und Mobile."
+  },
+  {
+    "name": "Signal Messenger",
+    "title": "Signal Messenger",
+    "link": "https://signal.org/",
+    "tag": "Social Media",
+    "description": "Verschlüsselter Messenger für private und sichere Kommunikation."
+  },
+  {
+    "name": "161 Webmail",
+    "title": "161 Webmail",
+    "link": "https://webmail.161.host/",
+    "tag": "privat",
+    "description": "Webmail-Dienst zum Verwalten von E-Mails im Browser."
+  },
+  {
+    "name": "Tutanota",
+    "title": "Tutanota",
+    "link": "https://mail.tutanota.com/",
+    "tag": "privat",
+    "description": "Sicherer und verschlüsselter E-Mail-Dienst aus Deutschland."
+  },
+  {
+    "name": "Gmail",
+    "title": "Gmail",
+    "link": "https://mail.google.com/",
+    "tag": "privat",
+    "description": "Weit verbreiteter kostenloser E-Mail-Dienst von Google."
+  },
+  {
+    "name": "Outlook",
+    "title": "Outlook",
+    "link": "https://outlook.live.com/",
+    "tag": "privat",
+    "description": "Webmail von Microsoft, E-Mail, Kalender und Kontakte."
+  },
+  {
+    "name": "Discord",
+    "title": "Discord",
+    "link": "https://discord.com/",
+    "tag": "Social Media",
+    "description": "Plattform für Text-, Sprach- und Videochat – ideal für Communities."
+  }
+]

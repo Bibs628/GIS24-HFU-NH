@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Studis Online",
+    "title": "Studis Online",
+    "link": "https://www.studis-online.de/",
+    "tag": "UniZeugs",
+    "description": "Informationsportal für Studierende: Studiengänge, BAföG, Wohnen, Jobs und mehr."
+  },
+  {
+    "name": "Unicum",
+    "title": "Unicum",
+    "link": "https://www.unicum.de/",
+    "tag": "UniZeugs",
+    "description": "Studentenmagazin mit Themen rund ums Studium, Karriere, Finanzen und Leben."
+  },
+  {
+    "name": "PDF24 Tools",
+    "title": "PDF24 Tools",
+    "link": "https://tools.pdf24.org/",
+    "tag": "Laptop",
+    "description": "Kostenlose Online-Tools zum Erstellen, Bearbeiten und Konvertieren von PDF-Dateien."
+  },
+  {
+    "name": "Grammarly",
+    "title": "Grammarly",
+    "link": "https://www.grammarly.com/",
+    "tag": "KI",
+    "description": "Englische Rechtschreib- und Grammatikprüfung, Stil- und Verständlichkeitsanalyse."
+  },
+  {
+    "name": "DeepL",
+    "title": "DeepL",
+    "link": "https://www.deepl.com/translator",
+    "tag": "KI",
+    "description": "KI-basierter Übersetzer mit hoher Übersetzungsqualität für viele Sprachen."
+  },
+  {
+    "name": "dict.cc",
+    "title": "dict.cc",
+    "link": "https://www.dict.cc/",
+    "tag": "Laptop",
+    "description": "Kostenloses Online-Wörterbuch für zahlreiche Sprachpaare."
+  },
+  {
+    "name": "Google Scholar",
+    "title": "Google Scholar",
+    "link": "https://scholar.google.com/",
+    "tag": "UniZeugs",
+    "description": "Suchmaschine für wissenschaftliche Arbeiten, Artikel und Publikationen."
+  },
+  {
+    "name": "Zotero",
+    "title": "Zotero",
+    "link": "https://www.zotero.org/",
+    "tag": "Laptop",
+    "description": "Kostenloses Tool zum Sammeln, Verwalten und Zitieren von Literaturquellen."
+  },
+  {
+    "name": "Khan Academy",
+    "title": "Khan Academy",
+    "link": "https://www.khanacademy.org/",
+    "tag": "VST",
+    "description": "Kostenlose Lernvideos und Übungen zu vielen Fächern, besonders für Mathe und Naturwissenschaften."
+  },
+  {
+    "name": "Studysmarter",
+    "title": "Studysmarter",
+    "link": "https://www.studysmarter.de/",
+    "tag": "VST",
+    "description": "Lernplattform mit Karteikarten, Zusammenfassungen und Lernplänen."
+  },
+  {
+    "name": "Pomofocus",
+    "title": "Pomofocus",
+    "link": "https://pomofocus.io/",
+    "tag": "Sonstiges",
+    "description": "Online-Pomodoro-Timer zur Steigerung von Fokus und Produktivität."
+  },
+  {
+    "name": "Lucidchart",
+    "title": "Lucidchart",
+    "link": "https://www.lucidchart.com/",
+    "tag": "Laptop",
+    "description": "Online-Tool zum Erstellen von Diagrammen, Flussdiagrammen und Mindmaps."
+  },
+  {
+    "name": "Overleaf",
+    "title": "Overleaf",
+    "link": "https://www.overleaf.com/",
+    "tag": "Codeing",
+    "description": "Online-LaTeX-Editor für das kollaborative Schreiben wissenschaftlicher Texte."
+  },
+  {
+    "name": "WeTransfer",
+    "title": "WeTransfer",
+    "link": "https://wetransfer.com/",
+    "tag": "Laptop",
+    "description": "Einfache und schnelle Übertragung großer Dateien über das Internet."
+  },
+  {
+    "name": "DAAD",
+    "title": "DAAD",
+    "link": "https://www.daad.de/",
+    "tag": "UniZeugs",
+    "description": "Deutscher Akademischer Austauschdienst: Infos und Stipendien für Auslandsstudium und Austausch."
+  },
+  {
+    "name": "Studierendenwerke",
+    "title": "Studierendenwerke",
+    "link": "https://www.studierendenwerke.de/",
+    "tag": "UniZeugs",
+    "description": "Bundesweite Infos zu BAföG, Wohnen, Mensa und sozialen Diensten für Studierende."
+  }
+]
