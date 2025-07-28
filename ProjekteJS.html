@@ -17,6 +17,28 @@
   <link rel="stylesheet" href="aurora_borealis.css">
   <script src="Projekte.js" defer></script>
   <link rel="icon" href="pictures/brainmade-head-white.svg">
+  <style>
+    /* Nord-Theme Überschriftenfarbe */
+    h1, h2, h3, .container.Seitenheader h1 {
+      color: var(--nord8);
+    }
+    /* Nord-Theme Hover-Effekt für Karten */
+    .flex-container .card {
+      transition: 
+        transform 0.2s,
+        background 0.2s,
+        border-color 0.2s,
+        box-shadow 0.2s;
+    }
+    .flex-container .card:hover {
+      transform: scale(1.04);
+      background: var(--nord3);
+      border-color: var(--nord10);
+      box-shadow: 0 4px 16px var(--nord10);
+      /* Optional: Textfarbe leicht ändern */
+      color: var(--nord14);
+    }
+  </style>
 </head>
 <script>
   // Aurora-Effekt laden
@@ -49,7 +71,7 @@
   <!-- Header -->
   <header id="header"></header>
 
-  <div class="Seitenheader">
+  <div class="container Seitenheader">
     <h1>Projekte</h1>
     <p>Die hier im folgendem Aufgeführten Elemente sind Projekte in denen ich involviert war. <br>
     Diese reichen von kleinen Teilhaben bis hin zur Mitorganisation, dieses wird dann in der Beschreibung genauer erklärt. </p>

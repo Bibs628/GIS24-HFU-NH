@@ -55,17 +55,60 @@
       <p>gelernter Zimmerer</p>
     </div>
 
-    <div class="container">
-      <img src="pictures/Nils.jpg" alt="Bild eines lächelndem Jungen im schwarzem Hoodie und Basecap vor grauem Hintergrund" width="40%" height="40%"> <br>
-      <p>
-        Hey, ich bin Nils und studiere Medieninformatik an der Hochschule Furtwangen. <br>
-        Neben dem Programmieren und Designen cooler digitaler Projekte engagiere ich mich ehrenamtlich in der Studierendenschaft. <br>
-        Als gewähltes Mitglied im Fakultätsrat vertrete ich die Interessen der Studierenden. Ob es darum geht, neue Lehrveranstaltungen anzustoßen oder kleinere Projekte zu planen – ich bin immer für neue Herausforderungen zu haben. <br>
-        In meiner Freizeit arbeite ich gerne an verschiedenen Projekten und entwickle mich stetig weiter. <br>
-        Bis zum Abschluss meines Studiums möchte ich meine Kenntnisse vertiefen und viel praktisch umsetzen. 
-      </p>
+    <div class="container profil-flex">
+      <img src="pictures/Nils.jpg" alt="Bild eines lächelndem Jungen im schwarzem Hoodie und Basecap vor grauem Hintergrund" class="profil-bild">
+      <div class="profil-text">
+        <p>
+          Hey, ich bin Nils und studiere Medieninformatik an der Hochschule Furtwangen.<br>
+          Neben dem Programmieren und Designen cooler digitaler Projekte engagiere ich mich ehrenamtlich in der Studierendenschaft.<br>
+          Als gewähltes Mitglied im Fakultätsrat vertrete ich die Interessen der Studierenden. Ob es darum geht, neue Lehrveranstaltungen anzustoßen oder kleinere Projekte zu planen – ich bin immer für neue Herausforderungen zu haben.<br>
+          In meiner Freizeit arbeite ich gerne an verschiedenen Projekten und entwickle mich stetig weiter.<br>
+          Bis zum Abschluss meines Studiums möchte ich meine Kenntnisse vertiefen und viel praktisch umsetzen.
+        </p>
+      </div>
     </div>
     <!-- Footer -->
     <footer id="footer"></footer>
 </body>
 </html>
+
+<style>
+/* Profilbereich: Bild und Text nebeneinander auf Desktop, untereinander auf Mobile */
+.profil-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.profil-bild {
+  width: 40%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  max-width: 300px;
+  min-width: 120px;
+}
+
+.profil-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .profil-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .profil-bild {
+    width: 80%;
+    max-width: 320px;
+  }
+  .profil-text {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+</style>

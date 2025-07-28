@@ -32,6 +32,21 @@
   border: 2px solid var(--nord6); /* Heller Rahmen wie Header */
 }
 
+.flex-container .card {
+  transition: 
+    transform 0.2s,
+    background 0.2s,
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.flex-container .card:hover {
+  transform: scale(1.04);
+  background: var(--nord3);         /* heller Nord-Ton */
+  border-color: var(--nord8);       /* Nord-Akzent */
+  box-shadow: 0 4px 16px var(--nord10); /* sanfter blauer Schatten */
+}
+
 @media screen and (max-width: 768px) {
   .Projekte {
     min-width: calc(100%/3 - 1rem);
@@ -168,15 +183,40 @@
 .Projekte:hover {
   background: var(--nord2);
   color: var(--nord6);
-  border-color: var(--nord15);
+  border-color: var(--nord11);
   opacity: 0.95;
 }
 
-.Projekte h3 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-  color: var(--nord15);
+/* Nord-Button */
+.button, button, #sortButton {
+  background: var(--nord11);
+  color: var(--nord6);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.button:hover, button:hover, #sortButton:hover {
+  background: var(--nord12);
+}
+
+/* Kartenüberschrift */
+.Projekte h3,
+.flex-container .card h3 {
+  color: var(--nord11);
+}
+
+/* Links in Karten */
+.flex-container .card a,
+.Projekte a {
+  color: var(--nord11);
+  font-weight: bold;
+}
+.flex-container .card a:hover,
+.Projekte a:hover {
+  color: var(--nord12);
 }
 
 .Projekte p {
@@ -200,11 +240,10 @@
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
-    color: #9B3922;
+    color: var(--nord11);
   }
-  
   .Projekte p {
-    color: white;
+    color: var(--nord6);
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
@@ -228,11 +267,10 @@
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
-    color: #9B3922;
+    color: var(--nord11);
   }
-  
   .Projekte p {
-    color: black;
+    color: var(--nord6);
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
@@ -250,11 +288,19 @@
   }
 }
 
+@media (prefers-color-scheme: dark), 
+@media (prefers-color-scheme: light) {
+  .Projekte h3 {
+    color: var(--nord11);
+  }
+}
+
 /* Hover-Effekt */
 .Projekte:hover {
-  color: white;
-  opacity: 0.8;
-  transition: all 0.3s ease; 
+  background: var(--nord2);
+  color: var(--nord6);
+  border-color: var(--nord11);
+  opacity: 0.95;
 }
 
 /* Hover-Effekt für das Bild */
@@ -265,21 +311,20 @@
 
 /* Hover-Effekt für den Text */
 .Projekte h3:hover {
-  color: white;
-  opacity: 0.8;
+  color: var(--nord12);
+  opacity: 0.9;
   transition: all 0.3s ease; 
 }
 
-/* Hover-Effekt für den Text */
 .Projekte p:hover {
-  color: white;
-  opacity: 0.8;
+  color: var(--nord12);
+  opacity: 0.9;
   transition: all 0.3s ease; 
 }
 
 /* Hover-Effekt für den Button */
 .Projekte a:hover {
-  color: white;
+  color: var(--nord6);
   opacity: 0.8;
   transition: all 0.3s ease; 
 }
@@ -289,11 +334,15 @@
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
-  background: #9B3922;
-  color: white;
+  background: var(--nord11);
+  color: var(--nord6);
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease;
+}
+#sortButton:hover {
+  background: var(--nord12);
+  color: var(--nord6);
 }

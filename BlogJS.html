@@ -17,6 +17,95 @@
   <link rel="stylesheet" href="aurora_borealis.css">
   <script src="scripts.js" defer></script>
 <link rel="icon" href="pictures/brainmade-head-white.svg">
+  <style>
+    /* Nord-Theme Überschriftenfarbe */
+    h1, h2, h3, .container.Seitenheader h1 {
+      color: var(--nord8);
+    }
+    /* Nord-Theme Hover-Effekt für Karten */
+    .flex-container a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+    .flex-container .Projekte {
+      transition: 
+        transform 0.2s,
+        background 0.2s,
+        border-color 0.2s,
+        box-shadow 0.2s;
+      border: 2px solid var(--nord4);
+      border-radius: 14px;
+      background: var(--nord1);
+      margin: 1rem 0.5rem;
+      padding: 1.2rem 1.2rem 1rem 1.2rem;
+      box-shadow: 0 2px 8px var(--nord2);
+      min-width: 220px;
+      max-width: 340px;
+    }
+    .flex-container .Projekte:hover {
+      transform: scale(1.04);
+      background: var(--nord3);
+      border-color: var(--nord10);
+      box-shadow: 0 4px 16px var(--nord10);
+      color: var(--nord14);
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: stretch;
+      margin-bottom: 2rem;
+    }
+    .flex-container .Projekte img {
+      display: block;
+      margin: 0 auto 12px auto;
+      max-width: 100%;
+      border-radius: 12px;
+    }
+    .flex-container .Projekte h3 {
+      color: var(--nord11);
+      margin-top: 0;
+      margin-bottom: 0.7rem;
+      text-align: center;
+    }
+    .flex-container .Projekte p {
+      color: var(--nord6);
+      margin-bottom: 0.5rem;
+      text-align: left;
+    }
+    .flex-container .Projekte div {
+      text-align: right;
+    }
+    #sortButton, .button {
+      background: var(--nord11);
+      color: var(--nord6);
+      border: none;
+      border-radius: 8px;
+      padding: 8px 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-bottom: 1rem;
+    }
+    #sortButton:hover, .button:hover {
+      background: var(--nord12);
+      color: var(--nord6);
+    }
+    @media (max-width: 700px) {
+      .flex-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      .flex-container .Projekte {
+        max-width: 98vw;
+        min-width: 0;
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 <script>
   // Aurora-Effekt laden
@@ -86,6 +175,13 @@
     .then(entries => {
       const list = document.getElementById('projectsjs');
       entries.forEach(entry => {
+        // Ganze Karte als Link
+        const cardLink = document.createElement('a');
+        cardLink.href = entry.link;
+        cardLink.target = "_blank";
+        cardLink.style.textDecoration = "none";
+        cardLink.style.display = "block";
+
         const card = document.createElement('div');
         card.className = 'Projekte';
         card.style.borderColor = entry.color || 'var(--nord6)';
@@ -93,10 +189,10 @@
           <h3>${entry.name}</h3>
           <img src="${entry.image}" alt="${entry.alt || ''}" style="max-width:100%;border-radius:12px;margin-bottom:12px;">
           <p>${entry.description}</p>
-          <a href="${entry.link}" target="_blank" style="color:var(--nord15);font-weight:bold;">Zur Unterseite</a>
           <div style="margin-top:8px;color:var(--nord4);font-size:0.95em;">${entry.date || ''}</div>
         `;
-        list.appendChild(card);
+        cardLink.appendChild(card);
+        list.appendChild(cardLink);
       });
     })
     .catch(err => {
