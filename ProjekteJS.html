@@ -79,6 +79,8 @@
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer').innerHTML = data;
+        var yearSpan = document.getElementById('year');
+        if (yearSpan) yearSpan.textContent = new Date().getFullYear();
       });
   </script>
 </body>
