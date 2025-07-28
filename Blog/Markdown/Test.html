@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lorem Ipsum Beispiel</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../styles_Projekte.css">
+  <link rel="stylesheet" href="../../header.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    .markdown-body {
+      max-width: 800px;
+      margin: 40px auto;
+      background: rgba(30,30,30,0.95);
+      border-radius: 18px;
+      padding: 32px;
+      color: #fff;
+      font-size: 1.1em;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+      color: #00bfff;
+    }
+  </style>
+</head>
+<body>
+  <header id="header"></header>
+  <div class="markdown-body" id="markdown-content">Lade Inhalt...</div>
+  <footer id="footer"></footer>
+  <script>
+    // Header und Footer laden
+    fetch('../../header.html')
+      .then(r => r.text())
+      .then(t => document.getElementById('header').innerHTML = t);
+    fetch('../../footer.html')
+      .then(r => r.text())
+      .then(t => document.getElementById('footer').innerHTML = t);
+
+    // Markdown laden und rendern
+    fetch('Test.md')
+      .then(response => response.text())
+      .then(md => {
+        document.getElementById('markdown-content').innerHTML = marked.parse(md);
+      });
+  </script>
+</body>
+</html>

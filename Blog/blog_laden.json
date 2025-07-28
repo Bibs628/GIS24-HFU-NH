@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Markdown Test",
+    "description": "Hier wird getestet ob die Datei aus dem Markdown-Format korrekt geladen wird.",
+    "image": "pictures/MediaJam24.jpg",
+    "link": "Markdown/Test.html",
+    "alt": "MedieJam WiSw24 Logo",
+    "date": "2024-07-28",
+    "color": "#ffcc00"
+  }
+]
