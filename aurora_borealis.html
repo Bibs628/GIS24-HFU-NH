@@ -1,0 +1,103 @@
+<div class="aurora-svg-bg">
+  <svg width="100%" height="100%" viewBox="0 0 1920 400" preserveAspectRatio="none" style="position:fixed;top:0;left:0;z-index:-1;pointer-events:none;">
+    <defs>
+      <linearGradient id="auroraGradient1" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#8fbcbb" stop-opacity="0.7"/>
+        <stop offset="50%" stop-color="#b48ead" stop-opacity="0.8"/>
+        <stop offset="100%" stop-color="#a3be8c" stop-opacity="0.7"/>
+      </linearGradient>
+      <linearGradient id="auroraGradient2" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#88c0d0" stop-opacity="0.7"/>
+        <stop offset="50%" stop-color="#5e81ac" stop-opacity="0.8"/>
+        <stop offset="100%" stop-color="#b48ead" stop-opacity="0.7"/>
+      </linearGradient>
+      <linearGradient id="auroraGradient3" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#a3be8c" stop-opacity="0.7"/>
+        <stop offset="50%" stop-color="#81a1c1" stop-opacity="0.8"/>
+        <stop offset="100%" stop-color="#8fbcbb" stop-opacity="0.7"/>
+      </linearGradient>
+      <linearGradient id="auroraGradient4" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#b48ead" stop-opacity="0.7"/>
+        <stop offset="50%" stop-color="#8fbcbb" stop-opacity="0.8"/>
+        <stop offset="100%" stop-color="#5e81ac" stop-opacity="0.7"/>
+      </linearGradient>
+      <linearGradient id="auroraGradient5" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#5e81ac" stop-opacity="0.7"/>
+        <stop offset="50%" stop-color="#a3be8c" stop-opacity="0.8"/>
+        <stop offset="100%" stop-color="#88c0d0" stop-opacity="0.7"/>
+      </linearGradient>
+      <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+        <feGaussianBlur stdDeviation="18" result="coloredBlur"/>
+        <feMerge>
+          <feMergeNode in="coloredBlur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <!-- Linie 1: ganz oben -->
+    <path filter="url(#glow)" fill="url(#auroraGradient1)" opacity="0.8"
+      d="M0,0 Q480,0 960,0 T1920,0 L1920,400 L0,400 Z">
+      <animate attributeName="d"
+        dur="8s"
+        repeatCount="indefinite"
+        values="
+          M0,0 Q480,0 960,0 T1920,0 L1920,400 L0,400 Z;
+          M0,20 Q480,-20 960,20 T1920,20 L1920,400 L0,400 Z;
+          M0,0 Q480,0 960,0 T1920,0 L1920,400 L0,400 Z
+        "
+      />
+    </path>
+    <!-- Linie 2: 1/4 Höhe -->
+    <path filter="url(#glow)" fill="url(#auroraGradient2)" opacity="0.7"
+      d="M0,100 Q480,60 960,100 T1920,100 L1920,400 L0,400 Z">
+      <animate attributeName="d"
+        dur="10s"
+        repeatCount="indefinite"
+        values="
+          M0,100 Q480,60 960,100 T1920,100 L1920,400 L0,400 Z;
+          M0,120 Q480,40 960,120 T1920,120 L1920,400 L0,400 Z;
+          M0,100 Q480,60 960,100 T1920,100 L1920,400 L0,400 Z
+        "
+      />
+    </path>
+    <!-- Linie 3: 1/2 Höhe -->
+    <path filter="url(#glow)" fill="url(#auroraGradient3)" opacity="0.6"
+      d="M0,200 Q480,160 960,200 T1920,200 L1920,400 L0,400 Z">
+      <animate attributeName="d"
+        dur="12s"
+        repeatCount="indefinite"
+        values="
+          M0,200 Q480,160 960,200 T1920,200 L1920,400 L0,400 Z;
+          M0,220 Q480,140 960,220 T1920,220 L1920,400 L0,400 Z;
+          M0,200 Q480,160 960,200 T1920,200 L1920,400 L0,400 Z
+        "
+      />
+    </path>
+    <!-- Linie 4: 3/4 Höhe -->
+    <path filter="url(#glow)" fill="url(#auroraGradient4)" opacity="0.5"
+      d="M0,300 Q480,260 960,300 T1920,300 L1920,400 L0,400 Z">
+      <animate attributeName="d"
+        dur="14s"
+        repeatCount="indefinite"
+        values="
+          M0,300 Q480,260 960,300 T1920,300 L1920,400 L0,400 Z;
+          M0,320 Q480,240 960,320 T1920,320 L1920,400 L0,400 Z;
+          M0,300 Q480,260 960,300 T1920,300 L1920,400 L0,400 Z
+        "
+      />
+    </path>
+    <!-- Linie 5: ganz unten -->
+    <path filter="url(#glow)" fill="url(#auroraGradient5)" opacity="0.4"
+      d="M0,400 Q480,400 960,400 T1920,400 L1920,400 L0,400 Z">
+      <animate attributeName="d"
+        dur="16s"
+        repeatCount="indefinite"
+        values="
+          M0,400 Q480,400 960,400 T1920,400 L1920,400 L0,400 Z;
+          M0,380 Q480,420 960,380 T1920,380 L1920,400 L0,400 Z;
+          M0,400 Q480,400 960,400 T1920,400 L1920,400 L0,400 Z
+        "
+      />
+    </path>
+  </svg>
+</div>

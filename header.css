@@ -1,17 +1,16 @@
 @import url('colors.css');
 
-/* Header: Dünner, leicht abgerundeter Rahmen */
+/* Header: Sehr dunkler Hintergrund, heller Rahmen, helle Schrift */
 header {
   width: 100%;
   box-sizing: border-box;
   padding: 1rem 0;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  background: var(--header-bg);           /* Header-Hintergrundfarbe */
-  color: var(--header-text-color);        /* Header-Schriftfarbe */
-  border: 1px solid var(--heading-color);
+  background: var(--nord0); /* Sehr dunkler Hintergrund */
+  color: var(--nord6);      /* Helle Schrift */
+  border: 2px solid var(--nord6); /* Heller Rahmen */
   border-radius: 12px;
-  box-shadow: none;
 }
 
 /* Navigation Container */
@@ -26,39 +25,38 @@ header {
   background: none;
   border: none;
   border-radius: 0;
-  box-shadow: none;
 }
 
 /* Navigation Links */
 .topnav a {
-  color: var(--header-text-color);        /* Schriftfarbe Header-Links */
+  color: var(--nord6); /* Helle Schrift */
   text-align: center;
   padding: 8px 16px;
   text-decoration: none;
   font-size: 1rem;
   border-radius: 8px;
   border: 2px solid transparent;
-  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  transition: background-color 0.8s, border-color 0.8s, color 0.8s; /* Übergang auf 0.8s verlängert */
   background: none;
   font-weight: 500;
   white-space: nowrap;
   min-width: 100px;
 }
 
-/* Hover-Effekt für Links: Orange Rahmen */
+/* Hover-Effekt: Heller Hintergrund, dunkle Schrift */
 .topnav a:hover {
-  background-color: var(--link-hover-color);
-  color: var(--nav-link-hover-text);      /* Definiert in colors.css */
-  border: 2px solid var(--heading-color);
+  background-color: var(--nord6); /* Heller Hintergrund */
+  color: var(--nord1);            /* Dunkle Schrift */
+  border: 2px solid var(--nord6);
 }
 
-/* Aktiver Link: Orange Rahmen und Hintergrund */
+/* Aktiver Link: Heller Hintergrund, dunkle Schrift */
 .topnav a.active {
-  background-color: var(--heading-color);
-  color: white;
-  border: 2px solid var(--heading-color);
+  background-color: var(--nord6);
+  color: var(--nord1);
+  border: 2px solid var(--nord6);
   font-weight: bold;
-  box-shadow: 0 0 8px var(--heading-color);
+  box-shadow: 0 0 8px var(--nord8);
   padding: 8px 16px;
 }
 

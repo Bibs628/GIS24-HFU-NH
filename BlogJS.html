@@ -14,17 +14,41 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles_Projekte.css">
   <link rel="stylesheet" href="styles_Standart.css">
+  <link rel="stylesheet" href="aurora_borealis.css">
   <script src="scripts.js" defer></script>
 <link rel="icon" href="pictures/brainmade-head-white.svg">
 </head>
+<script>
+  // Aurora-Effekt laden
+  fetch('aurora_borealis.html')
+    .then(r => r.text())
+    .then(html => {
+      document.body.insertAdjacentHTML('afterbegin', html);
+    });
 
+  // Header laden
+  fetch('../header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+
+  // Footer laden und Jahr setzen
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+      var yearSpan = document.getElementById('year');
+      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    });
+</script>
 <!-- Body -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
   <body>
 
-    <header id="header"></header>
+  <header id="header"></header>
 
-    <div class="Seitenheader">
+  <div class="container">
     <h1>Blog</h1>
     <p>Die hier im folgendem Aufgeführten Elemente sind Projekte in denen ich involviert war. <br>
     Diese reichen von kleinen Teilhaben bis hin zur Mitorganisation, dieses wird dann in der Beschreibung genauer erklärt. </p>
@@ -55,5 +79,30 @@
         document.getElementById('footer').innerHTML = data;
       });
   </script>
+<script>
+  // Blog-Karten dynamisch laden
+  fetch('Blog/blog_laden.json')
+    .then(response => response.json())
+    .then(entries => {
+      const list = document.getElementById('projectsjs');
+      entries.forEach(entry => {
+        const card = document.createElement('div');
+        card.className = 'Projekte';
+        card.style.borderColor = entry.color || 'var(--nord6)';
+        card.innerHTML = `
+          <h3>${entry.name}</h3>
+          <img src="${entry.image}" alt="${entry.alt || ''}" style="max-width:100%;border-radius:12px;margin-bottom:12px;">
+          <p>${entry.description}</p>
+          <a href="${entry.link}" target="_blank" style="color:var(--nord15);font-weight:bold;">Zur Unterseite</a>
+          <div style="margin-top:8px;color:var(--nord4);font-size:0.95em;">${entry.date || ''}</div>
+        `;
+        list.appendChild(card);
+      });
+    })
+    .catch(err => {
+      document.getElementById('projectsjs').innerHTML = "<p style='color:var(--nord11)'>Blog konnte nicht geladen werden.</p>";
+      console.error(err);
+    });
+</script>
   </body>
 </html>

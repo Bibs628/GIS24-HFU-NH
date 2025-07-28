@@ -1,6 +1,57 @@
+<!-- Footer mit Flexbox und Nord-Design -->
+<link rel="stylesheet" href="colors.css">
+<style>
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nord0);
+    color: var(--nord6);
+    border: 2px solid var(--nord6);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px var(--nord3);
+  }
+  .footer-left {
+    display: flex;
+    align-items: center;
+  }
+  .footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .footer img {
+    height: 2rem;
+  }
+  @media screen and (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.5rem;
+    }
+  }
+</style>
 <div class="footer">
-  <p>© 2024 Nils Hack</p>
-  <a href="https://brainmade.org">
-    <img src="/pictures/brainmade-white-logo.svg" alt="Brainmade Logo" width="80">
-  </a>
+  <div class="footer-left">
+    <p>© 2024–<span id="year"></span> Nils Hack</p>
+  </div>
+  <div class="footer-right">
+    <a href="https://brainmade.org">
+      <img src="/pictures/brainmade-white-logo.svg" alt="Brainmade Logo" width="80">
+    </a>
+  </div>
 </div>
+<script>
+  // Footer laden
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+      // Jahr setzen, nachdem der Footer im DOM ist
+      var yearSpan = document.getElementById('year');
+      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    });
+</script>

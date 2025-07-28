@@ -1,0 +1,33 @@
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.38;
+  background:
+    radial-gradient(ellipse 60% 40% at 20% 30%, #8fbcbb 0%, transparent 70%),
+    radial-gradient(ellipse 50% 30% at 80% 20%, #b48ead 0%, transparent 80%),
+    radial-gradient(ellipse 40% 20% at 60% 80%, #a3be8c 0%, transparent 80%),
+    radial-gradient(ellipse 30% 20% at 70% 60%, #88c0d0 0%, transparent 80%),
+    radial-gradient(ellipse 50% 30% at 50% 90%, #5e81ac 0%, transparent 80%),
+    radial-gradient(ellipse 40% 20% at 80% 80%, #81a1c1 0%, transparent 80%);
+  transition: opacity 0.8s;
+  animation: aurora-pulse 6s ease-in-out infinite;
+}
+
+@keyframes aurora-pulse {
+  0%   { opacity: 0.38; }
+  50%  { opacity: 0.60; }
+  100% { opacity: 0.38; }
+}
+
+.aurora-svg-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 40vh;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.7;
+}

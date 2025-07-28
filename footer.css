@@ -2,19 +2,28 @@
 
 /* Footer-Stile */
 .footer {
-  background-color: var(--container-background);
-  border-radius: 10px; /* Nur eine Umrandung */
-  padding: 1rem;
-  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--nord0);
+  color: var(--nord6);
+  border: 2px solid var(--nord6);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+  /* width: 100%;  // width entfernen oder auf 100% setzen */
+  box-sizing: border-box;
 }
 
-.footer p {
-  text-align: center;
-  color: var(--text-color);
-  margin: 0;
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .footer img {
@@ -25,55 +34,7 @@
 @media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer a {
-    width: 100%;
-    text-align: left;
-  }
-
-  .footer a.split {
-    margin-left: 0;
-  }
-
-  .footer a.icon {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    width: 90%;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    gap: 70%;
-
-    display: flex;
-    flex-direction: row;    /* Horizontal ausrichten */
-    flex-wrap: nowrap;      /* Keine Zeilenumbrüche */
-    justify-content: flex-start;
-    align-items: center;    /* Vertikal zentrieren */
-  }
-
-  .footer a {
-    font-size: 1.1rem;
-    padding: 0.75rem 1.5rem;
-    white-space: nowrap;
-    /*VerhindertZeilenumbruchimLink*/transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-    -webkit-transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-    -moz-transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-    -ms-transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-    -o-transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
-
-
-  .footer a.split {
-    margin-left: auto;
-    font-weight: bold;
-    box-shadow: 0 0 8px var(--heading-color);
+    align-items: stretch;
+    gap: 0.5rem;
   }
 }

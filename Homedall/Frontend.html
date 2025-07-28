@@ -6,7 +6,12 @@
   <title>Homedall Dashboard</title>
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../styles_Projekte.css">
+  <link rel="stylesheet" href="../colors.css">
   <style>
+    body {
+      background: var(--nord0);
+      color: var(--nord6);
+    }
     .flex-container {
       display: flex;
       flex-wrap: wrap;
@@ -15,25 +20,44 @@
       margin-top: 40px;
     }
     .card {
-      background: #222;
-      color: #fff;
+      background: var(--nord2);
+      color: var(--nord6);
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 8px var(--nord1);
+      border: 2px solid var(--nord4);
       padding: 24px 32px;
       min-width: 220px;
       max-width: 320px;
       text-align: center;
-      transition: transform 0.2s;
+      transition: transform 0.2s, background 0.2s, border-color 0.2s;
     }
     .card:hover {
       transform: scale(1.05);
-      background: #444;
+      background: var(--nord3);
+      border-color: var(--nord8);
     }
     .card a {
-      color: #00bfff;
+      color: var(--nord10);
       text-decoration: none;
       font-size: 1.2em;
       font-weight: bold;
+      transition: color 0.2s;
+    }
+    .card a:hover {
+      color: var(--nord14);
+    }
+    .Seitenheader {
+      background: var(--nord1);
+      color: var(--nord6);
+      border-radius: 12px;
+      padding: 1.5rem 1rem;
+      margin: 2rem auto 1.5rem auto;
+      max-width: 700px;
+      box-shadow: 0 2px 8px var(--nord2);
+      text-align: center;
+    }
+    footer {
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -48,18 +72,29 @@
   </div>
   <footer id="footer"></footer>
   <script>
+    // Aurora-Effekt laden (optional, falls du ihn möchtest)
+    fetch('../aurora_borealis.html')
+      .then(r => r.text())
+      .then(html => {
+        document.body.insertAdjacentHTML('afterbegin', html);
+      });
+
     // Header laden
     fetch('../header.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('header').innerHTML = data;
       });
-    // Footer laden
+
+    // Footer laden und Jahr setzen
     fetch('../footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer').innerHTML = data;
+        var yearSpan = document.getElementById('year');
+        if (yearSpan) yearSpan.textContent = new Date().getFullYear();
       });
+
     // Karten aus JSON generieren
     fetch('Homedall-backend.json')
       .then(response => response.json())

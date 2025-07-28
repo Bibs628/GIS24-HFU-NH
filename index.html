@@ -14,55 +14,58 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles_Projekte.css">
   <link rel="stylesheet" href="styles_Standart.css">
+  <link rel="stylesheet" href="aurora_borealis.css">
   <script src="scripts.js" defer></script>
   
 <link rel="icon" href="pictures/brainmade-head-white.svg">
 </head>
+<script>
+  // Aurora-Effekt laden
+  fetch('aurora_borealis.html')
+    .then(r => r.text())
+    .then(html => {
+      document.body.insertAdjacentHTML('afterbegin', html);
+    });
 
+  // Header laden
+  fetch('../header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+
+  // Footer laden und Jahr setzen
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+      var yearSpan = document.getElementById('year');
+      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    });
+</script>
 <!-- Body -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <body>
+    <!-- Header -->
+    <header id="header"></header>
 
-  <!-- Header -->
-  <header id="header"></header>
+    <div class="container">
+      <h1>Nils Johannes Hack</h1>
+      <p>Student der Medieninformatik</p>
+      <p>gelernter Zimmerer</p>
+    </div>
 
-  <div class="Seitenheader">
-    <h1>Nils Johannes Hack</h1>
-    <p>Student der Medieninformatik</p>
-    <p>gelernter Zimmerer</p>
-  </div>
-
-  <div class="Kurzbeschreibung">
-    <img src="pictures/Nils.jpg" alt="Bild eines lächelndem Jungen im schwarzem Hoodie und Basecap vor grauem Hintergrund" width="40%" height="40%"> <br>
-    <p> <!--  Hi, ich bin Nils und ich studiere Medieninformatik (B.Sc.) an der Hochschule Furtwangen. <br>
-       Ich bin in der Hochschule ehrenamtlich in der AStA und der Fachschaft tätig, in letzterer bin ich auch gewähltes Mitglied des Fakultätsrates.</p>-->
-  
-    <p>Hey, ich bin Nils und studiere Medieninformatik an der Hochschule Furtwangen. <br>
-      Neben dem Programmieren und Designen cooler digitaler Projekte engagiere ich mich ehrenamtlich in der Studierendenschaft. <br>
-      Als gewähltes Mitglied im Fakultätsrat vertrete ich die Interessen der Studierenden. Ob es darum geht, neue Lehrveranstaltungen anzustoßen oder kleinere Projekte zu planen – ich bin immer für neue Herausforderungen zu haben. <br>
-      In meiner Freizeit arbeite ich gerne an verschiedenen Projekten und entwickle mich stetig weiter. <br>
-      Bis zum Abschluss meines Studiums möchte ich meine Kenntnisse vertiefen und viel praktisch umsetzen. 
-    </p>
-  </div>
-
-  <!-- Footer -->
-  <footer id="footer"></footer>
-
-<!-- Dynamisches Laden von Header und Footer -->
-  <script>
-    // Header laden
-    fetch('../header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header').innerHTML = data;
-      });
-
-    // Footer laden
-    fetch('../footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer').innerHTML = data;
-      });
-  </script>
+    <div class="container">
+      <img src="pictures/Nils.jpg" alt="Bild eines lächelndem Jungen im schwarzem Hoodie und Basecap vor grauem Hintergrund" width="40%" height="40%"> <br>
+      <p>
+        Hey, ich bin Nils und studiere Medieninformatik an der Hochschule Furtwangen. <br>
+        Neben dem Programmieren und Designen cooler digitaler Projekte engagiere ich mich ehrenamtlich in der Studierendenschaft. <br>
+        Als gewähltes Mitglied im Fakultätsrat vertrete ich die Interessen der Studierenden. Ob es darum geht, neue Lehrveranstaltungen anzustoßen oder kleinere Projekte zu planen – ich bin immer für neue Herausforderungen zu haben. <br>
+        In meiner Freizeit arbeite ich gerne an verschiedenen Projekten und entwickle mich stetig weiter. <br>
+        Bis zum Abschluss meines Studiums möchte ich meine Kenntnisse vertiefen und viel praktisch umsetzen. 
+      </p>
+    </div>
+    <!-- Footer -->
+    <footer id="footer"></footer>
 </body>
 </html>

@@ -6,7 +6,12 @@
   <title>Homedall Dashboard</title>
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../styles_Projekte.css">
+  <link rel="stylesheet" href="../colors.css">
   <style>
+    body {
+      background: var(--nord0);
+      color: var(--nord6);
+    }
     .accordion-section {
       margin-bottom: 24px;
     }
@@ -16,8 +21,8 @@
       padding: 14px 24px;
       font-size: 1.1em;
       font-weight: bold;
-      background: #222;
-      color: #fff;
+      background: var(--nord2);
+      color: var(--nord6);
       border: none;
       border-radius: 14px;
       cursor: pointer;
@@ -25,50 +30,84 @@
       transition: background 0.2s;
     }
     .accordion-header:hover {
-      background: #444;
+      background: var(--nord3);
     }
     .flex-container {
       display: flex;
       flex-wrap: wrap;
       gap: 18px;
       margin-bottom: 12px;
-      align-items: stretch; /* Neu: sorgt dafür, dass alle Karten gleich hoch werden */
+      align-items: stretch;
     }
     .card {
-      background: rgba(30,30,30,0.95);
-      border: 3px solid #888;
+      background: var(--nord1);
+      border: 3px solid var(--nord4);
       border-radius: 18px;
       padding: 18px 24px;
       min-width: 220px;
       max-width: 320px;
       text-align: left;
-      color: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      color: var(--nord6);
+      box-shadow: 0 2px 8px var(--nord2);
       cursor: pointer;
-      transition: transform 0.15s, border-color 0.2s;
-      display: flex;           /* Neu */
-      flex-direction: column;  /* Neu */
-      flex: 1 1 220px;         /* Neu: sorgt für gleichmäßige Höhe */
+      transition: transform 0.15s, border-color 0.2s, background 0.2s;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 220px;
     }
     .card:hover {
       transform: scale(1.03);
-      border-color: #fff;
+      border-color: var(--nord8);
+      background: var(--nord2);
     }
     .card-title {
       font-weight: bold;
       font-size: 1.05em;
       margin-bottom: 6px;
+      color: var(--nord14);
     }
     .card-desc {
       font-size: 0.95em;
-      color: #ccc;
+      color: var(--nord4);
       margin-bottom: 4px;
     }
     .card-tag {
       font-size: 0.85em;
-      color: #b3e5fc;
+      color: var(--nord7);
       margin-top: 6px;
       font-style: italic;
+    }
+    .search-form {
+      display: inline-block;
+      background: var(--nord2);
+      padding: 24px 32px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px var(--nord3);
+      margin-top: 30px;
+      text-align: center;
+    }
+    .search-form input[type="text"] {
+      padding: 8px;
+      width: 300px;
+      border-radius: 8px;
+      border: none;
+      background: var(--nord3);
+      color: var(--nord6);
+      font-size: 1em;
+    }
+    .search-form button {
+      padding: 8px 16px;
+      margin-left: 10px;
+      border-radius: 8px;
+      background: var(--nord10);
+      color: var(--nord6);
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .search-form button:hover {
+      background: var(--nord14);
     }
   </style>
 </head>
@@ -76,13 +115,13 @@
   <header id="header"></header>
 
   <!-- StartpageSearchengine start-->
-    <div style="text-align:center;margin-top:30px;">
-    <form action="https://www.startpage.com/sp/search" method="GET" target="_blank" style="display:inline-block;background:#222;padding:24px 32px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.2);">
-      <input type="text" name="query" placeholder="Startpage-Suche" style="padding:8px;width:300px;border-radius:8px;border:none;background:#333;color:#fff;font-size:1em;">
-      <button type="submit" style="padding:8px 16px;margin-left:10px;border-radius:8px;background:#00bfff;color:#fff;font-weight:bold;border:none;cursor:pointer;transition:background 0.2s;">Suchen</button>
+  <div style="text-align:center;">
+    <form action="https://www.startpage.com/sp/search" method="GET" target="_blank" class="search-form">
+      <input type="text" name="query" placeholder="Startpage-Suche">
+      <button type="submit">Suchen</button>
     </form>
   </div>
-<!-- Startpagesearchengine Ende-->
+  <!-- Startpagesearchengine Ende-->
 
   <div id="homedall-important"></div>
   <div id="homedall-cards"></div>
@@ -90,34 +129,44 @@
 
   <footer id="footer"></footer>
   <script>
+    // Aurora-Effekt laden (optional)
+    fetch('../aurora_borealis.html')
+      .then(r => r.text())
+      .then(html => {
+        document.body.insertAdjacentHTML('afterbegin', html);
+      });
+
     // Header laden
     fetch('../header.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('header').innerHTML = data;
       });
-    // Footer laden
+
+    // Footer laden und Jahr setzen
     fetch('../footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer').innerHTML = data;
+        var yearSpan = document.getElementById('year');
+        if (yearSpan) yearSpan.textContent = new Date().getFullYear();
       });
 
-    // Farben für Tags in Important
+    // Farben für Tags in Important (Nord-Farben empfohlen)
     const importantTagColors = {
-      "VST": "#FFFF00",
-      "HFU": "#68a95e",
-      "UniZeugs": "# #FFC300 ",
-      "privat": "#aa4b24",
-      "Social Media": "#b21414",
-      "Laptop": "#24292e",
-      "KI": "#8e24aa",
-      "Sonstiges": "#939393",
-      "Codeing": "#24292e",
-      "Fotographie": "#2483aa",
-      "Travel": "#e04ed8",
-      "News": "# #900C3F ",
-      "Kochen": "#4ee056"
+      "VST": "#EBCB8B",
+      "HFU": "#A3BE8C",
+      "UniZeugs": "#B48EAD",
+      "privat": "#D08770",
+      "Social Media": "#BF616A",
+      "Laptop": "#5E81AC",
+      "KI": "#8FBCBB",
+      "Sonstiges": "#4C566A",
+      "Codeing": "#81A1C1",
+      "Fotographie": "#88C0D0",
+      "Travel": "#B48EAD",
+      "News": "#D8DEE9",
+      "Kochen": "#A3BE8C"
     };
 
     // Wichtige Links immer anzeigen
@@ -138,7 +187,7 @@
           const card = document.createElement('div');
           card.className = 'card';
           card.onclick = () => window.open(item.link, '_blank');
-          card.style.borderColor = importantTagColors[item.tag] || "#888";
+          card.style.borderColor = importantTagColors[item.tag] || "var(--nord4)";
           const favicon = item.link
             ? `<img src="https://www.google.com/s2/favicons?domain=${item.link}" alt="Favicon" style="width:20px;height:20px;margin-right:8px;vertical-align:middle;">`
             : '';
@@ -155,17 +204,17 @@
         importantDiv.appendChild(section);
       });
 
-    // Kategorien und Farben für die restlichen Bereiche
+    // Kategorien und Farben für die restlichen Bereiche (Nord-Farben empfohlen)
     const categories = [
-      { file: 'HD-Studium.json', label: 'Studium', color: "#ffb300" },
-      { file: 'HD-SocialMedia.json', label: 'Social Media', color: "#e91e63" },
-      { file: 'HD-Webentwicklung.json', label: 'Webentwicklung', color: "#00bfff" },
-      { file: 'HD-Projektmanagement.json', label: 'Projektmanagement', color: "#ffb300" },
-      { file: 'HD-Grafikgestaltung.json', label: 'Grafikgestaltung', color: "#8e24aa" },
-      { file: 'HD-AwesomeWebsites.json', label: 'Awesome Websites', color: "#0072c6" },
-      { file: 'HD-Kochen.json', label: 'Kochen', color: "#4ee056" },
-      { file: 'HD-Fotographie.json', label: 'Fotographie', color: "#2483aa" },
-      { file: 'HD-News.json', label: 'News', color: "#900C3F" }
+      { file: 'HD-Studium.json', label: 'Studium', color: "#EBCB8B" },
+      { file: 'HD-SocialMedia.json', label: 'Social Media', color: "#BF616A" },
+      { file: 'HD-Webentwicklung.json', label: 'Webentwicklung', color: "#5E81AC" },
+      { file: 'HD-Projektmanagement.json', label: 'Projektmanagement', color: "#A3BE8C" },
+      { file: 'HD-Grafikgestaltung.json', label: 'Grafikgestaltung', color: "#B48EAD" },
+      { file: 'HD-AwesomeWebsites.json', label: 'Awesome Websites', color: "#88C0D0" },
+      { file: 'HD-Kochen.json', label: 'Kochen', color: "#A3BE8C" },
+      { file: 'HD-Fotographie.json', label: 'Fotographie', color: "#88C0D0" },
+      { file: 'HD-News.json', label: 'News', color: "#D8DEE9" }
     ];
 
     const container = document.getElementById('homedall-cards');
@@ -216,12 +265,12 @@
     });
 
     // Favicon Grabber Beispiel
-    const DOMAIN = 'example.com';
-    fetch('https://favicongrabber.com/api/grab/' + DOMAIN)
-      .then(res => res.json())
-      .then(data => {
-        // data.icons[0].src ist meist das größte Icon
-      });
+    // const DOMAIN = 'example.com';
+    // fetch('https://favicongrabber.com/api/grab/' + DOMAIN)
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     // data.icons[0].src ist meist das größte Icon
+    //   });
   </script>
 </body>
 </html>

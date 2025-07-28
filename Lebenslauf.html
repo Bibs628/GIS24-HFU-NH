@@ -14,21 +14,42 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles_Projekte.css">
   <link rel="stylesheet" href="styles_Standart.css">
+  <link rel="stylesheet" href="aurora_borealis.css">
   <script src="scripts.js" defer></script>
   
 <link rel="icon" href="pictures/brainmade-head-white.svg">
 </head>
+<script>
+  // Aurora-Effekt laden
+  fetch('aurora_borealis.html')
+    .then(r => r.text())
+    .then(html => {
+      document.body.insertAdjacentHTML('afterbegin', html);
+    });
 
+  // Header laden
+  fetch('../header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+
+  // Footer laden und Jahr setzen
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+      var yearSpan = document.getElementById('year');
+      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    });
+</script>
 <!-- Body -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
   <body>
+    <!-- Header -->
+    <header id="header"></header>
 
-
-  <!-- Header -->
-  <header id="header"></header>
-
-
-    <div class="Standart">
+    <div class="container">
       <h3>Medieninformatik (B.Sc.) <br> Hochschule Furtwangen, Furtwangen</h3>
       <h4> März 2024 - heute</h4>
       <ul>
@@ -43,7 +64,7 @@
       </ul>
     </div>
 
-    <div class="Standart">
+    <div class="container">
       <h3>Ausbildung zum Zimmerer <br> Kaspar Holzbau GmbH, Gutach </h3>
       <h4>September 2020 – Juni 2023</h4>
       <ul>
@@ -65,7 +86,7 @@
       </ul>
     </div>
 
-    <div class="Standart">
+    <div class="container">
       <h3>Fachhochschulreife <br> Fichte-Gymnasium Karlsruhe</h3>
       <h4>August 2018 - Mai 2022</h4>
       <ul>
@@ -74,7 +95,7 @@
       </ul>
     </div>
 
-    <div class="Standart">
+    <div class="container">
       <h3>Kenntnisse <br> </h3>
       <ul>
         <ul>Programmiersprachen</ul>
@@ -98,9 +119,8 @@
           <li>LaTeX</li>
       </ul>
     </div>
-
-  <!-- Footer -->
-  <footer id="footer"></footer>
+    <!-- Footer -->
+    <footer id="footer"></footer>
 
     <!-- Dynamisches Laden von Header und Footer -->
   <script>

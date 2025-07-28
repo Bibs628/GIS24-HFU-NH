@@ -11,3 +11,13 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.Standart, .Standart2 {
+  background: var(--nord0);      /* Sehr dunkler Hintergrund wie Header */
+  color: var(--nord6);           /* Helle Schrift */
+  border: 2px solid var(--nord6);/* Heller Rahmen wie Header */
+  border-radius: 12px;           /* Gleiche Rundung wie Header */
+  box-sizing: border-box;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
