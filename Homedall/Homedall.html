@@ -32,6 +32,7 @@
       flex-wrap: wrap;
       gap: 18px;
       margin-bottom: 12px;
+      align-items: stretch; /* Neu: sorgt dafür, dass alle Karten gleich hoch werden */
     }
     .card {
       background: rgba(30,30,30,0.95);
@@ -45,6 +46,9 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.15);
       cursor: pointer;
       transition: transform 0.15s, border-color 0.2s;
+      display: flex;           /* Neu */
+      flex-direction: column;  /* Neu */
+      flex: 1 1 220px;         /* Neu: sorgt für gleichmäßige Höhe */
     }
     .card:hover {
       transform: scale(1.03);
