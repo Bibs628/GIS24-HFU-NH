@@ -109,6 +109,36 @@
     .search-form button:hover {
       background: var(--nord14);
     }
+    /* Nur für die wichtigen Karten */
+    #homedall-important .flex-container {
+      align-items: stretch;
+    }
+
+    #homedall-important .card {
+      min-width: 220px;
+      max-width: 320px;
+      flex: 1 0 220px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    /* Karten-Container der Kategorien */
+    #homedall-cards .flex-container {
+      align-items: stretch;
+    }
+
+    /* Karten der Kategorien */
+    #homedall-cards .card {
+      min-width: 220px;
+      max-width: 320px;
+      flex: 1 0 220px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
   </style>
 </head>
 <body>
@@ -122,6 +152,8 @@
     </form>
   </div>
   <!-- Startpagesearchengine Ende-->
+
+  <div style="height: 1rem;"></div>
 
   <div id="homedall-important"></div>
   <div id="homedall-cards"></div>
@@ -169,6 +201,15 @@
       "Kochen": "#A3BE8C"
     };
 
+    // Hilfsfunktion für Domain aus URL
+    function getDomain(url) {
+      try {
+        return new URL(url).hostname;
+      } catch {
+        return url;
+      }
+    }
+
     // Wichtige Links immer anzeigen
     fetch('HD-Important.json')
       .then(response => response.json())
@@ -189,7 +230,7 @@
           card.onclick = () => window.open(item.link, '_blank');
           card.style.borderColor = importantTagColors[item.tag] || "var(--nord4)";
           const favicon = item.link
-            ? `<img src="https://www.google.com/s2/favicons?domain=${item.link}" alt="Favicon" style="width:20px;height:20px;margin-right:8px;vertical-align:middle;">`
+            ? `<img src="https://www.google.com/s2/favicons?domain=${getDomain(item.link)}" alt="Favicon" style="width:20px;height:20px;margin-right:8px;vertical-align:middle;">`
             : '';
           card.innerHTML = `
             <div class="card-title">
@@ -247,7 +288,7 @@
             card.onclick = () => window.open(item.link, '_blank');
             card.style.borderColor = cat.color;
             const favicon = item.link
-              ? `<img src="https://www.google.com/s2/favicons?domain=${item.link}" alt="Favicon" style="width:20px;height:20px;margin-right:8px;vertical-align:middle;">`
+              ? `<img src="https://www.google.com/s2/favicons?domain=${getDomain(item.link)}" alt="Favicon" style="width:20px;height:20px;margin-right:8px;vertical-align:middle;">`
               : '';
             card.innerHTML = `
               <div class="card-title">
@@ -266,11 +307,11 @@
 
     // Favicon Grabber Beispiel
     // const DOMAIN = 'example.com';
-    // fetch('https://favicongrabber.com/api/grab/' + DOMAIN)
-    //   .then(res => res.json())
-    //   .then(data => {
-    //     // data.icons[0].src ist meist das größte Icon
-    //   });
+     fetch('https://favicongrabber.com/api/grab/' + DOMAIN)
+       .then(res => res.json())
+       .then(data => {
+         // data.icons[0].src ist meist das größte Icon
+       });
   </script>
 </body>
 </html>
