@@ -32,6 +32,28 @@
     details[open] .material-symbols-outlined {
       transform: rotate(180deg); /* Icon um 180° drehen, wenn das summary ausgeklappt ist */
     }
+
+    /* Am besten im <head> ergänzen oder in eine CSS-Datei auslagern */
+    .details-clean {
+      border: none;
+      background: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .details-clean summary {
+      border: none;
+      background: none;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      cursor: pointer;
+    }
+
+    .details-clean[open] {
+      background: none;
+      border: none;
+    }
   </style>
 </head>
 <script>
@@ -50,7 +72,7 @@
     });
 
   // Footer laden und Jahr setzen
-  fetch('footer.html')
+  fetch('../footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('footer').innerHTML = data;
@@ -75,7 +97,7 @@
     </div>
 
     <div class="container">
-      <details>
+      <details class="details-clean">
         <summary><h3>Haftung für Inhalte</h3><span class="material-symbols-outlined">arrow_drop_down</span></summary>
         <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. 
           Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen,
@@ -86,7 +108,7 @@
     </div>
 
     <div class="container">
-      <details>
+      <details class="details-clean">
         <summary><h3>Haftung für Links</h3><span class="material-symbols-outlined">arrow_drop_down</span></summary>
         <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
           Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
@@ -96,7 +118,7 @@
     </div>
 
     <div class="container">
-      <details>
+      <details class="details-clean">
         <summary><h3>Urheberrecht</h3><span class="material-symbols-outlined">arrow_drop_down</span></summary>
         <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
           Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
@@ -106,7 +128,7 @@
     </div>
 
     <div class="container">
-      <details>
+      <details class="details-clean">
         <summary><h3>Datenschutz</h3><span class="material-symbols-outlined">arrow_drop_down</span></summary>
         <p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis.
           Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
@@ -132,11 +154,13 @@
         document.getElementById('header').innerHTML = data;
       });
 
-    // Footer laden
+    // Footer laden und Jahr setzen
     fetch('../footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer').innerHTML = data;
+        var yearSpan = document.getElementById('year');
+        if (yearSpan) yearSpan.textContent = new Date().getFullYear();
       });
   </script>
   </body>
