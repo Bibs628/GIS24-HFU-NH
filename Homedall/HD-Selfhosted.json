@@ -1,0 +1,210 @@
+[
+    {
+        "name": "Immich",
+        "description": "Self-hosted personal assistant",
+        "url": "https://immich.com",
+        "image": "https://immich.com/logo.png"
+    },
+    {
+        "name": "Nextcloud",
+        "description": "Self-hosted personal dashboard",
+        "url": "https://nextcloud.com",
+        "image": "https://nextcloud.com/logo.png"
+    },
+    {
+        "name": "Jellyfin",
+        "description": "Curated list of awesome websites for self-hosting and more.",
+        "url": "https://jellyfin.org",
+        "image": "https://jellyfin.org/logo.png"
+    },
+    {
+        "name": "Plex",
+        "description": "Media server software for personal media collections.",
+        "url": "https://plex.tv",
+        "image": "https://plex.tv/logo.png"
+    },
+    {
+        "name": "Gitea",
+        "description": "Self-hosted Git service.",
+        "url": "https://gitea.io",
+        "image": "https://gitea.io/logo.png"
+    },
+    {
+        "name": "Home Assistant",
+        "description": "Open-source home automation platform.",
+        "url": "https://www.home-assistant.io",
+        "image": "https://www.home-assistant.io/logo.png"
+    },
+    {
+        "name": "Grafana",
+        "description": "Open-source analytics and monitoring platform.",
+        "url": "https://grafana.com",
+        "image": "https://grafana.com/logo.png"
+    },
+    {
+        "name": "Prometheus",
+        "description": "Open-source systems monitoring and alerting toolkit.",
+        "url": "https://prometheus.io",
+        "image": "https://prometheus.io/logo.png"
+    },
+    {
+        "name": "Portainer",
+        "description": "Management UI for Docker environments.",
+        "url": "https://www.portainer.io",
+        "image": "https://www.portainer.io/logo.png"
+    },
+    {
+        "name": "WireGuard",
+        "description": "Simple and fast VPN software.",
+        "url": "https://www.wireguard.com",
+        "image": "https://www.wireguard.com/logo.png"
+    },
+    {
+        "name": "Pi-hole",
+        "description": "Network-wide ad blocker.",
+        "url": "https://pi-hole.net",
+        "image": "https://pi-hole.net/logo.png"
+    },
+    {
+        "name": "Vaultwarden",
+        "description": "Self-hosted password manager.",
+        "url": "https://vaultwarden.com",
+        "image": "https://vaultwarden.com/logo.png"
+    },
+    {
+        "name": "Bitwarden",
+        "description": "Open-source password management solution.",
+        "url": "https://bitwarden.com",
+        "image": "https://bitwarden.com/logo.png"
+    },
+    {
+        "name": "Syncthing",
+        "description": "Continuous file synchronization program.",
+        "url": "https://syncthing.net",
+        "image": "https://syncthing.net/logo.png"
+    },
+    {
+        "name": "Mattermost",
+        "description": "Open-source messaging platform for team collaboration.",
+        "url": "https://mattermost.com",
+        "image": "https://mattermost.com/logo.png"
+    },
+    {
+        "name": "Rocket.Chat",
+        "description": "Open-source team communication platform.",
+        "url": "https://rocket.chat",
+        "image": "https://rocket.chat/logo.png"
+    },
+    {
+        "name": "Discourse",
+        "description": "Open-source discussion platform.",
+        "url": "https://www.discourse.org",
+        "image": "https://www.discourse.org/logo.png"
+    },
+    {
+        "name": "Ghost",
+        "description": "Open-source publishing platform.",
+        "url": "https://ghost.org",
+        "image": "https://ghost.org/logo.png"
+    },
+    {
+        "name": "Matomo",
+        "description": "Open-source web analytics platform.",
+        "url": "https://matomo.org",
+        "image": "https://matomo.org/logo.png"
+    },
+    {
+        "name": "OpenProject",
+        "description": "Open-source project management software.",
+        "url": "https://www.openproject.org",
+        "image": "https://www.openproject.org/logo.png"
+    },
+    {
+        "name": "Kanboard",
+        "description": "Simple and open-source project management software.",
+        "url": "https://kanboard.org",
+        "image": "https://kanboard.org/logo.png"
+    },
+    {
+        "name": "Zabbix",
+        "description": "Open-source monitoring software for networks and applications.",
+        "url": "https://www.zabbix.com",
+        "image": "https://www.zabbix.com/logo.png"
+    },
+    {
+        "name": "OpenVPN",
+        "description": "Open-source VPN software.",
+        "url": "https://openvpn.net",
+        "image": "https://openvpn.net/logo.png"
+    },
+    {        "name": "Wire",
+        "description": "Secure collaboration platform with messaging and file sharing.",
+        "url": "https://wire.com",
+        "image": "https://wire.com/logo.png"
+    },
+    {        "name": "Jitsi",
+        "description": "Open-source video conferencing solution.",
+        "url": "https://jitsi.org",
+        "image": "https://jitsi.org/logo.png"
+    },
+    {        "name": "Matrix",
+        "description": "Open network for secure, decentralized communication.",
+        "url": "https://matrix.org",
+        "image": "https://matrix.org/logo.png"
+    },
+    {        "name": "OpenMediaVault",
+        "description": "Open-source NAS (Network Attached Storage) solution.",
+        "url": "https://www.openmediavault.org",
+        "image": "https://www.openmediavault.org/logo.png"
+    },
+    {        "name": "Caddy",
+        "description": "Modern web server with automatic HTTPS.",
+        "url": "https://caddyserver.com",
+        "image": "https://caddyserver.com/logo.png"
+    },
+    {        "name": "Nginx",
+        "description": "High-performance web server and reverse proxy server.",
+        "url": "https://www.nginx.com",
+        "image": "https://www.nginx.com/logo.png"
+    },
+    {        "name": "Apache",
+        "description": "Open-source web server software.",
+        "url": "https://www.apache.org",
+        "image": "https://www.apache.org/logo.png"
+    },
+    {        "name": "Docker",
+        "description": "Platform for developing, shipping, and running applications in containers.",
+        "url": "https://www.docker.com",
+        "image": "https://www.docker.com/logo.png"
+    },
+    {        "name": "Kubernetes",
+        "description": "Open-source system for automating deployment, scaling, and management of containerized applications.",
+        "url": "https://kubernetes.io",
+        "image": "https://kubernetes.io/logo.png"
+    },
+    {        "name": "Traefik",
+        "description": "Modern reverse proxy and load balancer for microservices.",
+        "url": "https://traefik.io",
+        "image": "https://traefik.io/logo.png"
+    },
+    {        "name": "Homebridge",
+        "description": "Lightweight Node.js server that emulates the iOS HomeKit API.",
+        "url": "https://homebridge.io",
+        "image": "https://homebridge.io/logo.png"
+    },
+    {        "name": "OpenHAB",
+        "description": "Open-source home automation platform that integrates various home automation systems and technologies.",
+        "url": "https://www.openhab.org",
+        "image": "https://www.openhab.org/logo.png"
+    },
+    {        "name": "InfluxDB",
+        "description": "Open-source time series database designed to handle high write and query loads.",
+        "url": "https://www.influxdata.com",
+        "image": "https://www.influxdata.com/logo.png"
+    },
+    {        "name": "Elasticsearch",
+        "description": "Distributed, RESTful search and analytics engine capable of solving a growing number of use cases.",
+        "url": "https://www.elastic.co",
+        "image": "https://www.elastic.co/logo.png"
+    }
+]
