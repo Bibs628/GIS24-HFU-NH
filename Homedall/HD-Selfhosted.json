@@ -1,298 +1,254 @@
 [
   {
-    "name": "Immich",
-    "title": "Immich",
-    "link": "https://immich.com",
-    "tag": "Selfhosted",
-    "description": "Self-hosted personal assistant",
-    "image": "https://immich.com/logo.png"
+    "name": "paperless-ngx",
+    "title": "Paperless NGX",
+    "link": "http://141.28.229.14:8000",
+    "tag": "Dokumentenmanagement",
+    "description": "Effizientes Dokumentenmanagementsystem zur Digitalisierung, Archivierung und Durchsuchbarkeit von Dokumenten."
   },
   {
-    "name": "Nextcloud",
-    "title": "Nextcloud",
-    "link": "https://nextcloud.com",
-    "tag": "Selfhosted",
-    "description": "Self-hosted personal dashboard",
-    "image": "https://nextcloud.com/logo.png"
+    "name": "penpot",
+    "title": "Penpot",
+    "link": "http://141.28.229.14:9001",
+    "tag": "Design/Prototyping",
+    "description": "Open Source Design- und Prototyping-Plattform für Teams mit Unterstützung für UI/UX-Designs."
   },
   {
-    "name": "Jellyfin",
-    "title": "Jellyfin",
-    "link": "https://jellyfin.org",
-    "tag": "Selfhosted",
-    "description": "Curated list of awesome websites for self-hosting and more.",
-    "image": "https://jellyfin.org/logo.png"
+    "name": "planka",
+    "title": "Planka",
+    "link": "http://141.28.229.14:1337",
+    "tag": "Projektmanagement",
+    "description": "Trello-ähnliche Open Source Projektmanagement-Software für Aufgaben und Boards."
   },
   {
-    "name": "Plex",
-    "title": "Plex",
-    "link": "https://plex.tv",
-    "tag": "Selfhosted",
-    "description": "Media server software for personal media collections.",
-    "image": "https://plex.tv/logo.png"
+    "name": "pterodactyl-panel",
+    "title": "Pterodactyl Panel",
+    "link": "http://141.28.229.14:8080",
+    "tag": "Serververwaltung",
+    "description": "Panel zur Verwaltung von Game-Servern und anderen Anwendungen in Containern."
   },
   {
-    "name": "Gitea",
-    "title": "Gitea",
-    "link": "https://gitea.io",
-    "tag": "Selfhosted",
-    "description": "Self-hosted Git service.",
-    "image": "https://gitea.io/logo.png"
+    "name": "shlink",
+    "title": "Shlink",
+    "link": "http://141.28.229.14:8081",
+    "tag": "URL-Shortener",
+    "description": "Selbst gehosteter URL-Shortener mit Analytics und API."
   },
   {
-    "name": "Home Assistant",
-    "title": "Home Assistant",
-    "link": "https://www.home-assistant.io",
-    "tag": "Selfhosted",
-    "description": "Open-source home automation platform.",
-    "image": "https://www.home-assistant.io/logo.png"
+    "name": "stirling-pdf",
+    "title": "Stirling PDF",
+    "link": "http://141.28.229.14:8082",
+    "tag": "PDF-Werkzeuge",
+    "description": "Webbasiertes Tool zur Bearbeitung, Konvertierung und Verwaltung von PDF-Dateien."
   },
   {
-    "name": "Grafana",
-    "title": "Grafana",
-    "link": "https://grafana.com",
-    "tag": "Selfhosted",
-    "description": "Open-source analytics and monitoring platform.",
-    "image": "https://grafana.com/logo.png"
-  },
-  {
-    "name": "Prometheus",
-    "title": "Prometheus",
-    "link": "https://prometheus.io",
-    "tag": "Selfhosted",
-    "description": "Open-source systems monitoring and alerting toolkit.",
-    "image": "https://prometheus.io/logo.png"
-  },
-  {
-    "name": "Portainer",
-    "title": "Portainer",
-    "link": "https://www.portainer.io",
-    "tag": "Selfhosted",
-    "description": "Management UI for Docker environments.",
-    "image": "https://www.portainer.io/logo.png"
-  },
-  {
-    "name": "WireGuard",
-    "title": "WireGuard",
-    "link": "https://www.wireguard.com",
-    "tag": "Selfhosted",
-    "description": "Simple and fast VPN software.",
-    "image": "https://www.wireguard.com/logo.png"
-  },
-  {
-    "name": "Pi-hole",
-    "title": "Pi-hole",
-    "link": "https://pi-hole.net",
-    "tag": "Selfhosted",
-    "description": "Network-wide ad blocker.",
-    "image": "https://pi-hole.net/logo.png"
-  },
-  {
-    "name": "Vaultwarden",
-    "title": "Vaultwarden",
-    "link": "https://vaultwarden.com",
-    "tag": "Selfhosted",
-    "description": "Self-hosted password manager.",
-    "image": "https://vaultwarden.com/logo.png"
-  },
-  {
-    "name": "Bitwarden",
-    "title": "Bitwarden",
-    "link": "https://bitwarden.com",
-    "tag": "Selfhosted",
-    "description": "Open-source password management solution.",
-    "image": "https://bitwarden.com/logo.png"
-  },
-  {
-    "name": "Syncthing",
+    "name": "syncthing",
     "title": "Syncthing",
-    "link": "https://syncthing.net",
-    "tag": "Selfhosted",
-    "description": "Continuous file synchronization program.",
-    "image": "https://syncthing.net/logo.png"
+    "link": "http://141.28.229.14:8384",
+    "tag": "Dateisynchronisation",
+    "description": "Kontinuierliche, verschlüsselte Dateisynchronisation zwischen verschiedenen Geräten."
   },
   {
-    "name": "Mattermost",
-    "title": "Mattermost",
-    "link": "https://mattermost.com",
-    "tag": "Selfhosted",
-    "description": "Open-source messaging platform for team collaboration.",
-    "image": "https://mattermost.com/logo.png"
+    "name": "uptime-kuma",
+    "title": "Uptime Kuma",
+    "link": "http://141.28.229.14:3001",
+    "tag": "Monitoring",
+    "description": "Selbst gehostetes Monitoring-Tool zum Überwachen von Diensten und Webseiten."
   },
   {
-    "name": "Rocket.Chat",
-    "title": "Rocket.Chat",
-    "link": "https://rocket.chat",
-    "tag": "Selfhosted",
-    "description": "Open-source team communication platform.",
-    "image": "https://rocket.chat/logo.png"
+    "name": "vikunja",
+    "title": "Vikunja",
+    "link": "http://141.28.229.14:3456",
+    "tag": "Aufgabenverwaltung",
+    "description": "Open Source Aufgaben- und Projektmanagement mit Listen, Boards und Kalender."
   },
   {
-    "name": "Discourse",
-    "title": "Discourse",
-    "link": "https://www.discourse.org",
-    "tag": "Selfhosted",
-    "description": "Open-source discussion platform.",
-    "image": "https://www.discourse.org/logo.png"
+    "name": "wg-easy",
+    "title": "WG-Easy",
+    "link": "http://141.28.229.14:51821",
+    "tag": "VPN",
+    "description": "Webinterface zum einfachen Verwalten und Bereitstellen von WireGuard-VPN-Konfigurationen."
   },
   {
-    "name": "Ghost",
-    "title": "Ghost",
-    "link": "https://ghost.org",
-    "tag": "Selfhosted",
-    "description": "Open-source publishing platform.",
-    "image": "https://ghost.org/logo.png"
+    "name": "karakeep",
+    "title": "Karakeep",
+    "link": "http://141.28.229.14:8001",
+    "tag": "Notizen",
+    "description": "Selbst gehostete Plattform für Notizen und Wissensmanagement."
   },
   {
-    "name": "Matomo",
-    "title": "Matomo",
-    "link": "https://matomo.org",
-    "tag": "Selfhosted",
-    "description": "Open-source web analytics platform.",
-    "image": "https://matomo.org/logo.png"
+    "name": "kavita",
+    "title": "Kavita",
+    "link": "http://141.28.229.14:5000",
+    "tag": "E-Book/Comic-Server",
+    "description": "Schneller, funktionsreicher Leseserver für Comics und E-Books."
   },
   {
-    "name": "OpenProject",
-    "title": "OpenProject",
-    "link": "https://www.openproject.org",
-    "tag": "Selfhosted",
-    "description": "Open-source project management software.",
-    "image": "https://www.openproject.org/logo.png"
+    "name": "kitchenowl",
+    "title": "KitchenOwl",
+    "link": "http://141.28.229.14:8083",
+    "tag": "Haushaltsmanagement",
+    "description": "App zur Verwaltung von Rezepten, Einkaufslisten und Vorräten."
   },
   {
-    "name": "Kanboard",
-    "title": "Kanboard",
-    "link": "https://kanboard.org",
-    "tag": "Selfhosted",
-    "description": "Simple and open-source project management software.",
-    "image": "https://kanboard.org/logo.png"
+    "name": "komga",
+    "title": "Komga",
+    "link": "http://141.28.229.14:25600",
+    "tag": "Comic-Server",
+    "description": "Selbst gehosteter Comic- und Manga-Server mit Webinterface."
   },
   {
-    "name": "Zabbix",
-    "title": "Zabbix",
-    "link": "https://www.zabbix.com",
-    "tag": "Selfhosted",
-    "description": "Open-source monitoring software for networks and applications.",
-    "image": "https://www.zabbix.com/logo.png"
+    "name": "linkding",
+    "title": "Linkding",
+    "link": "http://141.28.229.14:9090",
+    "tag": "Lesezeichenverwaltung",
+    "description": "Einfache, selbstgehostete Lösung zur Verwaltung von Bookmarks."
   },
   {
-    "name": "OpenVPN",
-    "title": "OpenVPN",
-    "link": "https://openvpn.net",
-    "tag": "Selfhosted",
-    "description": "Open-source VPN software.",
-    "image": "https://openvpn.net/logo.png"
+    "name": "mealie",
+    "title": "Mealie",
+    "link": "http://141.28.229.14:9925",
+    "tag": "Rezepte",
+    "description": "Modernes Rezeptmanagement mit Planer und Einkaufsliste."
   },
   {
-    "name": "Wire",
-    "title": "Wire",
-    "link": "https://wire.com",
-    "tag": "Selfhosted",
-    "description": "Secure collaboration platform with messaging and file sharing.",
-    "image": "https://wire.com/logo.png"
+    "name": "metube",
+    "title": "MeTube",
+    "link": "http://141.28.229.14:8084",
+    "tag": "YouTube-Downloader",
+    "description": "Weboberfläche zum Herunterladen von Videos von YouTube und anderen Plattformen."
   },
   {
-    "name": "Jitsi",
-    "title": "Jitsi",
-    "link": "https://jitsi.org",
-    "tag": "Selfhosted",
-    "description": "Open-source video conferencing solution.",
-    "image": "https://jitsi.org/logo.png"
+    "name": "netbootxyz",
+    "title": "NetbootXYZ",
+    "link": "http://141.28.229.14:3002",
+    "tag": "Netzwerkboot",
+    "description": "PXE-Server zur Verwaltung und zum Starten von Images über das Netzwerk."
   },
   {
-    "name": "Matrix",
-    "title": "Matrix",
-    "link": "https://matrix.org",
-    "tag": "Selfhosted",
-    "description": "Open network for secure, decentralized communication.",
-    "image": "https://matrix.org/logo.png"
+    "name": "netdata",
+    "title": "Netdata",
+    "link": "http://141.28.229.14:19999",
+    "tag": "Monitoring",
+    "description": "Leistungsstarkes Monitoring-Tool für Server und Dienste mit Echtzeitdaten."
   },
   {
-    "name": "OpenMediaVault",
-    "title": "OpenMediaVault",
-    "link": "https://www.openmediavault.org",
-    "tag": "Selfhosted",
-    "description": "Open-source NAS (Network Attached Storage) solution.",
-    "image": "https://www.openmediavault.org/logo.png"
+    "name": "nextcloud",
+    "title": "Nextcloud",
+    "link": "http://141.28.229.14:8085",
+    "tag": "Cloudspeicher",
+    "description": "Open Source Cloud-Plattform für Dateisynchronisation, Kalender, Kontakte und mehr."
   },
   {
-    "name": "Caddy",
-    "title": "Caddy",
-    "link": "https://caddyserver.com",
-    "tag": "Selfhosted",
-    "description": "Modern web server with automatic HTTPS.",
-    "image": "https://caddyserver.com/logo.png"
+    "name": "nginx-proxy-manager",
+    "title": "Nginx Proxy Manager",
+    "link": "http://141.28.229.14:81",
+    "tag": "Reverse Proxy",
+    "description": "Benutzerfreundliches Webinterface zur Verwaltung von Nginx-Reverse-Proxies und SSL-Zertifikaten."
   },
   {
-    "name": "Nginx",
-    "title": "Nginx",
-    "link": "https://www.nginx.com",
-    "tag": "Selfhosted",
-    "description": "High-performance web server and reverse proxy server.",
-    "image": "https://www.nginx.com/logo.png"
+    "name": "open-speed-test",
+    "title": "Open Speed Test",
+    "link": "http://141.28.229.14:3003",
+    "tag": "Speedtest",
+    "description": "Webbasiertes Tool zum Testen der Netzwerkgeschwindigkeit im lokalen Netz."
   },
   {
-    "name": "Apache",
-    "title": "Apache",
-    "link": "https://www.apache.org",
-    "tag": "Selfhosted",
-    "description": "Open-source web server software.",
-    "image": "https://www.apache.org/logo.png"
+    "name": "audiobookshelf",
+    "title": "Audiobookshelf",
+    "link": "http://141.28.229.14:13378",
+    "tag": "Hörbuchserver",
+    "description": "Selbst gehosteter Server für Hörbücher mit Web- und Mobilzugriff."
   },
   {
-    "name": "Docker",
-    "title": "Docker",
-    "link": "https://www.docker.com",
-    "tag": "Selfhosted",
-    "description": "Platform for developing, shipping, and running applications in containers.",
-    "image": "https://www.docker.com/logo.png"
+    "name": "calibre-web",
+    "title": "Calibre Web",
+    "link": "http://141.28.229.14:8083",
+    "tag": "E-Book-Server",
+    "description": "Weboberfläche für Calibre zur Verwaltung und zum Lesen von E-Books."
   },
   {
-    "name": "Kubernetes",
-    "title": "Kubernetes",
-    "link": "https://kubernetes.io",
-    "tag": "Selfhosted",
-    "description": "Open-source system for automating deployment, scaling, and management of containerized applications.",
-    "image": "https://kubernetes.io/logo.png"
+    "name": "convertx",
+    "title": "ConvertX",
+    "link": "http://141.28.229.14:4000",
+    "tag": "Konvertierung",
+    "description": "Tool zur Konvertierung verschiedener Dateiformate online."
   },
   {
-    "name": "Traefik",
-    "title": "Traefik",
-    "link": "https://traefik.io",
-    "tag": "Selfhosted",
-    "description": "Modern reverse proxy and load balancer for microservices.",
-    "image": "https://traefik.io/logo.png"
+    "name": "drawio",
+    "title": "Draw.io",
+    "link": "http://141.28.229.14:8086",
+    "tag": "Diagramme",
+    "description": "Webbasierte Anwendung zum Erstellen von Diagrammen und Flussdiagrammen."
   },
   {
-    "name": "Homebridge",
-    "title": "Homebridge",
-    "link": "https://homebridge.io",
-    "tag": "Selfhosted",
-    "description": "Lightweight Node.js server that emulates the iOS HomeKit API.",
-    "image": "https://homebridge.io/logo.png"
+    "name": "forgejo",
+    "title": "Forgejo",
+    "link": "http://141.28.229.14:3004",
+    "tag": "Git-Server",
+    "description": "Selbstgehosteter Git-Server mit Weboberfläche für Repositories und Projekte."
   },
   {
-    "name": "OpenHAB",
-    "title": "OpenHAB",
-    "link": "https://www.openhab.org",
-    "tag": "Selfhosted",
-    "description": "Open-source home automation platform that integrates various home automation systems and technologies.",
-    "image": "https://www.openhab.org/logo.png"
+    "name": "gitea",
+    "title": "Gitea",
+    "link": "http://141.28.229.14:3000",
+    "tag": "Git-Server",
+    "description": "Leichter, selbstgehosteter Git-Service für Code-Hosting."
   },
   {
-    "name": "InfluxDB",
-    "title": "InfluxDB",
-    "link": "https://www.influxdata.com",
-    "tag": "Selfhosted",
-    "description": "Open-source time series database designed to handle high write and query loads.",
-    "image": "https://www.influxdata.com/logo.png"
+    "name": "grocy",
+    "title": "Grocy",
+    "link": "http://141.28.229.14:9283",
+    "tag": "Haushaltsverwaltung",
+    "description": "Selbst gehostetes System zur Verwaltung von Vorräten, Einkauf und Haushalt."
   },
   {
-    "name": "Elasticsearch",
-    "title": "Elasticsearch",
-    "link": "https://www.elastic.co",
-    "tag": "Selfhosted",
-    "description": "Distributed, RESTful search and analytics engine capable of solving a growing number of use cases.",
-    "image": "https://www.elastic.co/logo.png"
+    "name": "handbrake-web",
+    "title": "Handbrake Web",
+    "link": "http://141.28.229.14:5800",
+    "tag": "Videokonvertierung",
+    "description": "Webinterface für Handbrake zur Videokonvertierung."
+  },
+  {
+    "name": "homebox",
+    "title": "Homebox",
+    "link": "http://141.28.229.14:3100",
+    "tag": "Inventarverwaltung",
+    "description": "App zur Verwaltung und Katalogisierung von Haushaltsgegenständen."
+  },
+  {
+    "name": "homepage",
+    "title": "Homepage",
+    "link": "http://141.28.229.14:3005",
+    "tag": "Dashboard",
+    "description": "Individuell anpassbares Home-Dashboard für eigene Dienste und Links."
+  },
+  {
+    "name": "immich",
+    "title": "Immich",
+    "link": "http://141.28.229.14:2283",
+    "tag": "Fotomanager",
+    "description": "Selbst gehostete Lösung zur Verwaltung, Sicherung und gemeinsamen Nutzung von Fotos und Videos."
+  },
+  {
+    "name": "it-tools",
+    "title": "IT-Tools",
+    "link": "http://141.28.229.14:8087",
+    "tag": "Werkzeuge",
+    "description": "Sammlung von nützlichen IT-Werkzeugen für den täglichen Gebrauch."
+  },
+  {
+    "name": "jdownloader2",
+    "title": "JDownloader2",
+    "link": "http://141.28.229.14:3129",
+    "tag": "Downloader",
+    "description": "Beliebter Download-Manager mit Webinterface für automatisierte Downloads."
+  },
+  {
+    "name": "jellyfin",
+    "title": "Jellyfin",
+    "link": "http://141.28.229.14:8096",
+    "tag": "Mediaserver",
+    "description": "Freier, selbstgehosteter Mediaserver für Filme, Serien und Musik."
   }
 ]
