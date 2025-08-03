@@ -2,21 +2,21 @@
   {
     "name": "paperless-ngx",
     "title": "Paperless NGX",
-    "link": "http://141.28.229.14:8000",
+    "link": "http://141.28.229.14:30070",
     "tag": "Dokumentenmanagement",
     "description": "Effizientes Dokumentenmanagementsystem zur Digitalisierung, Archivierung und Durchsuchbarkeit von Dokumenten."
   },
   {
     "name": "penpot",
     "title": "Penpot",
-    "link": "http://141.28.229.14:9001",
+    "link": "http://141.28.229.14:31027",
     "tag": "Design/Prototyping",
     "description": "Open Source Design- und Prototyping-Plattform für Teams mit Unterstützung für UI/UX-Designs."
   },
   {
     "name": "planka",
     "title": "Planka",
-    "link": "http://141.28.229.14:1337",
+    "link": "http://141.28.229.14:30034",
     "tag": "Projektmanagement",
     "description": "Trello-ähnliche Open Source Projektmanagement-Software für Aufgaben und Boards."
   },
@@ -37,203 +37,203 @@
   {
     "name": "stirling-pdf",
     "title": "Stirling PDF",
-    "link": "http://141.28.229.14:8082",
+    "link": "http://141.28.229.14:30124",
     "tag": "PDF-Werkzeuge",
     "description": "Webbasiertes Tool zur Bearbeitung, Konvertierung und Verwaltung von PDF-Dateien."
   },
   {
     "name": "syncthing",
     "title": "Syncthing",
-    "link": "http://141.28.229.14:8384",
+    "link": "http://141.28.229.14:20910",
     "tag": "Dateisynchronisation",
     "description": "Kontinuierliche, verschlüsselte Dateisynchronisation zwischen verschiedenen Geräten."
   },
   {
     "name": "uptime-kuma",
     "title": "Uptime Kuma",
-    "link": "http://141.28.229.14:3001",
+    "link": "http://141.28.229.14:31050",
     "tag": "Monitoring",
     "description": "Selbst gehostetes Monitoring-Tool zum Überwachen von Diensten und Webseiten."
   },
   {
     "name": "vikunja",
     "title": "Vikunja",
-    "link": "http://141.28.229.14:3456",
+    "link": "http://141.28.229.14:30107",
     "tag": "Aufgabenverwaltung",
     "description": "Open Source Aufgaben- und Projektmanagement mit Listen, Boards und Kalender."
   },
   {
     "name": "wg-easy",
     "title": "WG-Easy",
-    "link": "http://141.28.229.14:51821",
+    "link": "http://141.28.229.14:30058",
     "tag": "VPN",
     "description": "Webinterface zum einfachen Verwalten und Bereitstellen von WireGuard-VPN-Konfigurationen."
   },
   {
     "name": "karakeep",
     "title": "Karakeep",
-    "link": "http://141.28.229.14:8001",
+    "link": "http://141.28.229.14:30147",
     "tag": "Notizen",
     "description": "Selbst gehostete Plattform für Notizen und Wissensmanagement."
   },
   {
     "name": "kavita",
     "title": "Kavita",
-    "link": "http://141.28.229.14:5000",
+    "link": "http://141.28.229.14:30069",
     "tag": "E-Book/Comic-Server",
     "description": "Schneller, funktionsreicher Leseserver für Comics und E-Books."
   },
   {
     "name": "kitchenowl",
     "title": "KitchenOwl",
-    "link": "http://141.28.229.14:8083",
+    "link": "http://141.28.229.14:30211",
     "tag": "Haushaltsmanagement",
     "description": "App zur Verwaltung von Rezepten, Einkaufslisten und Vorräten."
   },
   {
     "name": "komga",
     "title": "Komga",
-    "link": "http://141.28.229.14:25600",
+    "link": "http://141.28.229.14:30048",
     "tag": "Comic-Server",
     "description": "Selbst gehosteter Comic- und Manga-Server mit Webinterface."
   },
   {
     "name": "linkding",
     "title": "Linkding",
-    "link": "http://141.28.229.14:9090",
+    "link": "http://141.28.229.14:30083",
     "tag": "Lesezeichenverwaltung",
     "description": "Einfache, selbstgehostete Lösung zur Verwaltung von Bookmarks."
   },
   {
     "name": "mealie",
     "title": "Mealie",
-    "link": "http://141.28.229.14:9925",
+    "link": "http://141.28.229.14:30111",
     "tag": "Rezepte",
     "description": "Modernes Rezeptmanagement mit Planer und Einkaufsliste."
   },
   {
     "name": "metube",
     "title": "MeTube",
-    "link": "http://141.28.229.14:8084",
+    "link": "http://141.28.229.14:30094",
     "tag": "YouTube-Downloader",
     "description": "Weboberfläche zum Herunterladen von Videos von YouTube und anderen Plattformen."
   },
   {
     "name": "netbootxyz",
     "title": "NetbootXYZ",
-    "link": "http://141.28.229.14:3002",
+    "link": "http://141.28.229.14:31010",
     "tag": "Netzwerkboot",
     "description": "PXE-Server zur Verwaltung und zum Starten von Images über das Netzwerk."
   },
   {
     "name": "netdata",
     "title": "Netdata",
-    "link": "http://141.28.229.14:19999",
+    "link": "http://141.28.229.14:20489",
     "tag": "Monitoring",
     "description": "Leistungsstarkes Monitoring-Tool für Server und Dienste mit Echtzeitdaten."
   },
   {
     "name": "nextcloud",
     "title": "Nextcloud",
-    "link": "http://141.28.229.14:8085",
+    "link": "http://141.28.229.14:30027",
     "tag": "Cloudspeicher",
     "description": "Open Source Cloud-Plattform für Dateisynchronisation, Kalender, Kontakte und mehr."
   },
   {
     "name": "nginx-proxy-manager",
     "title": "Nginx Proxy Manager",
-    "link": "http://141.28.229.14:81",
+    "link": "http://141.28.229.14:30020",
     "tag": "Reverse Proxy",
     "description": "Benutzerfreundliches Webinterface zur Verwaltung von Nginx-Reverse-Proxies und SSL-Zertifikaten."
   },
   {
     "name": "open-speed-test",
     "title": "Open Speed Test",
-    "link": "http://141.28.229.14:3003",
+    "link": "http://141.28.229.14:30116",
     "tag": "Speedtest",
     "description": "Webbasiertes Tool zum Testen der Netzwerkgeschwindigkeit im lokalen Netz."
   },
   {
     "name": "audiobookshelf",
     "title": "Audiobookshelf",
-    "link": "http://141.28.229.14:13378",
+    "link": "http://141.28.229.14:30067",
     "tag": "Hörbuchserver",
     "description": "Selbst gehosteter Server für Hörbücher mit Web- und Mobilzugriff."
   },
   {
     "name": "calibre-web",
     "title": "Calibre Web",
-    "link": "http://141.28.229.14:8083",
+    "link": "http://141.28.229.14:31067",
     "tag": "E-Book-Server",
     "description": "Weboberfläche für Calibre zur Verwaltung und zum Lesen von E-Books."
   },
   {
     "name": "convertx",
     "title": "ConvertX",
-    "link": "http://141.28.229.14:4000",
+    "link": "http://141.28.229.14:30154",
     "tag": "Konvertierung",
     "description": "Tool zur Konvertierung verschiedener Dateiformate online."
   },
   {
     "name": "drawio",
     "title": "Draw.io",
-    "link": "http://141.28.229.14:8086",
+    "link": "http://141.28.229.14:30090",
     "tag": "Diagramme",
     "description": "Webbasierte Anwendung zum Erstellen von Diagrammen und Flussdiagrammen."
   },
   {
     "name": "forgejo",
     "title": "Forgejo",
-    "link": "http://141.28.229.14:3004",
+    "link": "http://141.28.229.14:30142",
     "tag": "Git-Server",
     "description": "Selbstgehosteter Git-Server mit Weboberfläche für Repositories und Projekte."
   },
   {
     "name": "gitea",
     "title": "Gitea",
-    "link": "http://141.28.229.14:3000",
+    "link": "http://141.28.229.14:30008",
     "tag": "Git-Server",
     "description": "Leichter, selbstgehosteter Git-Service für Code-Hosting."
   },
   {
     "name": "grocy",
     "title": "Grocy",
-    "link": "http://141.28.229.14:9283",
+    "link": "http://141.28.229.14:30219",
     "tag": "Haushaltsverwaltung",
     "description": "Selbst gehostetes System zur Verwaltung von Vorräten, Einkauf und Haushalt."
   },
   {
     "name": "handbrake-web",
     "title": "Handbrake Web",
-    "link": "http://141.28.229.14:5800",
+    "link": "http://141.28.229.14:31116",
     "tag": "Videokonvertierung",
     "description": "Webinterface für Handbrake zur Videokonvertierung."
   },
   {
     "name": "homebox",
     "title": "Homebox",
-    "link": "http://141.28.229.14:3100",
+    "link": "http://141.28.229.14:30149",
     "tag": "Inventarverwaltung",
     "description": "App zur Verwaltung und Katalogisierung von Haushaltsgegenständen."
   },
   {
     "name": "homepage",
     "title": "Homepage",
-    "link": "http://141.28.229.14:3005",
+    "link": "http://141.28.229.14:30054",
     "tag": "Dashboard",
     "description": "Individuell anpassbares Home-Dashboard für eigene Dienste und Links."
   },
   {
     "name": "immich",
     "title": "Immich",
-    "link": "http://141.28.229.14:2283",
+    "link": "http://141.28.229.14:30041",
     "tag": "Fotomanager",
     "description": "Selbst gehostete Lösung zur Verwaltung, Sicherung und gemeinsamen Nutzung von Fotos und Videos."
   },
   {
     "name": "it-tools",
     "title": "IT-Tools",
-    "link": "http://141.28.229.14:8087",
+    "link": "http://141.28.229.14:30063",
     "tag": "Werkzeuge",
     "description": "Sammlung von nützlichen IT-Werkzeugen für den täglichen Gebrauch."
   },
@@ -247,7 +247,7 @@
   {
     "name": "jellyfin",
     "title": "Jellyfin",
-    "link": "http://141.28.229.14:8096",
+    "link": "http://141.28.229.14:30013",
     "tag": "Mediaserver",
     "description": "Freier, selbstgehosteter Mediaserver für Filme, Serien und Musik."
   }
